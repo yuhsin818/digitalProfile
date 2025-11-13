@@ -56,15 +56,32 @@ export default function RootLayout({ children }) {
         />
       </div> */}
 
-      <div className="w-screen h-screen flex flex-col sm:flex-row gap-5 bg-[linear-gradient(to_bottom_right,_#00437B,_#AFC7D8)] p-8 box-border overflow-y-auto">
+      <div className="relative w-screen h-screen flex flex-col sm:flex-row bg-[#D8E9F0] p-8 box-border overflow-y-hidden overflow-x-hidden">
       {/* <div className="w-screen h-screen flex flex-col sm:flex-row gap-5 bg-transparent p-8 box-border overflow-y-auto"> */}
 
+        {/* <!-- 光暈球 1 --> */}
+        <div className="absolute z-0 top-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full 
+        bg-[#00437B] blur-[100px] opacity-60"></div>
+
+        {/* <!-- 光暈球 2 --> */}
+        <div className="absolute z-0 bottom-[-150px] right-[-100px] w-[400px] h-[400px] rounded-full 
+        bg-[#00437B] blur-[120px] opacity-50"></div>
+
+        {/* <!-- 光暈球 3（中間補光） --> */}
+        <div className="absolute z-0 top-[3%] left-[50%] w-[400px] h-[400px] rounded-full 
+        bg-[#00437B] blur-[80px] opacity-40"></div>
+
+        {/* <!-- 光暈球 4（中間補光） --> */}
+        <div className="absolute z-0 bottom-[5%] left-[10%] w-[400px] h-[400px] rounded-full 
+        bg-[#00437B] blur-[80px] opacity-40"></div>
+
         {/* <div className="min-w-[320px] w-full sm:w-[320px] h-full rounded-2xl bg-[#D8E9F0] flex justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden"> */}
-        <div className="min-w-[320px] w-full sm:w-[320px] h-full rounded-2xl bg-[#D8E9F0] flex justify-start items-center flex-col overflow-y-auto overflow-x-hidden">
+        <div className="z-10 min-w-[320px] w-full sm:w-[320px] h-full rounded-4xl bg-[#00437B] bg-gradient-to-br from-[#00538f] to-[#003766]
+          shadow-[inset_6px_6px_16px_rgba(255,255,255,0.6),inset_-6px_-6px_16px_rgba(0,0,0,0.3)] flex justify-start items-center flex-col overflow-y-auto overflow-x-hidden">
           
-          <div className="w-full bg-[#00437B] flex flex-col items-center rounded-b-[4vw]">
+          <div className="w-full flex flex-col items-center rounded-b-[4vw]">
             <Image src={AvatarImage2} alt="Avatar" className="w-[80px] h-[80px] rounded-full mt-[64px]" />
-            <h1 className="mt-2 text-white font-bold text-[18px]">潘玉心</h1>
+            <h1 className="mt-2 text-white font-bold text-[18px] my-2">潘玉心</h1>
             <p className="max-w-[380px] text-center text-white">
               心理系學生，斜槓數位內容。
             </p>
@@ -97,11 +114,11 @@ export default function RootLayout({ children }) {
           {/* <div className="">Information Categories</div> */}
 
           {/* 頁面切換 */}
-          <div className="w-full flex-col flex gap-3 mt-6 px-10 text-[#00437B] font-bold">
-            <div className="flex justify-center text-[20px]">Categories</div>
+          <div className="w-full flex-col flex gap-3 mt-1 px-10 text-white font-bold">
+            {/* <div className="flex justify-center text-[20px]">Categories</div> */}
             
             <Link href="/">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
                 <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
                   <Image src={HomeIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
@@ -110,43 +127,16 @@ export default function RootLayout({ children }) {
             </Link>
 
             <Link href="/about">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
                 <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
                   <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
                 <div>About</div>
               </div>
             </Link>
-{/* 
-            <Link href="/uiux">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
-                <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={UiuxIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>UI/UX</div>
-              </div>
-            </Link>
-
-            <Link href="/p5js">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
-                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>P5.js</div>
-              </div>
-            </Link>
-
-            <Link href="/photo">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300 mb-2">
-                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={CameraIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>Photos</div>
-              </div>
-            </Link> */}
 
             <Link href="/project">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
                 <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
                   <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
@@ -158,7 +148,9 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        {children}
+        <div className="flex-1 ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-r-4xl"> 
+          {children}
+        </div>
 
       </div>
 

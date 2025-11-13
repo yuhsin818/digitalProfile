@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full h-full bg-[rgba(255,255,255,0.3)] flex justify-center items-center rounded-2xl gap-2 p-8 overflow-hidden min-w-[320px] overflow-y-auto">
+    <div className="w-full h-full flex justify-center items-center gap-2 p-8 overflow-hidden min-w-[320px] overflow-y-auto">
       <div className="flex flex-row rounded-2xl shadow shadow-[#00437B] hover:shadow-xl transition-shadow duration-300 w-[60vh] lg:h-[40vh]">
 
         <div className="bg-gray-200  rounded-2xl  flex-[3]"

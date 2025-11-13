@@ -8,9 +8,9 @@ import File4 from "@/app/image/JLPT.png"
 
 export default function About() {
   return (
-    <div className="w-full min-w-[320px] h-full bg-[#D8E9F0] flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
+    <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
       
-      <div className="w-full bg-[#00437B] flex flex-col text-white pt-8 px-20 rounded-bl-[4vw]">
+      <div className="w-full flex flex-col text-[#00437B] pt-8 px-20 rounded-bl-[4vw]">
         <h1 className="text-2xl font-bold mb-1">
           關於我
         </h1>
@@ -20,8 +20,8 @@ export default function About() {
       </div>
 
     
-      <div className="w-full h-[150vh] sm:h-full bg-[#00437B]">
-        <div className="w-full flex flex-col gap-5 p-[30px] bg-[#D8E9F0] rounded-tr-[4vw] lg:items-center">
+      <div className="w-full h-[150vh] sm:h-full">
+        <div className="w-full flex flex-col gap-5 p-[30px] rounded-tr-[4vw] lg:items-center">
 
           <div className="flex w-full lg:justify-center flex-col lg:flex-row mt-6">
             <div className="w-full lg:w-[50vh] pl-8 text-[#00437B] font-bold">

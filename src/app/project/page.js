@@ -70,51 +70,53 @@ export default function Project() {
     otherProjects;
 
   return (
-    <div className="w-full min-w-[320px] h-full bg-[#D8E9F0] flex flex-col items-center overflow-y-auto rounded-2xl">
+    <div className="w-full min-w-[320px] h-full flex flex-col items-center overflow-y-auto">
       {/* 頁面標題 + 分類按鈕 */}
-      <div className="w-full bg-[#00437B] flex flex-col text-white pt-8 px-20 rounded-bl-[4vw]">
-        <h1 className="text-2xl font-bold mb-5">作品集</h1>
-        <div className="w-full h-[50px] flex gap-2">
-        {[
-          { key: "uiux", label: "UI/UX" },
-          { key: "web", label: "網頁" },
-          { key: "final", label: "畢業製作" },
-          { key: "p5", label: "生成式藝術" },
-          { key: "game", label: "遊戲" },
-          { key: "psy", label: "心理" },
-          { key: "others", label: "其他" },
-        ].map(({ key, label }) => (
-          <button
-            key={key}
-            onClick={() => {
-              setCategory(key);
-              router.push(`/project?category=${key}`); // ✅ URL 更新
-            }}
-            className={`
-              whitespace-nowrap w-fit px-6 h-[50px] rounded-t-2xl flex justify-center items-center
-              transition-all duration-300 ease-in-out
-              ${category === key ? 'bg-[#D8E9F0] text-[#00437B] font-bold' : 'bg-white/50 text-white'}
-              hover:bg-[#D8E9F0] hover:text-[#00437B] hover:font-bold
-              hover:scale-105 hover:shadow-lg cursor-pointer
-            `}
-          >
-            {label}
-          </button>
-        ))}
+      <div className="w-full flex flex-col text-[#00437B] pt-8 px-20">
+        <h1 className="text-2xl font-bold mb-5">My Projects</h1>
 
+        <div className="w-full flex justify-around border-b border-[#9BB7C6] pb-2">
+          {[
+            { key: "uiux", label: "UI/UX" },
+            { key: "web", label: "網頁" },
+            { key: "final", label: "畢業製作" },
+            { key: "p5", label: "生成式藝術" },
+            { key: "game", label: "遊戲" },
+            { key: "psy", label: "心理" },
+            { key: "others", label: "其他" },
+          ].map(({ key, label }) => (
+            <button
+              key={key}
+              onClick={() => {
+                setCategory(key);
+                router.push(`/project?category=${key}`);
+              }}
+              className={`
+                relative text-lg font-medium transition-all duration-300 cursor-pointer
+                ${category === key ? 'text-[#00437B] font-bold' : 'text-[#6B8795]'}
+                after:content-[''] after:absolute after:left-0 after:-bottom-[2px]
+                after:w-0 after:h-[2px] after:bg-[#00437B] after:transition-all after:duration-300
+                hover:after:w-full hover:text-[#00437B]
+                ${category === key ? 'after:w-full' : ''}
+              `}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </div>
 
+
       {/* 根據選擇顯示對應作品 */}
-      <div className="w-full bg-[#00437B]">
+      
         
-        <div className="w-full flex flex-col gap-8 relative p-10 lg:px-20 bg-[#D8E9F0] rounded-tr-4xl transition-all">
+        <div className="w-full flex flex-col gap-8 relative p-10 lg:px-30 transition-all">
           {projects.map((p, index) => (
             <ProjectPage key={index} image={p.image} content={p.content} href={"/project/" + p.href}/>
           ))}
         </div>
         
-      </div>
+    
 
     </div>
   );
