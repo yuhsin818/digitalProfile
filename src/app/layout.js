@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         />
       </div> */}
 
-      <div className="relative w-screen h-screen flex flex-col sm:flex-row bg-[#D8E9F0] p-8 box-border overflow-y-hidden overflow-x-hidden">
+      <div className="relative w-screen h-full sm:h-screen flex flex-col sm:flex-row bg-[#D8E9F0] p-8 box-border overflow-y-auto sm:overflow-y-hidden overflow-x-hidden">
       {/* <div className="w-screen h-screen flex flex-col sm:flex-row gap-5 bg-transparent p-8 box-border overflow-y-auto"> */}
 
         {/* <!-- 光暈球 1 --> */}
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
 
         {/* <div className="min-w-[320px] w-full sm:w-[320px] h-full rounded-2xl bg-[#D8E9F0] flex justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden"> */}
         <div className="z-10 min-w-[320px] w-full sm:w-[320px] h-full rounded-4xl bg-[#00437B] bg-gradient-to-br from-[#00538f] to-[#003766]
-          shadow-[inset_6px_6px_16px_rgba(255,255,255,0.6),inset_-6px_-6px_16px_rgba(0,0,0,0.3)] flex justify-start items-center flex-col overflow-y-auto overflow-x-hidden">
+          shadow-[inset_6px_6px_16px_rgba(255,255,255,0.6),inset_-6px_-6px_16px_rgba(0,0,0,0.3)] flex justify-start items-center flex-col  overflow-y-auto overflow-x-hidden">
           
           <div className="w-full flex flex-col items-center rounded-b-[4vw]">
             <Image src={AvatarImage2} alt="Avatar" className="w-[80px] h-[80px] rounded-full mt-[64px]" />
@@ -148,7 +148,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        <div className="flex-1 ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-r-4xl"> 
+        <div className="flex-1 ml-0 sm:ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-4xl sm:rounded-r-4xl sm:rounded-l-sm"> 
           {children}
         </div>
 

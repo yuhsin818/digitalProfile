@@ -110,7 +110,7 @@ export default function Project() {
       {/* 根據選擇顯示對應作品 */}
       
         
-        <div className="w-full flex flex-col gap-8 relative p-10 lg:px-30 transition-all">
+        <div className="w-full flex flex-col gap-8 relative py-10 px-20 lg:px-30 transition-all">
           {projects.map((p, index) => (
             <ProjectPage key={index} image={p.image} content={p.content} href={"/project/" + p.href}/>
           ))}
