@@ -14,16 +14,22 @@ import InstagramIcon from "@/app/image/icon_instagram.svg"
 import TwitterIcon from "@/app/image/icon_twitter.svg"
 import ThreadIcon from "@/app/image/icon_thread.svg"
 import CameraIcon from "@/app/image/icon_camera.svg"
-import { Italiana } from 'next/font/google'
+// import { Italiana } from 'next/font/google'
+import { Mate_SC } from 'next/font/google';
 import Aurora from '@/component/Aurora';
 import Iridescence from '@/component/Iridescence';
   
 
-const italiana = Italiana({
+// const italiana = Italiana({
+//   subsets: ['latin'],
+//   weight: '400',
+//   display: 'swap',
+// })
+
+const mate = Mate_SC({
   subsets: ['latin'],
   weight: '400',
-  display: 'swap',
-})
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${italiana.className} font-['Microsoft_JhengHei']`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${mate.className} font-['Microsoft_JhengHei']`}
       >
 
       {/* <div className="absolute inset-0 -z-1 pointer-events-none">
@@ -114,7 +120,7 @@ export default function RootLayout({ children }) {
           {/* <div className="">Information Categories</div> */}
 
           {/* 頁面切換 */}
-          <div className="w-full flex-col flex gap-3 mt-1 px-10 text-white font-bold">
+          <div className="w-full flex-col flex gap-3 mt-1 px-10 text-white">
             {/* <div className="flex justify-center text-[20px]">Categories</div> */}
             
             <Link href="/">
@@ -122,16 +128,7 @@ export default function RootLayout({ children }) {
                 <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
                   <Image src={HomeIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
-                <div>Home</div>
-              </div>
-            </Link>
-
-            <Link href="/about">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
-                <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>About</div>
+                <div>Profile</div>
               </div>
             </Link>
 
@@ -141,6 +138,15 @@ export default function RootLayout({ children }) {
                   <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
                 <div>Projects</div>
+              </div>
+            </Link>
+
+            <Link href="/about">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+                <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
+                  <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                </div>
+                <div>Contact me</div>
               </div>
             </Link>
 
