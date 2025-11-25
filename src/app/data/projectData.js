@@ -20,6 +20,62 @@ import game_web3 from "@/app/image/game3_03.png";
 import game_web4 from "@/app/image/game3_04.png";
 import game_web5 from "@/app/image/game3_05.png";
 
+import P5js1 from "@/app/image/p5js_1.png"
+import p5js1_01 from "@/app/image/p5js1_01.png";
+import p5js1_02 from "@/app/image/p5js1_02.png";
+import p5js1_03 from "@/app/image/p5js1_03.png";
+import p5js1_04 from "@/app/image/p5js1_04.png";
+
+import P5js2 from "@/app/image/p5js_2.png"
+import p5js2_01 from "@/app/image/p5js2_01.png";
+import p5js2_02 from "@/app/image/p5js2_02.png";
+
+import P5js3 from "@/app/image/p5js_3.png"
+import p5js3_01 from "@/app/image/p5js3_01.png";
+import p5js3_02 from "@/app/image/p5js3_02.png";
+import p5js3_03 from "@/app/image/p5js3_03.png";
+import p5js3_04 from "@/app/image/p5js3_04.png";
+
+import P5js4 from "@/app/image/p5js_4.png"
+import p5js4_01 from "@/app/image/p5js4_01.png";
+import p5js4_02 from "@/app/image/p5js4_02.png";
+import p5js4_03 from "@/app/image/p5js4_03.png";
+import p5js4_04 from "@/app/image/p5js4_04.png";
+
+import P5js5 from "@/app/image/p5js_5.png"
+import p5js5_01 from "@/app/image/p5js5_01.png";
+import p5js5_02 from "@/app/image/p5js5_02.png";
+import p5js5_03 from "@/app/image/p5js5_03.png";
+import p5js5_04 from "@/app/image/p5js5_04.png";
+import p5js5_05 from "@/app/image/p5js5_05.png";
+import p5js5_06 from "@/app/image/p5js5_06.png";
+
+import Web1 from "@/app/image/web1.png"
+import web1_01 from "@/app/image/web1_01.png";
+import web1_02 from "@/app/image/web1_02.png";
+import web1_03 from "@/app/image/web1_03.png";
+import web1_04 from "@/app/image/web1_04.png";
+
+import Web2 from "@/app/image/web2.png"
+import web2_01 from "@/app/image/web2_01.png";
+import web2_02 from "@/app/image/web2_02.png";
+import web2_03 from "@/app/image/web2_03.png";
+
+import Web3 from "@/app/image/web3.png"
+import web3_01 from "@/app/image/web3_01.png";
+import web3_02 from "@/app/image/web3_02.png";
+import web3_03 from "@/app/image/web3_03.png";
+import web3_04 from "@/app/image/web3_04.png";
+
+import Final from "@/app/image/final.png"
+import final01 from "@/app/image/final01.png";
+import final02 from "@/app/image/final02.png";
+import final03 from "@/app/image/final03.png";
+import final04 from "@/app/image/final04.png";
+import final05 from "@/app/image/final05.png";
+import final06 from "@/app/image/final06.png";
+
+
 export const projects = [
     {
       id: "dog-game",
@@ -157,6 +213,400 @@ export const projects = [
         github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
         play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
       }
-    }
+    },
+
+    {
+      id: "p5js1",
+      category: "p5",
+      name: "Under The Sea",
+      cover: P5js1,
+  
+      intro: `此為利用flow fields的技巧所創作的作品，主要想透過交錯、彎曲的線條模擬海底的藻類生態。畫布主要有三層結構，第一層是根據noise field生成的較細的線條；第二層為更粗、與第一層線條為互補色的流線；第三層是疊加在第一層線條上的圓點，增加顆粒感與深度。畫面呈現的彎曲線條主要是利用多個圓形拼成，並設定起點到終點圖形漸變的顏色，每一步依照noise的曲率改變方向，形成自然的流動感。`,
+  
+      type: "生成式藝術作品（以p5.js製作）",
+  
+      example: [
+        {
+          img: p5js1_01,
+        },
+        {
+          img: p5js1_02,
+        },
+        {
+          img: p5js1_03,
+        },
+        {
+          img: p5js1_04,
+        }
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "p5js2",
+      category: "p5",
+      name: "Hellish River",
+      cover: P5js2,
+  
+      intro: `此作品運用 Stack and Hills 的技術，透過大量依據座標與 Perlin noise 計算的線條、昏暗且略顯骯髒的顏色組合，以及參雜其中的手部素材，模擬出如地獄的河流會有的光景。
+              \n畫面以密集的格點逐行掃描，每一個位置都會因噪聲而產生高度偏移，形成類似河流起伏的基礎。在此基礎上，程式為每個有效位置生成一株「草」，其長度、粗細與初始角度皆由噪聲與亂數共同決定；每一株草再由許多小矩形逐步堆疊而成，每一步都依據 noise 輕微改變角度與方向，使線條呈現如水流或風向牽動的彎曲感。線條的顏色則使用兩種基底色做漸層插值，根部較深、末端較亮，再加入噪聲動態調整亮度，讓整體具有細膩的顆粒感。`,
+  
+      type: "生成式藝術作品（以p5.js製作）",
+  
+      example: [
+        {
+          img: p5js2_01,
+        },
+        {
+          img: p5js2_02,
+        }
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "p5js3",
+      category: "p5",
+      name: "Abstract Slicing Journey",
+      cover: P5js3,
+  
+      intro: `此作品以 Recursion and Blocks 技巧為核心，透過大量自動分割的矩形區塊與充滿像素感的線條，構築出一個具有「科技介面」風格的視覺系統。
+              \n整體畫面先由隨機選定的主色調建立背景，接著畫布被函式 ARect 與 BRect 不斷依據隨機比例水平或垂直切分，形成如電路板層級般的模組化結構。當某區塊被判定為足夠大時會繼續遞迴拆解；若太小則轉而以不同線材質填滿：ARect 使用由噪聲控制的點狀線列，營造掃描訊號或像素干擾的質感；BRect 則以粗細不一的矩形邊框，塑造宛如系統 UI 的邊界或感測區塊。顏色則以主色調為中心，加入隨機偏移與透明度變化，使整體風格更偏向數位介面、 hologram 或次世代控制面板。這些元素透過遞迴生成交錯、排列，最終形成一個由機械規則與隨機性共同生成的科技感視覺網格，像是介於程式語言、電子電路與虛擬空間之間的混合性圖形結構。`,
+  
+      type: "生成式藝術作品（以p5.js製作）",
+  
+      example: [
+        {
+          img: p5js3_01,
+        },
+        {
+          img: p5js3_02,
+        },
+        {
+          img: p5js3_03,
+        },
+        {
+          img: p5js3_04,
+        }
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "p5js4",
+      category: "p5",
+      name: "Flower Planet",
+      cover: P5js4,
+  
+      intro: `這個作品主要是以 noise 運算與色彩控制構築一個由花朵與根系共同形成的行星景觀。
+              \n整體畫面分為上下兩層：上方的花朵位置透過 Perlin noise 決定高度與傾斜角度，使花朵呈現自然散落的姿態；下方的根莖則以大量小圓點依據 noise 分布，逐層向下拉伸，逐漸聚集成球體般的質量，彷彿由根系構成的星球。作品在色彩上以隨機主色調為核心，再由高度控制 Hue 的漸層變化，使根部與花瓣產生相對的色調。渲染過程透過逐步 await 的非同步繪製，使花朵以近乎生長的方式逐一出現，強化了這顆“花之行星”從噪聲中生成的生命感。`,
+  
+      type: "生成式藝術作品（以p5.js製作）",
+  
+      example: [
+        {
+          img: p5js4_01,
+        },
+        {
+          img: p5js4_02,
+        },
+        {
+          img: p5js4_03,
+        },
+        {
+          img: p5js4_04,
+        }
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "p5js5",
+      category: "p5",
+      name: "GOTCHA",
+      cover: P5js5,
+  
+      intro: `《Gacha World》以現代街頭常見的扭蛋機作為靈感來源，從扭蛋店成排陳列的機台延伸出一種「扭蛋自成世界」的想像。為了呈現這個可愛而獨立的宇宙，我以生成式藝術的隨機性作為核心機制，讓扭蛋彷彿擁有生命，不斷在畫面中變化—這種期待感也呼應人們轉動扭蛋機時的驚喜感。作品畫面由隨機生成的扭蛋機、背景與扭蛋組成，透過互動按壓即可觸發一次“轉扭蛋”，即刻生成新的扭蛋並推動畫面狀態演化，讓作品具備遊戲般的參與性。
+              \n扭蛋本身具有大量參數化的組成：包含顏色、毛髮長度與粗細、排列方式，以及利用 noise 製造出的方向變化，使質感呈現更自然的生長感；臉部則具備約十種表情，並與對應的扭蛋機造型相連動。扭蛋的大小、位置與類型亦由隨機決定，從機台內、出口到外部散落的扭蛋皆有不同狀態，甚至包含僅以外框呈現的透明扭蛋殼與少量才會出現的漸層稀有款。
+              \n扭蛋機則同樣以隨機邏輯構成，包括顏色、造型、數量與位置。其最具辨識度的部分是機台上方的臉與耳朵造型，並與扭蛋的特徵相互對應，使整個世界具有一致的語彙。背景則由多組簡單圖形所組成，維持溫柔可愛的視覺風格；當畫面僅生成一台機台時，背景會自動延伸佔比，營造空間感。
+              \n在互動設計上，我讓作品能真正“扭”出扭蛋：當觀者點擊畫面，出口會生成一顆新的扭蛋，而原本在出口的扭蛋則會被隨機拋到外部場景中，形成持續累積且永不重複的扭蛋景觀。最終，《Gacha World》以生成式藝術的機制打造出一個可愛、隨機且持續生成的扭蛋宇宙，使每一次觀看與操作都像再次轉動扭蛋般充滿期待。`,
+  
+      type: "生成式藝術作品（以p5.js製作）",
+  
+      example: [
+        {
+          img: p5js5_01,
+        },
+        {
+          img: p5js5_02,
+        },
+        {
+          img: p5js5_03,
+        },
+        {
+          img: p5js5_04,
+        },
+        {
+          img: p5js5_05,
+        },
+        {
+          img: p5js5_06,
+        }
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "web1",
+      category: "web",
+      name: "你的靈魂樂器",
+      cover: Web1,
+  
+      intro: `此網頁是一個測驗受試者的個性是類似於哪種樂器的趣味心理測驗。由於每個樂器在樂團中都各自扮演不同的角色，故我以此為發想，連結到每個人的個性可能對應到的樂器，製作此趣味測驗，同時也讓不熟悉古典樂的使用者能夠以這個測驗為契機了解個別樂器在交響樂中的定位。
+              測驗總共有10題、16種可能的結果。`,
+  
+      type: "網頁趣味心理測驗（以next.js製作）",
+  
+      flow2: [
+        {
+          img: web1_01,
+          text: "首頁介紹趣味心理測驗主題和背景，點選開始測驗後進入答題階段。",
+        },
+        {
+          img: web1_02,
+          text: "從四個選項中選擇最符合敘述的選項",
+        },
+        {
+          img: web1_03,
+          text: "點選查看結果（此頁顯示結果的16種樂器）。",
+        },
+        {
+          img: web1_04,
+          text: "顯示測驗結果，可以點選下載結果儲存結果的圖片，或是點選在玩一次重新測驗。",
+        }
+      ],
+
+
+      ux:[
+        "透過簡潔清晰的開場說明，降低使用門檻並提升完成率。",
+        "設計流程包含：題目 → 選項 → 結果頁，並加入回饋動畫或交互效果，使使用者感受到即時回應。",
+        "使用響應式設計與視覺階層，確保在手機與點電腦上皆有良好的體驗。"
+      ],
+
+      ui:[
+        "設計簡約，且採用五種主要色調，對應四種類型的樂器（銅管、木管、弦樂、打擊樂）和封面、結果頁。",
+        "在除了加入音樂相關素材作為裝飾外，不同問題頁面下方被按壓的的鋼琴鍵也會隨著題號往右側移動。",
+        "隨著鼠標的移動軌跡產生音符（♫, ♩, ♪, ♬），塑造更強的互動感與凸顯音樂主題。",
+        "背景音樂根據在每個作答階段有所不同，襯托每個階段的氛圍，例如：等待結果畫面是弦樂撥弦的音樂，帶出期待、雀躍的心情；而結果頁為較活潑的交響樂。"
+      ],
+
+      tech: [
+        "使用 Next.js + React 建構 SPA 架構，並部署於 Vercel。",
+        "利用 zustand 管理不同作答階段的頁面切換條件、測驗計分。",
+        "套用 react.bits 以及自定義的動畫效果加強互動性。",
+        "使用 Tailwind CSS 實作響應式版面與互動效果，確保跨裝置體驗一致。",
+        "利用 component 定義不同頁面中會重複使用到的UI樣式、頁面基本架構。",
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "web2",
+      category: "web",
+      name: "熊熊夾娃娃機",
+      cover: Web2,
+  
+      intro: `這是一個載入blender建模的網頁互動遊戲，可以控制娃娃機爪子抓取機台內娃娃，有機率獲得的獎品類型共有三種，亦有機率失敗沒抓到。`,
+  
+      type: "網頁3D互動抽獎遊戲（以next.js製作）",
+  
+      flow: [
+        {
+          img: web2_01,
+          text: "操作方式介紹。",
+        },
+        {
+          img: web2_02,
+          text: "開始遊玩，按WASD上下左右移動，空白鍵抓取。",
+        },
+        {
+          img: web2_03,
+          text: "出現遊玩結果，共有三種獎品，以及未中獎。",
+        }
+      ],
+
+      ui:[
+        "使用明亮、帶童趣的配色風格，呼應「遊戲機台」的氛圍。",
+        "使用一致的 icon 與色彩階層，提升整體設計的一致性與識別度。",
+        "SweetAlert2 建立有趣可愛的遊戲彈窗（遊戲開始提示 + 抽獎結果圖片顯示）"
+      ],
+
+      tech: [
+        "利用Next.js + React 進行 SPA 互動式頁面設計。",
+        "使用 React Three Fiber（R3F）打造 3D 遊戲場景，並加上 @react-three/drei 輔助元件（Environment、Camera、useGLTF、ContactShadows）",
+        "useKeyboardControls() 建立 WASD + 方向鍵 + Space 操作，透過 useFrame 每幀偵測按鍵並更新夾取器位置",
+        "利用 useGLTF 載入夾娃娃機 glb 模型，並透過 traverse() 動態控制模型內不同子物件的動作（爪子、機械軌道、娃娃顯示）",
+        "用Math.random() 實作機率抽獎系統，useState 管理夾子位置、下降狀態、是否抓取成功，useEffect 做遊戲開始時提示彈窗。"
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "web3",
+      category: "web",
+      name: "月來悅貼心",
+      cover: Web3,
+  
+      intro: `本報告的動機主要源於對「月經貧窮」和「月經汙名」這兩大社會議題的關注。月經貧窮是指女性在生理期缺乏安全衛生的用品、設施或經期衛生教育，這使得低收入女性面臨巨大經濟壓力，例如臺灣約有 9% 的人曾因此陷入購買生理用品與日常必需品之間的兩難。缺乏替換用品可能導致尿道感染、皮膚刺激等健康風險，而社會對月經的負面看法則產生了月經汙名，將經期視為羞恥或禁忌，促使人們隱藏生理用品。解決這些相互影響的問題被視為推動社會公平與人權進步的關鍵里程碑。雖然非營利組織小紅帽已在 Google 開源地圖上建置「月經友善空間」提供免費用品等服務，但現有地圖的資訊有限，僅標示地點與服務項目。因此，本專案的動機在於建構一個更全面、實用性更高的「月經友善」網站，不僅旨在提供正確知識、消除月經汙名，更關鍵的是要優化現有的地圖。透過新增各地點衛生棉的數量與規格等詳細資訊，本專案希望提升使用者體驗及地圖的精準度，讓需要的人能夠更自在、清楚地使用友善空間，以最終實現月經平權與友善社會。
+              \n（此為小組作品，我負責的部分為利用 python 連結 ChatGPT API，利用 FAISS 比對使用者輸入的文字以及月經資料，以生成最相關、合適的回覆訓練機器人；串接python與網頁API）`,
+  
+      type: "網頁AI機器人（以next.js+python製作）",
+  
+      flow2: [
+        {
+          img: web3_01,
+          text: "「聊一聊」功能，可以與AI機器人聊天或詢問月經相關問題（機器人經過正確的月經知識相關資料訓練）。",
+        },
+        {
+          img: web3_02,
+          text: "點選我要拍拍，可以進入到情緒安撫模式，機器人語氣會較為溫和。",
+        },
+        {
+          img: web3_03,
+          text: "點選我要提問，可以切換到諮詢模式，機器人語氣會較為專業。",
+        },
+        {
+          img: web3_04,
+          text: "「看地圖」功能可以看附近哪裡有提供免費衛生棉使用以及餘量。",
+        }
+      ],
+
+      tech: [
+        `1. 資料讀取與前處理：\n從雲端載入自製的月經知識 txt 資料，並以 LangChain 的 Document 格式讀入，再使用 RecursiveCharacterTextSplitter 將全文切成每段 500 字，方便之後做檢索。`,
+        `2. 建立向量資料庫與語意比對：\n使用 OpenAI Embeddings 將每段文字轉成向量，並以 FAISS 建立向量資料庫。所有用戶提問都會先做語意比對，找到最相關的文本再生成回答。`,
+        `3. 設定聊天機器人角色與提示詞：\n設定 AI 為「女性生理期智能助手」，並加入兩種模式：溫馨好友模式與專業顧問模式。同時定義行為規範，例如角色分離、拒答無關問題、記憶上下文等，並以檢索資料作為知識來源。`,
+        `4. API 串接與版本相容調整：\n使用 OpenAI API 作為主要模型。`,
+        `5. 建立即時網路串接：\n在 Colab 中建立 Flask 後端並用 Ngrok 產生公開 URL 供前端呼叫。使用 flask-cors 讓網頁可跨域存取，形成完整的網頁與 Colab 互動流程。`
+      ],
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "final",
+      category: "final",
+      name: "Frame",
+      cover: Final,
+  
+      intro: `在一片深邃的森林，裡面藏著一面「真實之鏡」。這面鏡子在夜晚會投射出人們的影子，並環繞著無數句話，如低語般浮現在影子周圍。
+              這些句子代表了外人對照鏡者的評價。這些話語有時像祝福，有時像壓力，讓人們越來越依賴外界的眼光，逐漸忽略了自己的內心。
+              村莊裡有個傳說：若有人能在自己的影子裡找到一句特別的字句：「我是…的人」，便能真正看清自我，而不再被他人所左右。
+              作品結合JavaScript程式技術、網頁互動設計與原創動畫故事，打造一套依據參與者回應內容動態生成視覺化結果的互動裝置，將抽象的自我尋找歷程具象化，讓觀眾以參與者的角色介入，實踐自我覺察與解放的過程，引導觀眾從外在框架中解放自我，不再僅僅是外界評價的產物，而是主動定義屬於自己的價值與身份。`,
+  
+      background: `本作品旨在鼓勵人們擺脫外界評價的束縛，重新認識並定義「我是什麼樣的人」。現代社會中，我們的自我評價往往受到他人影響，例如：家人期待、社會價值觀或主流文化的壓力。這些外在聲音使得個體容易迷失自我，逐漸遠離真實的內在感受與需求。
+                  \n作品名稱「Frame」具有多層意涵，象徵外界的框架、限制以及對個體的定義。在現實中，社會與文化經常透過既定的標準框架將人分類、歸納，從而形塑了人們對自己的認知。同時，「Frame」也隱喻了一面鏡子——一種能夠反射他人目光的媒介，但這樣的反射往往扭曲了真實的自我。作品希望引導觀眾從這個框架中解放自我，不再僅僅是外界評價的產物，而是主動定義屬於自己的價值與身份。
+                  \n透過「從他人眼光中找尋自我評價」這一核心行為設計，作品將參與者的探索過程具象化。從大量外界評價的文字中找出屬於自己的語句，象徵了從他人聲音中剝離並重回內心深處，完成一段真實自我的重新認識。整個過程同時也傳達了一個訊息：雖然我們的生活充滿各種框架，但這些框架不應該限制我們發掘並認識真實的自己，而應成為反思與突破的契機。
+                  \n作品希望透過這樣的設計，不僅啟發觀眾釋放自我，更以自我定義的價值，構築一個更加獨立且真誠的內在世界。
+                  \n（此為小組作品，我負責的部分為 p5.js人體偵測、技術整合、流程優化等）`,
+
+      type: "投影互動裝置（以p5.js、next.js、AE製作）",
+  
+      flow: [
+        {
+          img: final01,
+          text: "在體驗區外用電腦先透過網頁觀看前導動畫與填寫問卷（問卷的填答內容會影響作品呈現的文字）",
+        },
+        {
+          img: final02,
+          text: "進入體驗區，對準畫面中央站，會自動開始撥放前導動畫第二部分。",
+        },
+        {
+          img: final03,
+          text: "觀看前導動畫第二部分，與遊戲規則講解。",
+        },
+        {
+          img: final04,
+          text: "開始遊戲體驗，參展者要移動身體，在90秒內找到自己剛剛在網頁輸入的文字，並停留5秒以判定為找到（畫面中其他干擾的文字與網頁端所做的選擇題結果有關）",
+        },
+        {
+          img: final05,
+          text: "找到字後會進入成功的結果動畫；時間內沒找到則會進入失敗的動畫。",
+        },
+        {
+          img: final06,
+          text: "出現體驗結束的字樣即可離開。",
+        }
+      ],
+
+      final_tech:[
+        {
+          title: "p5.js",
+          text: "p5.js的部分分為四個執行階段，分別為：\n(1) 偵測觀眾站在螢幕前開始體驗流程\n(2) 播放動畫（包含規則敘述）\n(3) 利用剪影偵測進行找字遊戲\n(4) 根據成功與否播放結尾動畫\n主要的技術是使用 ml5.js 的 BodyPix 模型進行人體剪影偵測。對於剪影位置的判定則是依據該點座標的遮罩透明度：當該點座標的遮罩alpha值為 0 時，可以得知剪影偵測範圍有涵蓋到該座標。此技術應用在上述四個執行階段中的階段一和階段三，其中階段一將剪影的畫面隱藏起來，僅應用此技術來判斷螢幕前是否有觀眾，以即時進入體驗流程。階段三的找字遊戲，背景的文字是根據網頁回傳的選擇題選項決定，程式會先loadData()後，依據收到的選項選定對應的字串陣列，再將各提對應的陣列打散，隨機組合出背景所呈現的文字。參展者所要找尋的字則會在程式接收到網頁端輸入的答案後，以隨機位置加入陣列。\n此外，程式會在收到新數據或整個體驗流程執行完後自動更新頁面，套用下一個使用者在網頁端所輸入的數據。只有在階段一收到新數據才會即時更新頁面，故網頁端的體驗流程可以和小黑屋的體驗同時進行。"
+        },
+        {
+          title: "後端串接",
+          text: "網頁的部分使用 npm run build 將 react 所建立的網頁打包成靜態檔案，並利用 node.js + express 在本地端建立伺服器。由於展場所使用的兩台電腦是連結相同的網路，故可以在執行 server 後，透過輸入 ip 位置和指定的port在另一台電腦開啟網頁。網頁端會在使用者點擊完選項或送出文字後 post 對應的答案到 server，server 會將接收到的數據轉換成 json 格式，以提供 p5.js 取用。p5.js 在 server 接收到「我是...的人」數據後，會依據情況自動更新頁面。"
+        }
+      ],
+
+      final_upgrade: [
+        {
+          title: "展前測試後的改善",
+          text:
+            "展前測試後調整了體驗流程以提升參展者的沉浸感。原先兩段前導動畫都放在網頁端，導致觀眾在體驗區外停留過久，因此將第二段動畫移到實際體驗區內播放，使兩個區域能同時容納不同組觀眾並提升流動效率。找字階段原本只有背景音樂，使長時間體驗較無趣，故加入每 20 秒一次的魔鏡挑釁語音以增加互動感。結尾部分也加入魔鏡的配音與明確的體驗結束字樣，讓故事更完整並避免結束過於突兀。"
+        },
+        {
+          title: "自動化",
+          text:
+            "參展者在體驗區外於網頁輸入的內容會 POST 到 server，作品會自動採用 server 最新收到的資料。上一位參與者體驗結束後 10 秒，作品會自動重新載入並更新為下一位的資料。進入體驗區後，只要站上指定位置，第二段動畫會自動開始播放。工作人員可透過後方控台監看進度，按下空白鍵可切換至休息畫面；若有新資料進來，休息畫面會自動切回偵測畫面，以利即時管理現場流程。"
+        }
+      ],
+      
+  
+      links: {
+        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
   ];
   
