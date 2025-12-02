@@ -75,10 +75,15 @@ import final04 from "@/app/image/final04.png";
 import final05 from "@/app/image/final05.png";
 import final06 from "@/app/image/final06.png";
 
+import Photo from "@/app/image/photo1.jpg";
+import Design from "@/app/image/Design.png";
+import AE from "@/app/image/AE2.png";
+
+import UIUX1 from "@/app/image/uiux1_cover.png";
 
 export const projects = [
     {
-      id: "dog-game",
+      id: "game1",
       category: "game",
       name: "政大流浪狗躲避戰",
       cover: Game1,
@@ -122,19 +127,17 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        game: "https://dog-game-ivory.vercel.app/",
       }
     },
 
     {
-      id: "3D-game",
+      id: "game2",
       category: "game",
       name: "豪宅保衛戰",
       cover: Game2,
   
-      intro: `此遊戲是以 unity 製作的 3D射擊遊戲，素材選用豪宅的場景，角色與怪物則是分別匯入可愛風格的 asset 塑造統一的風格和療愈的遊玩體驗。`,
+      intro: `此遊戲是以 unity 製作的 3D射擊遊戲，素材選用豪宅的場景，角色與怪物則是分別匯入可愛風格的 asset 塑造統一的風格和療癒的遊玩體驗。`,
   
       type: "3D射擊遊戲（以unity製作）",
   
@@ -166,14 +169,12 @@ export const projects = [
       ,
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        report: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
       }
     },
 
     {
-      id: "web-game",
+      id: "game3",
       category: "game",
       name: "指定不退",
       cover: Game3,
@@ -210,14 +211,13 @@ export const projects = [
   
       links: {
         demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        report: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2"
       }
     },
 
     {
       id: "p5js1",
-      category: "p5",
+      category: "p5js",
       name: "Under The Sea",
       cover: P5js1,
   
@@ -241,15 +241,13 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://openprocessing.org/sketch/2130748"
       }
     },
 
     {
       id: "p5js2",
-      category: "p5",
+      category: "p5js",
       name: "Hellish River",
       cover: P5js2,
   
@@ -268,15 +266,13 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://openprocessing.org/sketch/2125279",
       }
     },
 
     {
       id: "p5js3",
-      category: "p5",
+      category: "p5js",
       name: "Abstract Slicing Journey",
       cover: P5js3,
   
@@ -301,15 +297,13 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://openprocessing.org/sketch/2101986",
       }
     },
 
     {
       id: "p5js4",
-      category: "p5",
+      category: "p5js",
       name: "Flower Planet",
       cover: P5js4,
   
@@ -334,15 +328,13 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://openprocessing.org/sketch/2064930",
       }
     },
 
     {
       id: "p5js5",
-      category: "p5",
+      category: "p5js",
       name: "GOTCHA",
       cover: P5js5,
   
@@ -375,9 +367,7 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://www.fxhash.xyz/generative/slug/gotcha",
       }
     },
 
@@ -434,9 +424,7 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://psychological-test-three.vercel.app/",
       }
     },
 
@@ -480,9 +468,7 @@ export const projects = [
       ],
   
       links: {
-        demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        play: "https://claw-machine-six.vercel.app/",
       }
     },
 
@@ -526,8 +512,7 @@ export const projects = [
   
       links: {
         demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        report: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
       }
     },
 
@@ -604,8 +589,93 @@ export const projects = [
   
       links: {
         demo: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        github: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
-        play: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+        report: "https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2",
+      }
+    },
+
+    {
+      id: "photo",
+      category: "others",
+      name: "攝影作品",
+      cover: Photo,
+  
+      intro: `我放在推特上的娃娃收藏分享`,
+      
+    },
+
+    {
+      id: "design",
+      category: "others",
+      name: "美宣作品",
+      cover: Design,
+  
+      intro: `我擔任 政大心理之夜/政大交響/政大心理營/師大附中管樂 美宣的作品`,
+      
+    },
+
+    {
+      id: "AE",
+      category: "others",
+      name: "影像作品",
+      cover: AE,
+  
+      intro: `我在 AE 課程中所做的影像作業`,
+      
+    },
+
+    {
+      id: "uiux1",
+      category: "uiux",
+      name: "現在玩台北",
+      cover: UIUX1,
+  
+      intro: `本專案為「現在玩台北」App 的 Redesign。事前研究的部分透過問卷、訪談，了解目標使用者對於旅遊 App 的使用經驗與期許，重新規劃、設計一個以「台北觀光景點資訊」為主要功能的 App，並在完成設計後進行測試與改善。`,
+  
+      type: "網頁趣味心理測驗（以next.js製作）",
+  
+      flow2: [
+        {
+          img: web1_01,
+          text: "首頁介紹趣味心理測驗主題和背景，點選開始測驗後進入答題階段。",
+        },
+        {
+          img: web1_02,
+          text: "從四個選項中選擇最符合敘述的選項",
+        },
+        {
+          img: web1_03,
+          text: "點選查看結果（此頁顯示結果的16種樂器）。",
+        },
+        {
+          img: web1_04,
+          text: "顯示測驗結果，可以點選下載結果儲存結果的圖片，或是點選在玩一次重新測驗。",
+        }
+      ],
+
+
+      ux:[
+        "透過簡潔清晰的開場說明，降低使用門檻並提升完成率。",
+        "設計流程包含：題目 → 選項 → 結果頁，並加入回饋動畫或交互效果，使使用者感受到即時回應。",
+        "使用響應式設計與視覺階層，確保在手機與點電腦上皆有良好的體驗。"
+      ],
+
+      ui:[
+        "設計簡約，且採用五種主要色調，對應四種類型的樂器（銅管、木管、弦樂、打擊樂）和封面、結果頁。",
+        "在除了加入音樂相關素材作為裝飾外，不同問題頁面下方被按壓的的鋼琴鍵也會隨著題號往右側移動。",
+        "隨著鼠標的移動軌跡產生音符（♫, ♩, ♪, ♬），塑造更強的互動感與凸顯音樂主題。",
+        "背景音樂根據在每個作答階段有所不同，襯托每個階段的氛圍，例如：等待結果畫面是弦樂撥弦的音樂，帶出期待、雀躍的心情；而結果頁為較活潑的交響樂。"
+      ],
+
+      tech: [
+        "使用 Next.js + React 建構 SPA 架構，並部署於 Vercel。",
+        "利用 zustand 管理不同作答階段的頁面切換條件、測驗計分。",
+        "套用 react.bits 以及自定義的動畫效果加強互動性。",
+        "使用 Tailwind CSS 實作響應式版面與互動效果，確保跨裝置體驗一致。",
+        "利用 component 定義不同頁面中會重複使用到的UI樣式、頁面基本架構。",
+      ],
+  
+      links: {
+        play: "https://psychological-test-three.vercel.app/",
       }
     },
   ];

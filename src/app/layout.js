@@ -14,6 +14,7 @@ import InstagramIcon from "@/app/image/icon_instagram.svg"
 import TwitterIcon from "@/app/image/icon_twitter.svg"
 import ThreadIcon from "@/app/image/icon_thread.svg"
 import CameraIcon from "@/app/image/icon_camera.svg"
+import EmailIcon from "@/app/image/envelope.svg"
 // import { Italiana } from 'next/font/google'
 import { Mate_SC } from 'next/font/google';
 import Aurora from '@/component/Aurora';
@@ -87,13 +88,28 @@ export default function RootLayout({ children }) {
           
           <div className="w-full flex flex-col items-center rounded-b-[4vw]">
             <Image src={AvatarImage2} alt="Avatar" className="w-[80px] h-[80px] rounded-full mt-[64px]" />
-            <h1 className="mt-2 text-white font-bold text-[18px] my-2">潘玉心</h1>
-            <p className="max-w-[380px] text-center text-white">
-              心理系學生，斜槓數位內容。
-            </p>
+            <h1 className=" text-white font-bold text-[18px] mb-5">潘玉心</h1>
+            <div className="w-full y-auto mb-5 font-light text-white flex flex-col items-center">
+              <p className="max-w-[380px] text-center">
+                畢業於政大心理系
+              </p>
+              <p className="max-w-[380px] text-center">
+                雙主修數位內容
+                輔系日文
+              </p>
+              <p className="max-w-[380px] text-center mt-1">
+                擅長使用者經驗設計
+              </p>
+              <p className="max-w-[380px] text-center">
+                網頁開發、數位互動裝置
+              </p>
+              {/* <p className="max-w-[380px] text-center text-white font-light">
+              畢業於政大心理學系，雙主修數位內容、輔系日文，具備跨領域整合能力。專長為使用者經驗設計、網頁開發與數位互動裝置，擅長從使用者心理出發，將需求轉化為具互動性與實用性的數位介面，期望投入 UI/UX 或前端相關領域發展。
+              </p> */}
+            </div>
 
             {/* 社群連結 */}
-            <div className="flex gap-4 my-10 mb-12">
+            {/* <div className="flex gap-4 my-10 mb-12">
               <a href="https://www.facebook.com/share/16KwfnLnzb/?mibextid=wwXIfr" target="_blank">
                 <div className="bg-[linear-gradient(to_bottom_right,_#226390,_#A4C2D4)] w-[40px] h-[40px] rounded-full flex justify-center items-center transform transition duration-300 hover:scale-110">
                   <Image src={FacebookIcon} alt="Icon" className="w-[25px] h-[25px]" />
@@ -109,31 +125,31 @@ export default function RootLayout({ children }) {
                   <Image src={TwitterIcon} alt="Icon" className="w-[21px] h-[21px]" />
                 </div>
               </a>
-              <a href="https://www.threads.net/@mallow_888?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+              <a hrf="https://www.threads.net/@mallow_888?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
                 <div className="bg-[linear-gradient(to_bottom_right,_#226390,_#A4C2D4)] w-[40px] h-[40px] rounded-full flex justify-center items-center transform transition duration-300 hover:scale-110">
                   <Image src={ThreadIcon} alt="Icon" className="w-[24px] h-[24px]" />
                 </div>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="">Information Categories</div> */}
 
           {/* 頁面切換 */}
-          <div className="w-full flex-col flex gap-3 mt-1 px-10 text-white">
+          <div className="w-full flex-col flex gap-3 mt-10 sm:mt-[40px] px-10 text-white mb-8 sm:mb-3">
             {/* <div className="flex justify-center text-[20px]">Categories</div> */}
             
             <Link href="/">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
                 <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={HomeIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                  <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
                 <div>Profile</div>
               </div>
             </Link>
 
             <Link href="/project">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
                 <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
                   <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
@@ -142,9 +158,9 @@ export default function RootLayout({ children }) {
             </Link>
 
             <Link href="/about">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:border-white transition-all duration-300">
+              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
                 <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                  <Image src={EmailIcon} alt="Icon" className="w-[23px] h-[23px]" />
                 </div>
                 <div>Contact me</div>
               </div>

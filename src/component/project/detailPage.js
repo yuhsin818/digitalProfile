@@ -8,6 +8,7 @@ import game_dog2 from "@/app/image/dog02.png";
 import game_dog3 from "@/app/image/dog03.png";
 import game_dog4 from "@/app/image/dog04.png";
 import game_dog5 from "@/app/image/dog05.png";
+import { motion } from "framer-motion";
 
 
 export default function DetailPage({ project }) {
@@ -25,12 +26,16 @@ export default function DetailPage({ project }) {
         </button>
       </div>
 
-      <div className="flex flex-col w-full gap-6 mt-3 justify-center items-center p-[60px] pl-[100px] pb-6">
+      <div className="flex flex-col w-full gap-6 justify-center items-center p-[60px] sm:pl-[100px] pb-6 pt-[30px]">
         {/* 頁面主標題與介紹 */}
         <div className="w-full flex flex-col lg:flex-row gap-8 items-center">
-          <div className="lg:w-1/2 w-full">
+          <motion.div className="lg:w-1/2 w-full"
+           initial={{ opacity: 0, y: 30 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.6 }}
+          >
             <Image src={project.cover} alt={project.name} className="w-full h-auto rounded-[6vh]" />
-          </div>
+          </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
             <h1 className="text-4xl font-extrabold text-[#00437B] mb-6">{project.name}</h1>
             <p className="text-[#00437B] whitespace-pre-line">{project.intro}</p>
@@ -215,12 +220,20 @@ export default function DetailPage({ project }) {
                 Demo影片
               </button>
             )}
-            {project.links.github && (
+            {project.links.game && (
               <button
-                onClick={() => window.open(project.links.github, "_blank")}
+                onClick={() => window.open(project.links.game, "_blank")}
                 className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
               >
-                Github
+                開始遊戲
+              </button>
+            )}
+            {project.links.report && (
+              <button
+                onClick={() => window.open(project.links.report, "_blank")}
+                className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+              >
+                書面報告
               </button>
             )}
             {project.links.play && (
@@ -228,7 +241,7 @@ export default function DetailPage({ project }) {
                 onClick={() => window.open(project.links.play, "_blank")}
                 className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
               >
-                開始遊戲
+                前往作品
               </button>
             )}
           </div>
