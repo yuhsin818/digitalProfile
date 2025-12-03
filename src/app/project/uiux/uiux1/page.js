@@ -231,7 +231,7 @@ export default function AE() {
             <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程</p>
 
             {/* 訂票流程 */}
-            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl">
+            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5">
 
               <p className="text-[#00437B] text-xl font-bold p-5">
                 訂票
@@ -293,7 +293,7 @@ export default function AE() {
 
 
             {/* 查景點流程 */}
-            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl mt-5">
+            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
               <p className="text-[#00437B] text-xl font-bold p-5">
                 查景點
@@ -353,7 +353,7 @@ export default function AE() {
 
 
             {/* 排行程流程 */}
-            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl mt-5">
+            <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
               <p className="text-[#00437B] text-xl font-bold p-5">
                 排行程

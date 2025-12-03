@@ -28,7 +28,7 @@ export default function Project() {
             { key: "final", label: "畢業製作" },
             { key: "p5js", label: "生成式藝術" },
             { key: "game", label: "遊戲" },
-            { key: "psy", label: "心理" },
+            // { key: "psy", label: "心理" },
             { key: "others", label: "其他" },
           ].map(({ key, label }) => (
             <button
