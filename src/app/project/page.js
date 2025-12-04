@@ -9,7 +9,7 @@ export default function Project() {
 
   const searchParams = useSearchParams();
   const router = useRouter();
-  const initialCategory = searchParams.get("category") || "web";
+  const initialCategory = searchParams.get("category") || "uiux";
   const [category, setCategory] = useState(initialCategory);
 
   const projects_now = projects.filter(p => p.category === category);
@@ -23,8 +23,8 @@ export default function Project() {
 
         <div className="w-full flex justify-around border-b border-[#9BB7C6] pb-2">
           {[
-            { key: "web", label: "網頁" },
             { key: "uiux", label: "UI/UX" },
+            { key: "web", label: "網頁" },
             { key: "final", label: "畢業製作" },
             { key: "p5js", label: "生成式藝術" },
             { key: "game", label: "遊戲" },
@@ -58,7 +58,7 @@ export default function Project() {
             key={p.id} 
             image={p.cover} 
             title={p.name}
-            content={p.intro} 
+            content={p.intro_short} 
             href={`/project/${p.category}/${p.id}`} 
           />
         ))}

@@ -49,7 +49,7 @@ export default function AE() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1805450765755977945" target="_blank">
+              <a href="https://drive.google.com/file/d/1ERo3_0vnh8UtSLoS9fGFG1nBLu__BRxF/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold whitespace-pre-line">
                     以 12 個食物圖片素材，做出類似定格動畫的效果，{`\n`}
@@ -69,10 +69,10 @@ export default function AE() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1815960981706817712" target="_blank">
+              <a href="https://drive.google.com/file/d/14omZLtuIucBmtnt4cpg9B0TpBgRzgfLv/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
-                    以大自然為主題選擇三組靜態圖片做動畫。
+                    以大自然為主題選擇三組靜態圖片所做的動畫。
                   </p>
                 </div>
               </a>
@@ -88,7 +88,7 @@ export default function AE() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1809851226567426549" target="_blank">
+              <a href="https://drive.google.com/file/d/1M7lUwjpatMU-lkuCewp9d2QyvhjT5Ogc/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     以演奏會影像為素材，具象化呈現音樂帶給人類似魔法般的想像。

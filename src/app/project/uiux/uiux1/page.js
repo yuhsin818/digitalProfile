@@ -456,7 +456,21 @@ export default function AE() {
           </div>
         </div>
           
-
+        <div className="w-full mt-8 flex gap-4">
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+            <button
+              onClick={() => window.open("https://drive.google.com/file/d/16auc4eNCAR0qdeyCtKBCtEdoE30gUEQb/view?usp=drive_link", "_blank")}
+              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+            >
+              Demo影片
+            </button>
+            <button
+              onClick={() => window.open("https://drive.google.com/file/d/1tuXbVnNxsTDvcLd71ZKVh1SUrJm0dGna/view?usp=drive_link", "_blank")}
+              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+            >
+              海報
+            </button>
+        </div>
 
 
         

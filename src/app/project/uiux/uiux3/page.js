@@ -38,6 +38,7 @@ import uiux_flow5_2 from  "@/app/image/uiux3_flow5_2.png";
 import uiux_flow5_3 from  "@/app/image/uiux3_flow5_3.png";
 import uiux_flow5_4 from  "@/app/image/uiux3_flow5_4.png";
 import uiux_flow5_5 from  "@/app/image/uiux3_flow5_5.png";
+import uiux_flow5_6 from  "@/app/image/uiux3_flow5_6.png";
 
 import uiux_flow6_1 from  "@/app/image/uiux3_flow6_1.png";
 import uiux_flow6_2 from  "@/app/image/uiux3_flow6_2.png";
@@ -81,31 +82,32 @@ export default function AE() {
     {
       title: "查詢成績",
       data: [
-        { src: uiux_flow4_1, caption: "1. 行程規劃" },
-        { src: uiux_flow4_2, caption: "2. 推薦行程" },
-        { src: uiux_flow4_3, caption: "3. 刪除" },
-        { src: uiux_flow4_4, caption: "2. 推薦行程" },
-        { src: uiux_flow4_5, caption: "3. 刪除" },
+        { src: uiux_flow4_1, caption: "1. 點選側邊導覽列「考試結果＞查詢成績」" },
+        { src: uiux_flow4_2, caption: "2. 呈現已報名考科列表，可點選查看個人成績、榜單公告，若有及格則可以下載及格通知書，不及格則不會出現該按紐。" },
+        { src: uiux_flow4_3, caption: "3. 查看個人成績，可以選擇放大或下載。" },
+        { src: uiux_flow4_4, caption: "2. 查看及格通知書，可以選擇放大或下載。" },
+        { src: uiux_flow4_5, caption: "3. 查看榜單公告，可以選擇放大或下載。" },
       ]
     },
     {
       title: "志願選填",
       data: [
-        { src: uiux_flow5_1, caption: "1. 行程規劃" },
-        { src: uiux_flow5_2, caption: "2. 推薦行程" },
-        { src: uiux_flow5_3, caption: "3. 刪除" },
-        { src: uiux_flow5_4, caption: "4. 確認" },
-        { src: uiux_flow5_5, caption: "5. 完成" },
+        { src: uiux_flow5_1, caption: "1. 點選側邊導覽列「錄取分發＞職務查詢（志願選填）」" },
+        { src: uiux_flow5_2, caption: "2. 可選擇並搜尋職務的篩選條件，將職務加入志願清單。" },
+        { src: uiux_flow5_3, caption: "3. 成功加入職務後，原本呈現加號的按鈕會轉為打勾狀態，點選「查看志願清單」可看到已加入志願清單的職務列表。" },
+        { src: uiux_flow5_4, caption: "4. 已加入志願清單的職務可以拖拉調整志願序，或刪除志願。" },
+        { src: uiux_flow5_5, caption: "5. 若點選刪除志願，會跳出確認刪除的對話框。" },
+        { src: uiux_flow5_6, caption: "5. 成功刪除志願，可以按「查詢職務」跳回所有職務列表，加入其他職務。" }
       ]
     },
     {
       title: "錄取資格保留申請",
       data: [
-        { src: uiux_flow6_1, caption: "1. 行程規劃" },
-        { src: uiux_flow6_2, caption: "2. 推薦行程" },
-        { src: uiux_flow6_3, caption: "3. 刪除" },
-        { src: uiux_flow6_4, caption: "4. 確認" },
-        { src: uiux_flow6_5, caption: "5. 完成" },
+        { src: uiux_flow6_1, caption: "1. 點選側邊導覽列「錄取分發＞錄取資格保留申請」" },
+        { src: uiux_flow6_2, caption: "2. 呈現已錄取考科，可申請保留錄取資格。" },
+        { src: uiux_flow6_3, caption: "3. 確認基本資料（會預設為註冊帳號時所填寫的資料）。" },
+        { src: uiux_flow6_4, caption: "4. 填寫申辦事由和上傳證明文件，完成後點選確認。" },
+        { src: uiux_flow6_5, caption: "5. 完成申請，等待審核。" },
 
       ]
     },
@@ -349,7 +351,15 @@ export default function AE() {
           </div>
         </div>
           
-
+        <div className="w-full mt-8 flex gap-4">
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+            <button
+              onClick={() => window.open("https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web_digitalProfile?page-id=1%3A3&node-id=67-6435&viewport=-996%2C-160%2C0.02&t=0qq4zdxVpTaGJKtl-1&scaling=scale-down&content-scaling=fixed", "_blank")}
+              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+            >
+              FIGMA
+            </button>
+        </div>
 
 
         
