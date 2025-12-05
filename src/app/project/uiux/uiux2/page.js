@@ -105,7 +105,7 @@ export default function AE() {
       </div>
 
 
-      <div className="flex flex-col w-full gap-6 justify-center items-center p-[60px] pl-[100px] pt-[30px]">
+      <div className="flex flex-col w-full gap-6 justify-center items-center p-4 sm:p-[60px] sm:pl-[100px] pt-[30px]">
           
           {/* 頁面主標題與介紹 */}
         <div className="w-full flex flex-col lg:flex-row gap-8 items-center mb-12">

@@ -170,7 +170,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        <div className="flex-1 ml-0 sm:ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-4xl sm:rounded-r-4xl sm:rounded-l-sm"> 
+        <div className="min-w-[320px] flex-1 ml-0 sm:ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-4xl sm:rounded-r-4xl sm:rounded-l-sm"> 
           {children}
         </div>
 

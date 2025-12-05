@@ -26,7 +26,7 @@ export default function DetailPage({ project }) {
         </button>
       </div>
 
-      <div className="flex flex-col w-full gap-6 justify-center items-center p-[60px] sm:pl-[100px] pb-6 pt-[30px]">
+      <div className="flex flex-col w-full gap-6 justify-center items-center p-4 sm:p-[60px] sm:pl-[100px] pb-6 pt-[30px]">
         {/* 頁面主標題與介紹 */}
         <div className="w-full flex flex-col lg:flex-row gap-8 items-center">
           <motion.div className="lg:w-1/2 w-full"
@@ -57,7 +57,7 @@ export default function DetailPage({ project }) {
             {project.flow.map((f, i) => (
               <div key={i} className="flex flex-col lg:flex-row items-center gap-4 justify-center">
                 <Image src={f.img} alt={`流程圖${i+1}`} width={500} height={300} className="rounded-[4vh]"/>
-                <p className="text-[#00437B] pl-6 w-[400px]">{f.text}</p>
+                <p className="text-[#00437B] pl-6 w-full lg:w-[400px]">{f.text}</p>
               </div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function DetailPage({ project }) {
           {project.flow2.map((f, i) => (
             <div key={i} className="flex flex-col lg:flex-row items-center justify-center gap-4">
               <Image src={f.img} alt={`流程圖${i+1}`} className="w-[350px] h-auto rounded-[4vh]"/>
-              <p className="text-[#00437B] p-6 w-[400px]">{f.text}</p>
+              <p className="text-[#00437B] p-6 w-full lg:w-[400px]">{f.text}</p>
             </div>
           ))}
           </div>

@@ -37,7 +37,7 @@ export default function Design() {
         </button>
       </div>
 
-      <div className="flex flex-col w-full gap-6 justify-center items-center p-[60px] pl-[100px] pt-[30px]">
+      <div className="flex flex-col w-full gap-6 justify-center items-center p-[60px] sm:pl-[100px] pt-[30px]">
           
           <div className="w-full flex flex-col gap-4">
             <h1 className="text-4xl font-extrabold text-[#00437B]">{project.name}</h1>

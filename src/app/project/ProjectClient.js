@@ -18,7 +18,7 @@ export default function Project() {
     <div className="w-full min-w-[320px] h-full flex flex-col items-center overflow-y-auto">
 
       {/* 標題、分類 */}
-      <div className="w-full flex flex-col text-[#00437B] pt-8 px-20">
+      <div className="w-full flex flex-col text-[#00437B] pt-8 px-4 sm:px-20">
         <h1 className="text-2xl font-bold mb-5">My Projects</h1>
 
         <div className="w-full flex justify-around border-b border-[#9BB7C6] pb-2">
@@ -52,7 +52,7 @@ export default function Project() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col gap-8 relative p-[60px] sm:pl-[100px] pt-[30px]">
+      <div className="w-full flex flex-col gap-8 relative p-4 sm:p-[60px] sm:pl-[100px] pt-[30px]">
         {projects_now.map((p, index) => (
           <ProjectPage 
             key={p.id} 
