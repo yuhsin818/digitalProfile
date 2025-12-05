@@ -132,18 +132,27 @@ export default function DetailPage({ project }) {
               {project.final_upgrade.map((t, i) => (
                 <div key={i} className="w-full flex flex-col gap-4 p-2">
 
-                  <div className="w-full flex flex-row items-center gap-4 p-1">
+                  <div className="w-full flex flex-row gap-4 p-1">
                     {/* 左側圓形 */}
-                    <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] aspect-square flex-shrink-0 rounded-full"></div>
+                    <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
                     {/* 右側文字 */}
-                    <p className="text-[#00437B] text-xl font-bold whitespace-pre-line">{t.title}</p>
+                    <div className="text-[#00437B] text-xl font-bold whitespace-pre-line">
+                      {t.title}
+                      {/* 下方文字 */}
+                      <div className="font-normal text-base p-3 space-y-3">
+                        <li>{t.text1}</li>
+                        <li>{t.text2}</li>
+                        <li>{t.text3}</li>
+                      </div>
+
+                    </div>
+                    {/* <p className="text-[#00437B] text-xl font-bold whitespace-pre-line">{t.title}</p> */}
                   </div>
 
                   {/* 小標題
                   <p className="text-[#00437B] text-xl font-bold whitespace-pre-line">{t.title}</p> */}
                   
-                  {/* 下方文字 */}
-                  <p className="text-[#00437B] whitespace-pre-line pl-10">{t.text}</p>
+                 
                 </div>
               ))}
             </div>
