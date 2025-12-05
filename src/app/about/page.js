@@ -47,7 +47,7 @@ export default function Home() {
         <div className="relative text-[#00437B] flex justify-center items-center p-4 flex-col">
           <BlurText text="Please contact me if you are interested in hiring me" delay={150} animateBy="words" direction="top" className="text-[20px] mb-8"/>
            {/* Email */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-col sm:flex-row">
             <BlurText
               text="My Email:  maggie96206@gmail.com"
               delay={150}
@@ -63,14 +63,14 @@ export default function Home() {
                 setTimeout(() => setEmailCopied(false), 1500);
               }}
               className="px-4 py-1 text-sm rounded-full border border-[#00437B] transition
-                        hover:bg-[#00437B] hover:text-white cursor-pointer"
+                        hover:bg-[#00437B] hover:text-white cursor-pointer mb-4 sm:mb-0"
             >
               {emailCopied ? "✅Copied" : "Copy"}
             </button>
           </div>
 
           {/* Phone */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3  flex-col sm:flex-row">
             <BlurText
               text="My Phone:  0912367162"
               delay={150}

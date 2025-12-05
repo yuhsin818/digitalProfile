@@ -3,10 +3,11 @@
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
 import HeartImg from "@/../public/heart.png";
-import File1 from "@/app/image/HSNU.png"
-import File2 from "@/app/image/NCCU.png"
-import File3 from "@/app/image/certificate.png"
-import File4 from "@/app/image/JLPT.png"
+import File1 from "@/app/image/pic1.jpg"
+import File2 from "@/app/image/pic2.jpg"
+import File3 from "@/app/image/pic3.jpg"
+import File3_2 from "@/app/image/pic3-2.jpg"
+import File4 from "@/app/image/pic4.jpg"
 import PersonImage from "@/app/image/person.jpg";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -15,17 +16,38 @@ import { motion } from "framer-motion";
 export default function Profile(){
   const [preview, setPreview] = useState(null);
 
+  const [step, setStep] = useState(0); 
+  // step = 0 → 第一階段
+  // step = 1 → 第二階段（file3 切換後）
+
+  const handleImageClick = (img) => {
+    setPreview(img);
+    setStep(0); // 每次打開重置
+  };
+
+  const handlePreviewClick = () => {
+    // 情況：如果當前是 file3 → 要切換成 file3-2
+    if (preview === File3 && step === 0) {
+      setPreview(File3_2);
+      setStep(1);
+      return;
+    }
+
+    // 其他情況（包含 file3 第二次點擊）→ 關閉
+    setPreview(null);
+  };
+
   return(
     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col overflow-y-auto">
 
-      <div className="w-full h-auto p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
+      <div className="w-full h-auto p-4 sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
       
       <div className="w-full flex justify-start">
         <h1 className="text-2xl font-bold mb-5 text-[#00437B]">My Profile</h1>
       </div>
 
         {/* 上方照片+自我介紹 */}
-        <motion.div className="w-full h-auto flex flex-col lg:flex-row p-10 justify-center items-center mb-5 bg-[rgba(255,255,255,0.3)] rounded-4xl"
+        <motion.div className="w-full h-auto flex flex-col lg:flex-row p-4 pt-8 sm:p-10 justify-center items-center mb-5 bg-[rgba(255,255,255,0.3)] rounded-4xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -164,6 +186,7 @@ export default function Profile(){
                 </div>
               </div>
 
+              {/* 小圖區域 */}
               <div className="flex flex-wrap gap-2">
                 {[File1, File2, File3, File4].map((img, index) => (
                   <Image
@@ -171,23 +194,25 @@ export default function Profile(){
                     src={img}
                     alt=""
                     className="w-[20vh] h-[30vh] rounded-[3vh] cursor-pointer transform transition duration-300 hover:scale-105"
-                    onClick={() => setPreview(img)}
+                    onClick={() => handleImageClick(img)}
                   />
                 ))}
               </div>
 
+              {/* 預覽區域 */}
               {preview && (
                 <div
                   className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center rounded-2xl"
-                  onClick={() => setPreview(null)}
+                  onClick={handlePreviewClick}
                 >
                   <Image
                     src={preview}
                     alt=""
-                    className="max-w-[60vh] max-h-[90vh] rounded-xl"
+                    className="w-auto max-h-[90vh] rounded-xl"
                   />
                 </div>
               )}
+  
 
 
 
