@@ -264,7 +264,7 @@ export default function AE() {
                   <Image
                     src={flow1[index1].src}
                     alt=""
-                    className="h-[80vh] rounded-xl w-[40vh]"
+                    className="h-auto sm:h-[80vh] rounded-xl w-[40vh]"
                   />
                   <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow1[index1].caption}</p>
                 </div>
@@ -326,7 +326,7 @@ export default function AE() {
                   <Image
                     src={flow2[index2].src}
                     alt=""
-                    className="h-[80vh] rounded-xl w-[40vh]"
+                    className="h-autoh-auto sm:h-[80vh] rounded-xl w-[40vh]"
                   />
                   <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow2[index2].caption}</p>
                 </div>
@@ -386,7 +386,7 @@ export default function AE() {
                   <Image
                     src={flow3[index3].src}
                     alt=""
-                    className="h-[80vh] rounded-xl w-[40vh]"
+                    className="h-autoh-auto sm:h-[80vh] rounded-xl w-[40vh]"
                   />
                   <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow3[index3].caption}</p>
                 </div>
