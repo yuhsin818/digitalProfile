@@ -143,7 +143,7 @@ export default function Profile(){
                     <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">6 個學期書卷獎（系排5%）</p>
 
                     <div className="p-2 flex flex-col gap-2">
-                      <p>110-1 系排第一名, 110-2 系排第一名, 111-1 系排第三名, 111-2 系排第一名, 112-1 系排第一名, 112-2 系排第二名</p>
+                      <p>110-1 系排第一名、110-2 系排第一名、111-1 系排第三名、111-2 系排第一名、112-1 系排第一名、112-2 系排第二名、畢業排名第一名</p>
                     </div>
 
                   </div>
@@ -170,7 +170,7 @@ export default function Profile(){
                     key={index}
                     src={img}
                     alt=""
-                    className="w-[20vh] h-[30vh] rounded-[3vh] cursor-pointer"
+                    className="w-[20vh] h-[30vh] rounded-[3vh] cursor-pointer transform transition duration-300 hover:scale-105"
                     onClick={() => setPreview(img)}
                   />
                 ))}
@@ -184,7 +184,7 @@ export default function Profile(){
                   <Image
                     src={preview}
                     alt=""
-                    className="max-w-[90vw] max-h-[90vh] rounded-xl"
+                    className="max-w-[60vh] max-h-[90vh] rounded-xl"
                   />
                 </div>
               )}
@@ -247,7 +247,7 @@ export default function Profile(){
             <div className="p-2">
               <p className="text-[#008BBF] font-bold mb-2">程式語言</p>
               <div className="flex flex-wrap gap-2 p-3">
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Jvascipt</button>
+                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Javascipt</button>
                 <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">C#</button>
                 <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Python</button>
                 <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Matlab</button>
