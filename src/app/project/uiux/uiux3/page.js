@@ -296,7 +296,7 @@ export default function AE() {
             {flows.map((flow, flowIndex) => (
               <div
                 key={flowIndex}
-                className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5"
+                className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5 -ml-12 sm:ml-0"
                 onTouchStart={(e) => touchStart(e, flowIndex)}
                 onTouchEnd={(e) => touchEnd(e, flowIndex)}
               >
@@ -325,7 +325,7 @@ export default function AE() {
                       alt=""
                       className="h-auto rounded-xl w-[80vh]"
                     />
-                    <p className="w-[40vh] p-3 text-[#00437B] text-center">
+                    <p className="w-full sm:w-[40vh] p-3 text-[#00437B] text-center">
                       {flow.data[indexes[flowIndex]].caption}
                     </p>
                   </div>

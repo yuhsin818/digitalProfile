@@ -210,40 +210,45 @@ export default function DetailPage({ project }) {
 
         {/* 相關連結 */}
         {project.links && (
-          <div className="w-full mt-8 flex gap-4">
+        
+          <div className="w-full mt-8 flex">
             <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p>
-            {project.links.demo && (
-              <button
-                onClick={() => window.open(project.links.demo, "_blank")}
-                className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-              >
-                Demo影片
-              </button>
-            )}
-            {project.links.game && (
-              <button
-                onClick={() => window.open(project.links.game, "_blank")}
-                className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-              >
-                開始遊戲
-              </button>
-            )}
-            {project.links.report && (
-              <button
-                onClick={() => window.open(project.links.report, "_blank")}
-                className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-              >
-                書面報告
-              </button>
-            )}
-            {project.links.play && (
-              <button
-                onClick={() => window.open(project.links.play, "_blank")}
-                className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-              >
-                前往作品
-              </button>
-            )}
+            
+            <div className="flex gap-4 flex-wrap">
+
+              {project.links.demo && (
+                <button
+                  onClick={() => window.open(project.links.demo, "_blank")}
+                  className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+                >
+                  Demo影片
+                </button>
+              )}
+              {project.links.game && (
+                <button
+                  onClick={() => window.open(project.links.game, "_blank")}
+                  className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+                >
+                  開始遊戲
+                </button>
+              )}
+              {project.links.report && (
+                <button
+                  onClick={() => window.open(project.links.report, "_blank")}
+                  className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+                >
+                  書面報告
+                </button>
+              )}
+              {project.links.play && (
+                <button
+                  onClick={() => window.open(project.links.play, "_blank")}
+                  className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+                >
+                  前往作品
+                </button>
+              )}
+            </div>
           </div>
         )}
 

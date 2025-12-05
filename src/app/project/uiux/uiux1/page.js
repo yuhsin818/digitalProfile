@@ -266,7 +266,7 @@ export default function AE() {
                     alt=""
                     className="h-[80vh] rounded-xl w-[40vh]"
                   />
-                  <p className="w-[40vh] text-[#00437B] text-center">{flow1[index1].caption}</p>
+                  <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow1[index1].caption}</p>
                 </div>
 
                 {/* 右箭頭 */}
@@ -328,7 +328,7 @@ export default function AE() {
                     alt=""
                     className="h-[80vh] rounded-xl w-[40vh]"
                   />
-                  <p className="w-[40vh] text-[#00437B] text-center">{flow2[index2].caption}</p>
+                  <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow2[index2].caption}</p>
                 </div>
 
                 {/* 右箭頭 */}
@@ -388,7 +388,7 @@ export default function AE() {
                     alt=""
                     className="h-[80vh] rounded-xl w-[40vh]"
                   />
-                  <p className="w-[40vh] text-[#00437B] text-center">{flow3[index3].caption}</p>
+                  <p className="w-full sm:w-[40vh] text-[#00437B] text-center">{flow3[index3].caption}</p>
                 </div>
 
                 {/* 右箭頭 */}
