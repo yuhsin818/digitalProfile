@@ -351,14 +351,17 @@ export default function AE() {
           </div>
         </div>
           
-        <div className="w-full mt-8 flex gap-4">
+        <div className="w-full mt-8 flex">
           <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+
+          <div className="flex gap-4 flex-wrap">
             <button
               onClick={() => window.open("https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web_digitalProfile?page-id=1%3A3&node-id=67-6435&viewport=-996%2C-160%2C0.02&t=0qq4zdxVpTaGJKtl-1&scaling=scale-down&content-scaling=fixed", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
               FIGMA
             </button>
+          </div>
         </div>
 
 

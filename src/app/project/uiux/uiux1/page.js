@@ -456,8 +456,10 @@ export default function AE() {
           </div>
         </div>
           
-        <div className="w-full mt-8 flex gap-4">
+        <div className="w-full mt-8 flex">
           <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+
+          <div className="flex gap-4 flex-wrap">
             <button
               onClick={() => window.open("https://drive.google.com/file/d/16auc4eNCAR0qdeyCtKBCtEdoE30gUEQb/view?usp=drive_link", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
@@ -470,6 +472,7 @@ export default function AE() {
             >
               海報
             </button>
+          </div>
         </div>
 
 
