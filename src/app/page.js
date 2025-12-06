@@ -133,7 +133,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">數位內容畢業製作-技術</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">16th 政大數位內容畢業製作-技術</p>
 
                 <div className="p-2 flex flex-col gap-2">
                   <p className="whitespace-pre-line">使用 p5.js + ml5.js BodyPix 完成人體剪影偵測、互動邏輯、動畫控制
@@ -233,10 +233,10 @@ export default function Profile(){
             <div className="w-full p-2">
               <p className="font-bold">UI/UX</p>
               <div className="ml-8 gap-2">
-                <li>使用者研究、人物誌（Persona）</li>
+                <li>使用者研究、人物誌</li>
                 <li>用戶旅程地圖、資訊架構、Wireframe</li>
-                <li>原型設計（Figma）</li>
                 <li>互動流程設計（Flowchart）</li>
+                <li>原型設計（Figma）</li>
               </div>
             </div>
 
@@ -244,9 +244,9 @@ export default function Profile(){
               <p className="font-bold">Front-end</p>
               <div className="ml-8 gap-2">
                 <li>HTML / CSS / JavaScript</li>
-                <li>React</li>
+                <li>React（Next.js）</li>
                 <li>p5.js</li>
-                <li>前後端 API 串接（Fetch / Express））</li>
+                <li>前後端 API 串接（Fetch / Express）</li>
               </div>
             </div>
 

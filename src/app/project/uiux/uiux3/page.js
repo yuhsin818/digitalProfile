@@ -85,8 +85,8 @@ export default function AE() {
         { src: uiux_flow4_1, caption: "1. 點選側邊導覽列「考試結果＞查詢成績」" },
         { src: uiux_flow4_2, caption: "2. 呈現已報名考科列表，可點選查看個人成績、榜單公告，若有及格則可以下載及格通知書，不及格則不會出現該按紐。" },
         { src: uiux_flow4_3, caption: "3. 查看個人成績，可以選擇放大或下載。" },
-        { src: uiux_flow4_4, caption: "2. 查看及格通知書，可以選擇放大或下載。" },
-        { src: uiux_flow4_5, caption: "3. 查看榜單公告，可以選擇放大或下載。" },
+        { src: uiux_flow4_4, caption: "4. 查看及格通知書，可以選擇放大或下載。" },
+        { src: uiux_flow4_5, caption: "5. 查看榜單公告，可以選擇放大或下載。" },
       ]
     },
     {
@@ -97,7 +97,7 @@ export default function AE() {
         { src: uiux_flow5_3, caption: "3. 成功加入職務後，原本呈現加號的按鈕會轉為打勾狀態，點選「查看志願清單」可看到已加入志願清單的職務列表。" },
         { src: uiux_flow5_4, caption: "4. 已加入志願清單的職務可以拖拉調整志願序，或刪除志願。" },
         { src: uiux_flow5_5, caption: "5. 若點選刪除志願，會跳出確認刪除的對話框。" },
-        { src: uiux_flow5_6, caption: "5. 成功刪除志願，可以按「查詢職務」跳回所有職務列表，加入其他職務。" }
+        { src: uiux_flow5_6, caption: "6. 成功刪除志願，可以按「查詢職務」跳回所有職務列表，加入其他職務。" }
       ]
     },
     {
@@ -257,7 +257,8 @@ export default function AE() {
               <div className="p-3 pl-5 space-y-3">
                 <li>現行網站介面字太多、太小，以致於操作吃力、易錯過重要資訊。</li>
                 <li>取得考試資訊的管道多且散（國考報名系統、考選部、電子信箱、簡訊、保訓會、人事行政總處）導致使用者常常需要花大量時間尋找或尋求幫助。</li>
-                <li>負責國考業務涉入之行政機關多，考生找不到資訊、重覆輸入資料 。</li>
+                <li>負責國考業務涉入之行政機關多，但考生不見得都清楚知道每個階段是對應到哪個負責的政府單位，以致於考生常無法立即找到資訊和各階段作業的網站</li>
+                <li>不同政府單位的不同網站窗口可能導致考生需要重覆輸入資料，無個人化的服務 。</li>
               </div>
   
             </div>
@@ -291,7 +292,7 @@ export default function AE() {
           {/* 右側文字 */}
           <div className="flex flex-col w-full gap-3">
 
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程（僅列舉主要流程）</p>
 
             {flows.map((flow, flowIndex) => (
               <div
