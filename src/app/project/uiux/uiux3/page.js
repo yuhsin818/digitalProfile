@@ -82,11 +82,11 @@ export default function AE() {
     {
       title: "查詢成績",
       data: [
-        { src: uiux_flow4_1, caption: "1. 點選側邊導覽列「考試結果＞查詢成績」" },
-        { src: uiux_flow4_2, caption: "2. 呈現已報名考科列表，可點選查看個人成績、榜單公告，若有及格則可以下載及格通知書，不及格則不會出現該按紐。" },
-        { src: uiux_flow4_3, caption: "3. 查看個人成績，可以選擇放大或下載。" },
-        { src: uiux_flow4_4, caption: "4. 查看及格通知書，可以選擇放大或下載。" },
-        { src: uiux_flow4_5, caption: "5. 查看榜單公告，可以選擇放大或下載。" },
+        { src: uiux_flow4_1, caption: "1. 點選側邊導覽列「考試結果＞成績查詢」" },
+        { src: uiux_flow4_2, caption: "2. 呈現已報名考科列表，可點選查看「個人成績」、「榜單公告」，若有及格則可以下載「及格通知」，不及格則不會出現該按紐。" },
+        { src: uiux_flow4_3, caption: "3. 查看個人成績，可以選擇「放大」或「下載」。" },
+        { src: uiux_flow4_4, caption: "4. 查看及格通知書，可以選擇「放大」或「下載」。" },
+        { src: uiux_flow4_5, caption: "5. 查看榜單公告，可以選擇「放大」或「下載」。" }
       ]
     },
     {
@@ -106,8 +106,8 @@ export default function AE() {
         { src: uiux_flow6_1, caption: "1. 點選側邊導覽列「錄取分發＞錄取資格保留申請」" },
         { src: uiux_flow6_2, caption: "2. 呈現已錄取考科，可申請保留錄取資格。" },
         { src: uiux_flow6_3, caption: "3. 確認基本資料（會預設為註冊帳號時所填寫的資料）。" },
-        { src: uiux_flow6_4, caption: "4. 填寫申辦事由和上傳證明文件，完成後點選確認。" },
-        { src: uiux_flow6_5, caption: "5. 完成申請，等待審核。" },
+        { src: uiux_flow6_4, caption: "4. 填寫申辦事由和上傳證明文件，完成後點選「確認」。" },
+        { src: uiux_flow6_5, caption: "5. 完成申請，等待審核。" }
 
       ]
     },
