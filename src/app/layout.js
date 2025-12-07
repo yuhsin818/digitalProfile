@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
-import AvatarImage2 from "@/../public/hachiware2.jpg";
+import AvatarImage2 from "@/app/image/person2.jpg";
 import Link from "next/link";
 import LinkImage1 from "@/app/image/house.png";
 import HomeIcon from "@/app/image/icon_home.svg"
