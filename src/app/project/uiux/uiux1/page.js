@@ -35,30 +35,30 @@ export default function AE() {
   const router = useRouter();
 
   const flow1 = [
-    { src: uiux_flow1_1, caption: "1. 附有附近景點的主頁（開始導航按鈕）" },
-    { src: uiux_flow1_2, caption: "2. 交通方式（大眾運輸Tab）" },
-    { src: uiux_flow1_3, caption: "3. 顯示不同路線與價格（路線按鈕）" },
-    { src: uiux_flow1_4, caption: "4. 路線詳細（訂票按鈕）" },
-    { src: uiux_flow1_5, caption: "5. 付費資訊（確認）" },
-    { src: uiux_flow1_6, caption: "6. 付費成功" }
+    { src: uiux_flow1_1, caption: "1. 使用者首先進入主頁，瀏覽目前所在位置周邊的景點資訊。當使用者點擊「開始導航」，系統將進入交通方式的選擇頁面。" },
+    { src: uiux_flow1_2, caption: "2. 進入交通方式頁面，使用者切換至「大眾運輸」分頁以查看可搭乘的交通選項。" },
+    { src: uiux_flow1_3, caption: "3. 使用者瀏覽不同路線所需的時間與費用，並從中選擇一條最適合自己的路線。" },
+    { src: uiux_flow1_4, caption: "4. 進入路線詳細頁後，使用者可查看完整資訊，並點擊「訂票」以進入付款步驟。" },
+    { src: uiux_flow1_5, caption: "5. 使用者檢查票券金額與付款資訊，並點擊「確認」完成支付。" },
+    { src: uiux_flow1_6, caption: "6. 系統顯示完成訂購的成功提示，流程正式結束。" }
   ];
   
   const flow2 = [
-    { src: uiux_flow2_1, caption: "1. 附有附近景點的主頁（搜尋Tab）" },
-    { src: uiux_flow2_2, caption: "2. 輸入景點名稱（搜索框）" },
-    { src: uiux_flow2_3, caption: "3. 搜尋結果（景點按鈕）" },
-    { src: uiux_flow2_4, caption: "4. 景點資訊（滑動檢視）" },
-    { src: uiux_flow2_5, caption: "5. 景點資訊（滑動檢視）" },
+    { src: uiux_flow2_1, caption: "1. 在主頁進行「搜尋」，查詢自己感興趣的景點。" },
+    { src: uiux_flow2_2, caption: "2. 在搜尋欄位輸入關鍵字進行查詢。" },
+    { src: uiux_flow2_3, caption: "3. 系統將顯示符合條件的搜尋結果，使用者點選其中一個景點以查看詳細內容。" },
+    { src: uiux_flow2_4, caption: "4. 在景點資訊頁中透過滑動方式瀏覽詳細內容，例如圖片、介紹、開放時間等。" },
+    { src: uiux_flow2_5, caption: "5. 繼續滑動頁面，以取得更深入的景點相關資訊。" },
   ];
   
   const flow3 = [
-    { src: uiux_flow3_1, caption: "1. 附有附近景點的主頁（行程規劃Tab）" },
-    { src: uiux_flow3_2, caption: "2. 推薦行程（指定的行程按鈕）" },
-    { src: uiux_flow3_3, caption: "3.行程資訊（要刪除的一項景點）" },
-    { src: uiux_flow3_4, caption: "4. 確認畫面（確認）" },
-    { src: uiux_flow3_5, caption: "5. 刪除成功" },
-    { src: uiux_flow3_6, caption: "6. 推薦行程（選擇指定的一項景點上的「直接加入」）" },
-    { src: uiux_flow3_7, caption: "7. 加入成功" }
+    { src: uiux_flow3_1, caption: "1. 從主頁切換至「行程規劃」分頁，開始管理個人行程。" },
+    { src: uiux_flow3_2, caption: "2. 系統提供多種推薦行程，使用者點擊其中一個行程以進入詳細內容。" },
+    { src: uiux_flow3_3, caption: "3. 在行程詳細頁中，使用者選擇刪除某個景點，系統隨即跳出確認視窗。" },
+    { src: uiux_flow3_4, caption: "4. 使用者在確認視窗按下「確認」，執行刪除動作。" },
+    { src: uiux_flow3_5, caption: "5. 系統顯示刪除成功的訊息，代表該景點已從行程中移除。" },
+    { src: uiux_flow3_6, caption: "6. 回到推薦行程頁面，並在某個景點項目按下「直接加入」。" },
+    { src: uiux_flow3_7, caption: "7. 系統顯示加入成功訊息，該景點正式新增至使用者的行程規劃。" }
   ];
 
   const [index1, setIndex1] = useState(0);
