@@ -45,7 +45,8 @@ export default function Home() {
 
        
         <div className="relative text-[#00437B] flex justify-center items-center p-4 flex-col">
-          <BlurText text="Please contact me if you are interested in hiring me" delay={150} animateBy="words" direction="top" className="text-[20px] mb-8"/>
+          <BlurText text="Feel free to contact me" delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-2"/>
+          <BlurText text="if you’re interested in working together." delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-8"/>
            {/* Email */}
           <div className="flex items-center gap-3 flex-col sm:flex-row">
             <BlurText
