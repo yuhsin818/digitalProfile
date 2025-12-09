@@ -54,7 +54,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1805450765755977945" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1805450765755977945" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     ハチワレとギター
@@ -73,7 +73,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1815960981706817712" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1815960981706817712" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     泣いちゃった
@@ -92,7 +92,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1809851226567426549" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1809851226567426549" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     お出かけ
@@ -111,7 +111,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1814898339932217368" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1814898339932217368" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     報酬もらった
@@ -130,7 +130,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1814564814968266810" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1814564814968266810" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     失敗しちゃった
@@ -149,7 +149,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1823212189395919257" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1823212189395919257" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     うさぎ
@@ -168,7 +168,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1823957591950811303" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1823957591950811303" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     慰めろッ
@@ -187,7 +187,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1829065190631190984" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1829065190631190984" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     古本屋だらけ
@@ -206,7 +206,7 @@ export default function Photo() {
               }  
             >
               {/* Hover 出現的白色毛玻璃圖層 */}
-              <a href="https://x.com/Hanayo888/status/1822860495042347057" target="_blank">
+              <a href="https://x.com/Mallow_chiikawa/status/1822860495042347057" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <p className="text-gray-800 text-center text-lg font-semibold">
                     ムン顔ハチワレ
