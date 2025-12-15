@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ProjectPage({ image, content, href, title }) {
+export default function ProjectPage({ image, content, href, title, isFeatured }) {
   
   const maxLength = 180;
   let displayedText = "";   // ✅ 先在外面宣告
@@ -39,14 +39,16 @@ export default function ProjectPage({ image, content, href, title }) {
         {/* 右邊文字內容 */}
         <div className="overflow-hidden w-full h-full flex flex-col p-6 lg:justify-center lg:items-center lg:w-1/2 text-[#00437B]">
           
-          {/* <div className="w-full flex justify-start items-center">
-            <div className="flex justify-start font-bold text-xl mb-3">{title}</div>
-            <button className="font-bold border-2 stroke-[#00437B] p-1 rounded-3xl flex items-center justify-center">
-              ⭐ Featured
-            </button>
-          </div> */}
+          <div className="w-full flex justify-start items-center mb-3 gap-3">
+            <div className="flex justify-start font-bold text-xl">{title}</div>
+            {isFeatured && (
+              <button className="text-[#AAD2E4] font-bold bg-[rgba(255,255,255,0.6)] rounded-3xl px-3 p-1 flex items-center justify-center">
+                ⭐ Featured
+              </button>
+            )}
+          </div>
 
-          <div className="w-full flex justify-start font-bold text-xl mb-3">{title}</div>
+          {/* <div className="w-full flex justify-start font-bold text-xl mb-3">{title}</div> */}
 
           <p className="w-full flex justify-start">{displayedText}</p>
           {/* <div className="w-full flex justify-start mt-3">

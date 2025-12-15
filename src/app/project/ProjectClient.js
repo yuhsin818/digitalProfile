@@ -60,6 +60,7 @@ export default function Project() {
             key={p.id} 
             image={p.cover} 
             title={p.name}
+            isFeatured={p.isFeatured}
             content={p.intro_short} 
             href={`/project/${p.category}/${p.id}`} 
           />
