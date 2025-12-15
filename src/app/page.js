@@ -55,7 +55,7 @@ export default function Profile(){
           <Image src={PersonImage} alt={''} className="w-[30vh] h-[40vh] rounded-[6vh]" />
           <div className="text-[#00437B] lg:w-1/2 p-5 pl-8">
             <h1 className="text-3xl font-extrabold mb-6">潘玉心</h1>
-            <p className="">我畢業於政大心理學系，雙主修數位內容並輔系日文，具備心理知識、設計思維與數位技術整合的跨領域背景。個性細心、做事認真且樂於溝通，曾參與多項互動與數位創作專案，累積從企劃到實作的完整經驗。心理學的訓練讓我更能從使用者行為與情緒出發，結合使用者經驗設計、網頁開發與互動裝置技術，規劃更直覺的介面流程與沈浸式互動體驗。期望持續深化技術能力，創造兼具美感與實用性的數位體驗！</p>
+            <p className="whitespace-pre-line">我畢業於政大心理學系，雙主修數位內容並輔系日文，具備心理學、設計思維與數位技術整合的跨領域背景。{`\n`}個性細心、做事認真且樂於溝通，曾參與多項互動與數位創作專案，累積從企劃發想到實際製作的完整經驗。{`\n`}心理學訓練使我能從使用者行為與情緒出發，結合使用者經驗設計、網頁開發與互動裝置技術，規劃清楚且符合使用者需求的互動體驗。期望持續深化技術與設計能力，創造兼具美感與實用性的作品！</p>
           </div>
         </motion.div>
 
@@ -119,7 +119,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">美宣-師大附中管樂/政大交響/政大心理之夜/政大心理營</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">美宣 - 師大附中管樂 | 政大交響 | 政大心理之夜 | 政大心理營</p>
 
                 <div className="p-2 flex flex-col gap-2">
                   <p>文宣品製作、海報設計、周邊設計</p>
@@ -133,12 +133,28 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">樂團長笛首席</p>
+
+                <div className="p-2 flex flex-col gap-2 ml-6">
+                  <li>規劃聲部練習流程，提升團隊整體表現</li>
+                  <li>透過教學與溝通協調不同程度的團員</li>
+                  <li>累積團隊領導、溝通與教學經驗</li>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="w-full flex flex-row gap-4 p-2">
+              {/* 左側圓形 */}
+              <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+              {/* 右側文字 */}
+              <div className="flex flex-col">
                 <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">16th 政大數位內容畢業製作-技術</p>
 
-                <div className="p-2 flex flex-col gap-2">
-                  <p className="whitespace-pre-line">使用 p5.js + ml5.js BodyPix 完成人體剪影偵測、互動邏輯、動畫控制
-                    {`\n`}建立前後端串接流程（express server），串接使用者輸入資料與互動視覺呈現
-                    {`\n`}與網頁端串接，實作自動化更新機制、體驗流程管理邏輯</p>
+                <div className="p-2 flex flex-col gap-2 ml-6">
+                  <li>使用 p5.js + ml5.js BodyPix 完成人體剪影偵測、互動邏輯、動畫控制</li>
+                  <li>建立前後端串接流程（express server），串接使用者輸入資料與互動視覺呈現</li>
+                  <li>實作自動化更新機制、體驗流程管理邏輯</li>
                 </div>
 
               </div>
@@ -153,7 +169,7 @@ export default function Profile(){
         {/* 獎項與證書 */}
         <div className="w-full h-auto bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B] mt-5">
             
-            <div className="grid grid-cols-1 xl:grid-cols-3">
+            <div className="grid grid-cols-1 2xl:grid-cols-3">
               <div className="col-span-2">
                 <p className="font-bold text-2xl mb-5">獎項與證書</p>
 
@@ -235,7 +251,7 @@ export default function Profile(){
               <div className="ml-8 gap-2">
                 <li>使用者研究、人物誌</li>
                 <li>用戶旅程地圖、資訊架構、Wireframe</li>
-                <li>互動流程設計（Flowchart）</li>
+                <li>互動流程設計</li>
                 <li>原型設計（Figma）</li>
               </div>
             </div>
@@ -243,9 +259,8 @@ export default function Profile(){
             <div className="w-full p-2">
               <p className="font-bold">Front-end</p>
               <div className="ml-8 gap-2">
-                <li>HTML / CSS / JavaScript</li>
-                <li>React（Next.js）</li>
-                <li>p5.js</li>
+                <li>HTML / CSS</li>
+                <li>Javascript（Next.js / p5.js）</li>
                 <li>前後端 API 串接（Fetch / Express）</li>
               </div>
             </div>
