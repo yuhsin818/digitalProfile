@@ -20,6 +20,8 @@ export default function Project() {
       {/* 標題、分類 */}
       <div className="w-full flex flex-col text-[#00437B] pt-8 px-4 sm:px-20">
         <h1 className="text-2xl font-bold mb-5">My Projects</h1>
+        {/* <h1 className="text-2xl font-bold mb-2">My Projects</h1>
+        <p className="mb-5">⭐ for recommended projects</p> */}
 
         <div className="w-full flex justify-around border-b border-[#9BB7C6] pb-2">
           {[
