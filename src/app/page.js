@@ -75,7 +75,7 @@ export default function Profile(){
               {/* 右側文字 */}
               <div className="flex flex-col">
                 <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">師範大學附屬高級中學</p>
-                <p className="text-[#AAD2E4] font-light text-base">2016 - 2019</p>
+                <p className="pl-1 text-[#AAD2E4] font-light text-base">2016 - 2019</p>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export default function Profile(){
               {/* 右側文字 */}
               <div className="flex flex-col">
                 <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">國立政治大學心理學系 / 雙主修數位內容 / 輔系日文系</p>
-                <p className="text-[#AAD2E4] font-light text-base">2020 - 2025</p>
+                <p className="pl-1 text-[#AAD2E4] font-light text-base">2020 - 2025</p>
 
                 <div className="p-2 flex flex-col gap-2">
                   <p className="font-bold">相關課程</p>
@@ -196,6 +196,20 @@ export default function Profile(){
 
                     <div className="p-2 flex flex-col gap-2">
                       <p>114年通過，總分177（滿分180）</p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="w-full flex flex-row gap-4 p-2">
+                  {/* 左側圓形 */}
+                  <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                  {/* 右側文字 */}
+                  <div className="flex flex-col">
+                    <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">指考英文頂標</p>
+
+                    <div className="p-2 flex flex-col gap-2">
+                      <p>大學英文免修資格</p>
                     </div>
 
                   </div>
