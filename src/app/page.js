@@ -84,7 +84,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">國立政治大學心理學系 | 雙主修數位內容 | 輔系日文系</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">國立政治大學心理學系｜雙主修數位內容｜輔系日文系</p>
                 <p className="pl-1 text-[#AAD2E4] font-light text-base">2020 - 2025</p>
 
                 <div className="p-2 flex flex-col gap-2">
@@ -119,7 +119,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">美宣 - 師大附中管樂 | 政大交響 | 政大心理之夜 | 政大心理營</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">美宣 - 師大附中管樂｜政大交響｜政大心理之夜｜政大心理營</p>
 
                 <div className="p-2 flex flex-col gap-2">
                   <p>文宣品製作、海報設計、周邊設計</p>
