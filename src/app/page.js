@@ -84,7 +84,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">國立政治大學心理學系 / 雙主修數位內容 / 輔系日文系</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">國立政治大學心理學系 | 雙主修數位內容 | 輔系日文系</p>
                 <p className="pl-1 text-[#AAD2E4] font-light text-base">2020 - 2025</p>
 
                 <div className="p-2 flex flex-col gap-2">
@@ -133,7 +133,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">樂團長笛首席</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">樂團長笛首席 - 靜心國中小管樂團 & 管弦樂團｜師大附中管樂社｜政大交響樂社</p>
 
                 <div className="p-2 flex flex-col gap-2 ml-6">
                   <li>規劃聲部練習流程，提升團隊整體表現</li>
@@ -149,7 +149,7 @@ export default function Profile(){
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
               {/* 右側文字 */}
               <div className="flex flex-col">
-                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">16th 政大數位內容畢業製作-技術</p>
+                <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">16th 政大數位內容畢業製作 - 技術</p>
 
                 <div className="p-2 flex flex-col gap-2 ml-6">
                   <li>使用 p5.js + ml5.js BodyPix 完成人體剪影偵測、互動邏輯、動畫控制</li>
