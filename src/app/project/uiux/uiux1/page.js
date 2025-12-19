@@ -167,14 +167,37 @@ export default function AE() {
           {/* 右側文字 */}
           <div className="flex flex-col">
             <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">事前研究</p>
-            <p className="text-[#00437B] whitespace-pre-line">
-              本專案於設計初期透過訪談、問卷調查與競品分析三種方式進行使用者研究，以深入了解使用者的旅遊行為與實際痛點。{`\n`}
-              研究結果顯示，多數使用者目前主要依賴 Google Map 作為行程規劃工具，僅少部分會額外使用 App 訂票或購買行程，但普遍認為現有工具存在店家資訊不足、資訊重複、更新仰賴店家而不即時、路線規劃雖最短但不便利、儲存地點不易管理等問題。{`\n`}
-              使用者同時也期待旅遊 App 能具備即時更新的商家資訊、符合個人需求的搜尋排序、篩選功能、路線與行事曆整合，以及住宿地點的衛生資訊查詢等進階功能。{`\n`}
-              在競品分析方面，Google Map 雖有評論與評分優勢，但在資訊完整度與規劃便利性上仍有不足；
-              原版「現在玩台北」App 雖具有景點分類與收藏功能，但整體景點數量不足、缺乏優惠與語音導覽整合，也未能建立使用者黏著度。{`\n`}
-              此外，研究亦發現部分使用者對於額外下載旅遊 App 的意願偏低，顯示產品需具備更明確的使用誘因，因此本專案也將優惠券、行程套票與排行榜推薦機制視為提升下載與使用動機的重要設計方向。
+            <p className="text-[#00437B] whitespace-pre-line mb-2">
+              <strong>1. 研究方法</strong>{`\n`}
+              本專案於設計初期採用深度訪談、問卷調查與競品分析三種研究方法，旨在精準定義目標對象（Target Audience）的旅遊行為，並挖掘現有工具未被滿足的痛點。
             </p>
+            <div className="text-[#00437B] whitespace-pre-line mb-4">
+              <div className="p-3 pl-5 space-y-3">
+                <li>深度訪談： 針對三位非台北人（具備基礎數位工具使用能力）進行質性訪談，探索旅遊規劃的心理路徑。</li>
+                <li>問卷調查： 回收 34 份樣本（主要分佈於政大交流板），量化使用者對景點、路線與住宿功能的滿意度影響因子，並針對功能重要性進行排序。</li>
+                <li>競品分析： 橫向評估 Klook、KKday、Funliday、愛食記與 Google Maps，釐清市場現有的服務缺口。</li>
+              </div>
+            </div>
+
+            <div className="text-[#00437B] whitespace-pre-line mb-4">
+              <strong>2. 研究發現與洞察</strong>{`\n`}
+              研究結果顯示，多數使用者目前主要依賴 Google Maps 作為行程規劃工具，僅少部分會額外使用 App 訂票 or 購買行程，但普遍認為現有工具存在店家資訊不足、資訊重複、更新仰賴店家而不即時、路線規劃雖最短但不便利、儲存地點不易管理等問題。{`\n`}
+              使用者同時也期待旅遊 App 能具備即時更新的商家資訊、符合個人需求的搜尋排序、篩選功能、路線與行事曆整合，以及住宿地點的衛生資訊查詢等進階功能。
+              {`\n`}在競品分析方面，Google Map 雖有評論與評分優勢，但在資訊完整度與規劃便利性上仍有不足；
+              原版「現在玩台北」App 雖具有景點分類與收藏功能，但整體景點數量不足、缺乏優惠與語音導覽整合；行程安排功能只能加入景點，未顯示景點間的交通時間預估，且未能建立使用者黏著度。
+              此外，我們亦發現部分使用者對於額外下載旅遊 App 的意願偏低，顯示產品需具備更明確的使用誘因促增加使用意願。
+            </div>
+
+            <div className="text-[#00437B] whitespace-pre-line">
+              <strong>3. 改善方案</strong>{`\n`}
+              針對上述洞察，本專案提出以下設計策略：
+              <div className="p-3 pl-5 space-y-3">
+                <li>資訊整合與介面設計： 針對資訊碎片化問題，重新設計景點頁面，整合即時更新的商家狀態，並優化導覽流程，降低搜尋時的認知負荷。</li>
+                <li>整合訂票功能：讓使用者可以直接於 app 中訂票，且可於查詢路徑時跳轉到該功能，降低使用者規劃旅遊時需使用多平台的負擔，提升整體服務流程的連貫性。</li>
+                <li>行程規劃系統： 優化路線排序邏輯，加入行事曆同步功能，讓使用者能直覺地拖拉調整行程順序，並即時預覽交通路徑，解決 Google Maps 儲存地點難以管理與規劃不便，以及現在玩台北行稱規劃功能不完整的痛點。</li>
+                <li>高誘幫激勵機制與社群排行榜： 為提升下載意願與黏著度，於首頁導入「獨家優惠券」與「限時行程套票」。同時建立基於大數據的「熱門排行榜」，將 App 從單純的工具轉變為具備「旅遊靈感提供」與「消費利多」的綜合平台。</li>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -457,6 +480,26 @@ export default function AE() {
             </div>
           </div>
         </div>
+
+        {/* 文字範圍1 */}
+        <div className="w-full flex flex-row gap-4 p-2">
+          {/* 左側圓形 */}
+          <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+          {/* 右側文字 */}
+          <div className="flex flex-col">
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">事後檢討</p>
+            <p className="text-[#00437B] whitespace-pre-line">
+            在專案結束後的自我審視中，我發現事前研究所觀察到的多項痛點並未在最終設計中獲得完整改善。
+            目前的 Prototype 僅優先完成了景點查詢、訂票與行程安排等核心功能，反映出在處理複雜需求時，
+            功能優先級的取捨與開發時程的平衡仍有進步空間。
+            {`\n`}此外，研究中提到的商家資訊更新不即時、或是地圖導覽路線規畫不佳等問題，
+            本質上多屬於後端資料庫維護或外部 API 演算的系統性限制，而非單純透過 App 介面或視覺設計層面所能輕易解決。
+            {`\n`}這次經驗讓我體認到 UI/UX 設計師除了優化視覺與互動，更需深入理解技術邊界與開發限制，並思考如何在無法更動底層邏輯的情況下，
+            透過設計手段（如增加最後更新時間標註、建立使用者回報機制等）來緩解使用者的操作負擔與焦慮感，
+            這將成為我未來在進行產品 Redesign 時極為重要的反思基礎。
+            </p>
+          </div>
+        </div>
           
         <div className="w-full mt-8 flex">
           <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
@@ -473,6 +516,12 @@ export default function AE() {
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
               海報
+            </button>
+            <button
+              onClick={() => window.open("https://drive.google.com/file/d/1WMDS6ez4satFEbZOFtrwft8Ctio__vwE/view?usp=sharing", "_blank")}
+              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
+            >
+              測試腳本
             </button>
           </div>
         </div>

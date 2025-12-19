@@ -40,7 +40,7 @@ export default function Profile(){
   return(
     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col overflow-y-auto">
 
-      <div className="w-full h-auto p-4 sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
+      <div className="w-full h-auto sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
       
       <div className="w-full flex justify-start">
         <h1 className="text-2xl font-bold mb-5 text-[#00437B]">My Profile</h1>
