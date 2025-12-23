@@ -184,11 +184,11 @@ export const projects = [
       name: "豪宅保衛戰",
       cover: Game2,
 
-      intro_short:'此遊戲是以 unity 製作的 3D射擊遊戲，素材選用豪宅的場景，角色與怪物則是分別匯入可愛風格的 asset 塑造統一的風格和療癒的遊玩體驗。',
+      intro_short:'此遊戲是以 unity 製作的 3D 射擊遊戲，素材選用豪宅的場景，角色與怪物則是分別匯入可愛風格的 asset 塑造統一的風格和療癒的遊玩體驗。',
   
       intro: `此遊戲是以 unity 製作的 3D射擊遊戲，素材選用豪宅的場景，角色與怪物則是分別匯入可愛風格的 asset 塑造統一的風格和療癒的遊玩體驗。`,
   
-      type: "3D射擊遊戲（以 unity 製作）",
+      type: "3D 射擊遊戲（以 unity 製作）",
   
       flow: [
         {
@@ -210,7 +210,7 @@ export const projects = [
       ],
   
       tech: [
-        "角色：\n1. 按下 'Q' 鍵會觸發 reset( ) 函式將角色位置重置並允許操作。\n2. 按下 'Z' 鍵會觸發 \"attack\" 動畫並在 0.3 秒後切換（發射魔法球）。\n3. 按下空白鍵 (\"space\") 會觸發跳躍動畫。\n4. 按下方向鍵或 WASD 鍵可控制角色移動方向，改變角色旋轉角度並切換為移動動畫。",
+        "角色：\n1. 按下 'Q' 鍵會觸發 reset( ) 函式將角色位置重置並允許操作。\n2. 按下 'Z' 鍵會觸發 \"attack\" 動畫並在 0.3 秒後切換（發射魔法球）。\n3. 按下空白鍵 (\"space\") 會觸發跳躍動畫。\n4. 按下方向鍵或 W, A, S, D 鍵可控制角色移動方向，改變角色旋轉角度並切換為移動動畫。",
         "魔法球：\n1. 魔法球在角色按 Z 鍵攻擊時生成，並具有預設的生命週期 LifeTime (2.0f)，無論是否擊中目標，時間到後都會自動銷毀。\n2. 透過 OnTriggerEnter 偵測碰撞；碰撞時會切換為爆炸特效。\n3. 向被擊中的物體發送 \"Hit\" 訊息，並傳遞 damageValue (15)。\n4. 發動效果後魔法球自毀。",    
         "怪物：\n1. 透過 PlayerSensor 偵測周圍的碰撞物體，並將偵測到的第一個物體設為 FollowTarget（玩家）。\n2. 若有 FollowTarget 且血量大於 0，怪物會轉向玩家並切換為跑步動畫。\n3. 透過 AttackSensor 判斷是否進入攻擊範圍；若在範圍內會啟動 \"Attack\" 動畫並停止移動。\n4. 收到 \"Hit\" 訊息後觸發被擊中動畫；當 CurrentHP 小於或等於 0 時，uiManager 會增加 10 分。",      
         "UI 管理器：\n1. Start( ) 中取得 TextMeshProUGUI 組件。\n2. 初始化顯示文本為 ScorePrefix（例如 \"Score: 250/\"）+ 當前分數 (0)。\n3. 分數增加時更新 UI 文本。\n4. 若達到或超過 240 分，UI 切換為 \"Success\" 字樣。",
@@ -461,7 +461,7 @@ export const projects = [
 
       intro: `這是一個載入 blender 建模的網頁互動遊戲，可以控制娃娃機爪子抓取機台內娃娃，有機率獲得的獎品類型共有三種，亦有機率失敗沒抓到。`,
   
-      type: "網頁3D互動抽獎遊戲（以 next.js 製作）",
+      type: "網頁 3D 互動抽獎遊戲（以 next.js 製作）",
   
       flow: [
         {
@@ -470,7 +470,7 @@ export const projects = [
         },
         {
           img: web2_02,
-          text: "開始遊玩，按WASD上下左右移動，空白鍵抓取。",
+          text: "開始遊玩，按 W, A, S, D 上下左右移動，空白鍵抓取。",
         },
         {
           img: web2_03,
@@ -485,11 +485,11 @@ export const projects = [
       ],
 
       tech: [
-        "利用Next.js + React 進行 SPA 互動式頁面設計。",
+        "利用 Next.js + React 進行 SPA 互動式頁面設計。",
         "使用 React Three Fiber（R3F）打造 3D 遊戲場景，並加上 @react-three/drei 輔助元件（Environment、Camera、useGLTF、ContactShadows）。",
         "useKeyboardControls() 建立 WASD + 方向鍵 + Space 操作，透過 useFrame 每幀偵測按鍵並更新夾取器位置。",
         "利用 useGLTF 載入夾娃娃機 glb 模型，並透過 traverse() 動態控制模型內不同子物件的動作（爪子、機械軌道、娃娃顯示）。",
-        "用Math.random() 實作機率抽獎系統，useState 管理夾子位置、下降狀態、是否抓取成功，useEffect 做遊戲開始時提示彈窗。"
+        "用 Math.random() 實作機率抽獎系統，useState 管理夾子位置、下降狀態、是否抓取成功，useEffect 做遊戲開始時提示彈窗。"
       ],
   
       links: {
