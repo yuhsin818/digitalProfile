@@ -29,7 +29,7 @@ export default function Home() {
   
 
   return (
-    <div className="w-full h-full flex justify-center items-center gap-2 p-8 overflow-hidden min-w-[320px] overflow-y-auto">
+    <div className="w-full h-full flex justify-center items-center gap-2 p-8 sm:pl-17 overflow-hidden min-w-[320px] overflow-y-auto">
       <div className="flex rounded-2xl justify-center items-center bg-[rgba(255,255,255,0.5)] shadow shadow-[#00437B] hover:shadow-xl transition-shadow duration-300 w-[80vh] lg:h-[50vh]">
 
         {/* <div className="bg-gray-200  rounded-2xl  flex-[3]"
@@ -50,7 +50,7 @@ export default function Home() {
            {/* Email */}
           <div className="flex items-center gap-3 flex-col sm:flex-row">
             <BlurText
-              text="My Email:  maggie96206@gmail.com"
+              text="Email:  maggie96206@gmail.com"
               delay={150}
               animateBy="words"
               direction="top"
@@ -73,7 +73,7 @@ export default function Home() {
           {/* Phone */}
           <div className="flex items-center gap-3  flex-col sm:flex-row">
             <BlurText
-              text="My Phone:  0912367162"
+              text="Mobile:  0912367162"
               delay={150}
               animateBy="words"
               direction="top"

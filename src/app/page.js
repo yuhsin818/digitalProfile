@@ -153,7 +153,7 @@ export default function Profile(){
 
                 <div className="p-2 flex flex-col gap-2 ml-6">
                   <li>使用 p5.js + ml5.js BodyPix 完成人體剪影偵測、互動邏輯、動畫控制</li>
-                  <li>建立前後端串接流程（express server），串接使用者輸入資料與互動視覺呈現</li>
+                  <li>建立 express server，串接使用者輸入資料與互動視覺呈現</li>
                   <li>實作自動化更新機制、體驗流程管理邏輯</li>
                 </div>
 
@@ -263,10 +263,9 @@ export default function Profile(){
             <div className="w-full p-2">
               <p className="font-bold">UI/UX</p>
               <div className="ml-8 gap-2">
-                <li>使用者研究、人物誌</li>
-                <li>用戶旅程地圖、資訊架構、Wireframe</li>
-                <li>互動流程設計</li>
-                <li>原型設計（Figma）</li>
+              <li>使用者研究（User Research）、深度訪談（Interview）、問卷調查（Questionnaire）、競品分析（Competitive Analysis）</li>
+              <li>人物誌（Persona）、資訊架構（Information Architecture）、流程圖（Flow Chart）</li>
+              <li>線框圖（Wireframe）、原型設計（Prototyping）、可用性測試（Usability Testing）</li>
               </div>
             </div>
 
