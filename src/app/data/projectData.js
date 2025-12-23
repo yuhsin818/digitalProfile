@@ -718,6 +718,8 @@ export const projects = [
       intro: `本專案為「現在玩台北」App 的 Redesign。事前研究的部分透過問卷、訪談，了解目標使用者對於旅遊 App 的使用經驗與期許，重新規劃、設計一個以「台北觀光景點資訊」為主要功能的 App，並在完成設計後進行測試與改善。`,
   
       type: "網頁趣味心理測驗（以next.js製作）",
+
+      isFeatured: true,
   
     },
 
