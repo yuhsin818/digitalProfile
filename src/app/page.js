@@ -40,7 +40,7 @@ export default function Profile(){
   return(
     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col overflow-y-auto">
 
-      <div className="w-full h-auto sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
+      <div className="w-full h-auto p-2 sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
       
       <div className="w-full flex justify-start">
         <h1 className="text-2xl font-bold mb-5 text-[#00437B]">My Profile</h1>
@@ -313,7 +313,7 @@ export default function Profile(){
 
         </div>
 
-        <div className="w-full mt-8 flex">
+        <div className="w-full mt-8 flex mb-4">
           <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關文件：</p> 
 
           <div className="flex gap-4 flex-wrap">
