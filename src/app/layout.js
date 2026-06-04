@@ -19,7 +19,7 @@ import EmailIcon from "@/app/image/envelope.svg"
 import { Mate_SC } from 'next/font/google';
 import Aurora from '@/component/Aurora';
 import Iridescence from '@/component/Iridescence';
-  
+
 
 // const italiana = Italiana({
 //   subsets: ['latin'],
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${mate.className} font-['Microsoft_JhengHei']`}
       >
 
-      {/* <div className="absolute inset-0 -z-1 pointer-events-none">
+        {/* <div className="absolute inset-0 -z-1 pointer-events-none">
         <Iridescence
           color={[0,0.6,0.7]}
           mouseReact={true}
@@ -63,53 +63,53 @@ export default function RootLayout({ children }) {
         />
       </div> */}
 
-      <div className="relative w-screen h-full sm:h-screen flex flex-col sm:flex-row bg-[#D8E9F0] p-8 box-border overflow-y-auto sm:overflow-y-hidden overflow-x-hidden">
-      {/* <div className="w-screen h-screen flex flex-col sm:flex-row gap-5 bg-transparent p-8 box-border overflow-y-auto"> */}
+        <div className="relative w-screen h-full sm:h-screen flex flex-col sm:flex-row bg-[#D8E9F0] p-8 box-border overflow-y-auto sm:overflow-y-hidden overflow-x-hidden">
+          {/* <div className="w-screen h-screen flex flex-col sm:flex-row gap-5 bg-transparent p-8 box-border overflow-y-auto"> */}
 
-        {/* <!-- 光暈球 1 --> */}
-        <div className="absolute z-0 top-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full 
+          {/* <!-- 光暈球 1 --> */}
+          <div className="absolute z-0 top-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full 
         bg-[#00437B] blur-[100px] opacity-60"></div>
 
-        {/* <!-- 光暈球 2 --> */}
-        <div className="absolute z-0 bottom-[-150px] right-[-100px] w-[400px] h-[400px] rounded-full 
+          {/* <!-- 光暈球 2 --> */}
+          <div className="absolute z-0 bottom-[-150px] right-[-100px] w-[400px] h-[400px] rounded-full 
         bg-[#00437B] blur-[120px] opacity-50"></div>
 
-        {/* <!-- 光暈球 3（中間補光） --> */}
-        <div className="absolute z-0 top-[3%] left-[50%] w-[400px] h-[400px] rounded-full 
+          {/* <!-- 光暈球 3（中間補光） --> */}
+          <div className="absolute z-0 top-[3%] left-[50%] w-[400px] h-[400px] rounded-full 
         bg-[#00437B] blur-[80px] opacity-40"></div>
 
-        {/* <!-- 光暈球 4（中間補光） --> */}
-        <div className="absolute z-0 bottom-[5%] left-[10%] w-[400px] h-[400px] rounded-full 
+          {/* <!-- 光暈球 4（中間補光） --> */}
+          <div className="absolute z-0 bottom-[5%] left-[10%] w-[400px] h-[400px] rounded-full 
         bg-[#00437B] blur-[80px] opacity-40"></div>
 
-        {/* <div className="min-w-[320px] w-full sm:w-[320px] h-full rounded-2xl bg-[#D8E9F0] flex justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden"> */}
-        <div className="z-10 min-w-[320px] w-full sm:w-[320px] h-full rounded-4xl bg-[#00437B] bg-gradient-to-br from-[#00538f] to-[#003766]
+          {/* <div className="min-w-[320px] w-full sm:w-[320px] h-full rounded-2xl bg-[#D8E9F0] flex justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden"> */}
+          <div className="z-10 min-w-[320px] w-full sm:w-[320px] h-full rounded-4xl bg-[#00437B] bg-gradient-to-br from-[#00538f] to-[#003766]
           shadow-[inset_6px_6px_16px_rgba(255,255,255,0.6),inset_-6px_-6px_16px_rgba(0,0,0,0.3)] flex justify-start items-center flex-col  overflow-y-auto overflow-x-hidden">
-          
-          <div className="w-full flex flex-col items-center rounded-b-[4vw]">
-            <Image src={AvatarImage2} alt="Avatar" className="w-[80px] h-[80px] rounded-full mt-[64px]" />
-            <h1 className=" text-white font-bold text-[18px] mb-5">潘玉心</h1>
-            <div className="w-full y-auto mb-5 font-light text-white flex flex-col items-center">
-              <p className="max-w-[380px] text-center">
-                畢業於政大心理系
-              </p>
-              <p className="max-w-[380px] text-center">
-                雙主修數位內容
-                輔系日文
-              </p>
-              <p className="max-w-[380px] text-center mt-1">
-                擅長使用者經驗設計
-              </p>
-              <p className="max-w-[380px] text-center">
-                網頁開發、數位互動裝置
-              </p>
-              {/* <p className="max-w-[380px] text-center text-white font-light">
+
+            <div className="w-full flex flex-col items-center rounded-b-[4vw]">
+              <Image src={AvatarImage2} alt="Avatar" className="w-[80px] h-[80px] rounded-full mt-[64px]" />
+              <h1 className=" text-white font-bold text-[18px] mb-5">潘玉心</h1>
+              <div className="w-full y-auto mb-5 font-light text-white flex flex-col items-center">
+                <p className="max-w-[380px] text-center">
+                  畢業於政大心理系
+                </p>
+                <p className="max-w-[380px] text-center">
+                  雙主修數位內容
+                  輔系日文
+                </p>
+                <p className="max-w-[380px] text-center mt-1">
+                  擅長使用者經驗設計
+                </p>
+                <p className="max-w-[380px] text-center">
+                  網頁開發、專案管理
+                </p>
+                {/* <p className="max-w-[380px] text-center text-white font-light">
               畢業於政大心理學系，雙主修數位內容、輔系日文，具備跨領域整合能力。專長為使用者經驗設計、網頁開發與數位互動裝置，擅長從使用者心理出發，將需求轉化為具互動性與實用性的數位介面，期望投入 UI/UX 或前端相關領域發展。
               </p> */}
-            </div>
+              </div>
 
-            {/* 社群連結 */}
-            {/* <div className="flex gap-4 my-10 mb-12">
+              {/* 社群連結 */}
+              {/* <div className="flex gap-4 my-10 mb-12">
               <a href="https://www.facebook.com/share/16KwfnLnzb/?mibextid=wwXIfr" target="_blank">
                 <div className="bg-[linear-gradient(to_bottom_right,_#226390,_#A4C2D4)] w-[40px] h-[40px] rounded-full flex justify-center items-center transform transition duration-300 hover:scale-110">
                   <Image src={FacebookIcon} alt="Icon" className="w-[25px] h-[25px]" />
@@ -131,50 +131,50 @@ export default function RootLayout({ children }) {
                 </div>
               </a>
             </div> */}
+            </div>
+
+            {/* <div className="">Information Categories</div> */}
+
+            {/* 頁面切換 */}
+            <div className="w-full flex-col flex gap-3 mt-10 sm:mt-[40px] px-10 text-white mb-8 sm:mb-3">
+              {/* <div className="flex justify-center text-[20px]">Categories</div> */}
+
+              <Link href="/">
+                <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
+                  <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
+                    <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                  </div>
+                  <div>Profile</div>
+                </div>
+              </Link>
+
+              <Link href="/project">
+                <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
+                  <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
+                    <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                  </div>
+                  <div>Projects</div>
+                </div>
+              </Link>
+
+              <Link href="/about">
+                <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
+                  <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
+                    <Image src={EmailIcon} alt="Icon" className="w-[23px] h-[23px]" />
+                  </div>
+                  <div>Contact me</div>
+                </div>
+              </Link>
+
+
+            </div>
           </div>
 
-          {/* <div className="">Information Categories</div> */}
-
-          {/* 頁面切換 */}
-          <div className="w-full flex-col flex gap-3 mt-10 sm:mt-[40px] px-10 text-white mb-8 sm:mb-3">
-            {/* <div className="flex justify-center text-[20px]">Categories</div> */}
-            
-            <Link href="/">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
-                <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={GraduationIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>Profile</div>
-              </div>
-            </Link>
-
-            <Link href="/project">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
-                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={P5jsIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>Projects</div>
-              </div>
-            </Link>
-
-            <Link href="/about">
-              <div className="bg-[rgba(255,255,255,0.3)] w-full h-[70px] rounded-4xl flex items-center p-2 border-4 border-transparent hover:bg-[#D8E9F0] hover:text-[#008BBF] transition-all duration-300">
-                <div className=" bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[40px] h-[40px] rounded-full mr-6 flex justify-center items-center">
-                  <Image src={EmailIcon} alt="Icon" className="w-[23px] h-[23px]" />
-                </div>
-                <div>Contact me</div>
-              </div>
-            </Link>
-
-
+          <div className="min-w-[320px] flex-1 ml-0 sm:ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-4xl sm:rounded-r-4xl sm:rounded-l-sm">
+            {children}
           </div>
-        </div>
 
-        <div className="min-w-[320px] flex-1 ml-0 sm:ml-[-40px] z-2 backdrop-blur-xl bg-white/40 rounded-4xl sm:rounded-r-4xl sm:rounded-l-sm"> 
-          {children}
         </div>
-
-      </div>
 
 
       </body>

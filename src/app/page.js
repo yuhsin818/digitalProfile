@@ -13,10 +13,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 
-export default function Profile(){
+export default function Profile() {
   const [preview, setPreview] = useState(null);
 
-  const [step, setStep] = useState(0); 
+  const [step, setStep] = useState(0);
   // step = 0 → 第一階段
   // step = 1 → 第二階段（file3 切換後）
 
@@ -37,14 +37,14 @@ export default function Profile(){
     setPreview(null);
   };
 
-  return(
+  return (
     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col overflow-y-auto">
 
       <div className="w-full h-auto p-2 sm:p-[60px] sm:pl-[100px] flex flex-col justify-center items-center pt-8">
-      
-      <div className="w-full flex justify-start">
-        <h1 className="text-2xl font-bold mb-5 text-[#00437B]">My Profile</h1>
-      </div>
+
+        <div className="w-full flex justify-start">
+          <h1 className="text-2xl font-bold mb-5 text-[#00437B]">My Profile</h1>
+        </div>
 
         {/* 上方照片+自我介紹 */}
         <motion.div className="w-full h-auto flex flex-col lg:flex-row p-4 pt-8 sm:p-10 justify-center items-center mb-5 bg-[rgba(255,255,255,0.3)] rounded-4xl"
@@ -68,7 +68,7 @@ export default function Profile(){
           <div className="w-full  h-auto bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B]">
 
             <p className="font-bold text-2xl mb-5">學歷</p>
-            
+
             <div className="w-full flex flex-row gap-4 p-2">
               {/* 左側圓形 */}
               <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
@@ -111,8 +111,8 @@ export default function Profile(){
 
           {/* 經歷 */}
           <div className="w-full bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B]">
-            
-            <p className="font-bold text-2xl mb-5">經歷</p>
+
+            <p className="font-bold text-2xl mb-5">在校經歷</p>
 
             <div className="w-full flex flex-row gap-4 p-2">
               {/* 左側圓形 */}
@@ -164,98 +164,145 @@ export default function Profile(){
 
         </motion.div>
 
-
-
-        {/* 獎項與證書 */}
+        {/* 工作經歷 */}
         <div className="w-full h-auto bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B] mt-5">
-            
-            <div className="grid grid-cols-1 2xl:grid-cols-3">
-              <div className="col-span-2">
-                <p className="font-bold text-2xl mb-5">獎項與證書</p>
 
-                <div className="w-full flex flex-row gap-4 p-2">
-                  {/* 左側圓形 */}
-                  <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
-                  {/* 右側文字 */}
-                  <div className="flex flex-col">
-                    <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">6 個學期書卷獎（系排5%）</p>
+          <div className="grid grid-cols-1 2xl:grid-cols-3">
+            <div className="col-span-2">
+              <p className="font-bold text-2xl mb-5">工作經歷</p>
 
-                    <div className="p-2 flex flex-col gap-2">
-                      <p>110-1 系排第一名、110-2 系排第一名、111-1 系排第三名、111-2 系排第一名、112-1 系排第一名、112-2 系排第二名、畢業排名第一名</p>
-                    </div>
+              <div className="w-full flex flex-row gap-4 p-2">
+                {/* 左側圓形 */}
+                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                {/* 右側文字 */}
+                <div className="flex flex-col">
+                  <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">飛捷材料有限公司 - 業務</p>
 
+                  <div className="p-2 flex flex-col gap-2">
+                    <p>半導體相關製程知識、客戶問題排解、材料訂購</p>
                   </div>
-                </div>
 
-                <div className="w-full flex flex-row gap-4 p-2">
-                  {/* 左側圓形 */}
-                  <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
-                  {/* 右側文字 */}
-                  <div className="flex flex-col">
-                    <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">日檢 N1</p>
-
-                    <div className="p-2 flex flex-col gap-2">
-                      <p>114年通過，總分177（滿分180）</p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div className="w-full flex flex-row gap-4 p-2">
-                  {/* 左側圓形 */}
-                  <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
-                  {/* 右側文字 */}
-                  <div className="flex flex-col">
-                    <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">指考英文頂標</p>
-
-                    <div className="p-2 flex flex-col gap-2">
-                      <p>大學英文免修資格</p>
-                    </div>
-
-                  </div>
                 </div>
               </div>
 
-              {/* 小圖區域 */}
-              <div className="flex flex-wrap gap-2">
-                {[File1, File2, File3, File4].map((img, index) => (
-                  <Image
-                    key={index}
-                    src={img}
-                    alt=""
-                    className="w-[20vh] h-[30vh] rounded-[3vh] cursor-pointer transform transition duration-300 hover:scale-105"
-                    onClick={() => handleImageClick(img)}
-                  />
-                ))}
-              </div>
+              <div className="w-full flex flex-row gap-4 p-2">
+                {/* 左側圓形 */}
+                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                {/* 右側文字 */}
+                <div className="flex flex-col">
+                  <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">五倍紅寶石軟體開發股份有限公司 - PM實習</p>
 
-              {/* 預覽區域 */}
-              {preview && (
-                <div
-                  className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center rounded-2xl"
-                  onClick={handlePreviewClick}
-                >
-                  <Image
-                    src={preview}
-                    alt=""
-                    className="w-auto max-h-[90vh] rounded-xl"
-                  />
+                  <div className="p-2 flex flex-col gap-2 whitespace-pre-line">
+                    <p>
+                      1. 溝通、整理客戶需求{`\n`}
+                      2. 根據客戶需求與工程師協調實作方式{`\n`}
+                      3. 專案排程，指派實作{`\n`}
+                      4. 功能測試與回報{`\n`}
+                      相關專案內容見作品集
+                    </p>
+                  </div>
+
                 </div>
-              )}
-  
-
-
+              </div>
 
             </div>
 
           </div>
+
+        </div>
+
+
+
+        {/* 獎項與證書 */}
+        <div className="w-full h-auto bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B] mt-5">
+
+          <div className="grid grid-cols-1 2xl:grid-cols-3">
+            <div className="col-span-2">
+              <p className="font-bold text-2xl mb-5">獎項與證書</p>
+
+              <div className="w-full flex flex-row gap-4 p-2">
+                {/* 左側圓形 */}
+                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                {/* 右側文字 */}
+                <div className="flex flex-col">
+                  <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">6 個學期書卷獎（系排5%）</p>
+
+                  <div className="p-2 flex flex-col gap-2">
+                    <p>110-1 系排第一名、110-2 系排第一名、111-1 系排第三名、111-2 系排第一名、112-1 系排第一名、112-2 系排第二名、畢業排名第一名</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="w-full flex flex-row gap-4 p-2">
+                {/* 左側圓形 */}
+                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                {/* 右側文字 */}
+                <div className="flex flex-col">
+                  <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">日檢 N1</p>
+
+                  <div className="p-2 flex flex-col gap-2">
+                    <p>114年通過，總分177（滿分180）</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="w-full flex flex-row gap-4 p-2">
+                {/* 左側圓形 */}
+                <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
+                {/* 右側文字 */}
+                <div className="flex flex-col">
+                  <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">指考英文頂標</p>
+
+                  <div className="p-2 flex flex-col gap-2">
+                    <p>大學英文免修資格</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {/* 小圖區域 */}
+            <div className="flex flex-wrap gap-2">
+              {[File1, File2, File3, File4].map((img, index) => (
+                <Image
+                  key={index}
+                  src={img}
+                  alt=""
+                  className="w-[20vh] h-[30vh] rounded-[3vh] cursor-pointer transform transition duration-300 hover:scale-105"
+                  onClick={() => handleImageClick(img)}
+                />
+              ))}
+            </div>
+
+            {/* 預覽區域 */}
+            {preview && (
+              <div
+                className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center rounded-2xl"
+                onClick={handlePreviewClick}
+              >
+                <Image
+                  src={preview}
+                  alt=""
+                  className="w-auto max-h-[90vh] rounded-xl"
+                />
+              </div>
+            )}
+
+
+
+
+          </div>
+
+        </div>
 
 
 
 
         {/* 技能 */}
         <div className="w-full h-auto bg-[rgba(255,255,255,0.3)] rounded-4xl flex p-6 flex-col text-[#00437B] mt-5">
-          
+
           <div className="flex flex-col mb-8">
 
             <p className="font-bold text-2xl mb-5">網頁相關技能</p>
@@ -263,9 +310,9 @@ export default function Profile(){
             <div className="w-full p-2">
               <p className="font-bold">UI/UX</p>
               <div className="ml-8 gap-2">
-              <li>使用者研究（User Research）、深度訪談（Interview）、問卷調查（Questionnaire）、競品分析（Competitive Analysis）</li>
-              <li>人物誌（Persona）、資訊架構（Information Architecture）、流程圖（Flow Chart）</li>
-              <li>線框圖（Wireframe）、原型設計（Prototyping）、可用性測試（Usability Testing）</li>
+                <li>使用者研究（User Research）、深度訪談（Interview）、問卷調查（Questionnaire）、競品分析（Competitive Analysis）</li>
+                <li>人物誌（Persona）、資訊架構（Information Architecture）、流程圖（Flow Chart）</li>
+                <li>線框圖（Wireframe）、原型設計（Prototyping）、可用性測試（Usability Testing）</li>
               </div>
             </div>
 
@@ -287,25 +334,25 @@ export default function Profile(){
             <div className="p-2 mb-5">
               <p className="text-[#008BBF] font-bold mb-2">軟體</p>
               <div className="flex flex-wrap gap-2 p-3">
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Figma</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">PS</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">AE</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Procreate</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">SPSS</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Unity</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Max/Msp</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Figma</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">PS</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">AE</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Procreate</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">SPSS</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Unity</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Max/Msp</button>
               </div>
             </div>
 
             <div className="p-2">
               <p className="text-[#008BBF] font-bold mb-2">程式語言</p>
               <div className="flex flex-wrap gap-2 p-3">
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Javascipt</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">C#</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Python</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Matlab</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">MySQL</button>
-                <button className="bg-[#D8E9F0] px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">R</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Javascipt</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">C#</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Python</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Matlab</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">MySQL</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">R</button>
               </div>
             </div>
 
@@ -314,7 +361,7 @@ export default function Profile(){
         </div>
 
         <div className="w-full mt-8 flex mb-4">
-          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關文件：</p> 
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關文件：</p>
 
           <div className="flex gap-4 flex-wrap">
             <button
@@ -331,168 +378,3 @@ export default function Profile(){
     </div>
   )
 }
-
-// export default function About() {
-//   return (
-//     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
-      
-//       <div className="w-full flex flex-col text-[#00437B] pt-8 px-20 rounded-bl-[4vw]">
-//         <h1 className="text-2xl font-bold mb-1">
-//           關於我
-//         </h1>
-//         <h3 className="mb-4">
-//           我的學習歷程與各種證明
-//         </h3>
-//       </div>
-
-    
-//       <div className="w-full h-[150vh] sm:h-full">
-//         <div className="w-full flex flex-col gap-5 p-[30px] rounded-tr-[4vw] lg:items-center">
-
-//           <div className="flex w-full lg:justify-center flex-col lg:flex-row mt-6">
-//             <div className="w-full lg:w-[50vh] pl-8 text-[#00437B] font-bold">
-//               <div className="flex flex-col relative">
-//                   {/* 垂直主線：整條線一次畫出 */}
-//                   <div className="absolute left-[-17px] top-[38px] bottom-[38px] lg:bottom-[38px] w-[4px] bg-[linear-gradient(to_bottom,_#A9D2E4,_#32A2CA)] z-0"></div>
-
-//                   {/* 第一個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#A9D2E4] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 畢業於師大附中</div>
-//                   </div>
-
-//                   {/* 第二個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#92C8DF] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 就讀於政治大學心理學系</div>
-//                   </div>
-
-//                   {/* 第三個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#79BED9] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 輔系日本語文學系</div>
-//                   </div>
-
-//                   {/* 第四個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#60B5D4] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 雙主修數位內容學位學程</div>
-//                   </div>
-
-//                   {/* 第五個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#46ABCF] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 通過日檢Nx</div>
-//                   </div>
-
-//                   {/* 第六個項目 */}
-//                   <div className="flex items-center rounded-2xl py-5 pl-3 pr-4 relative">
-//                     <div className="w-[30px] h-[30px] rounded-full bg-[#32A2CA] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">20xx 在xx公司擔任實習生</div>
-//                   </div>
-//                 </div>
-//             </div>
-
-
-//             <div className="w-full lg:w-[40vh] lg:h-[50vh] flex flex-col bg-[rgba(255,255,255,0.45)]  text-[#00437B] p-4 rounded-2xl">
-//               <h2 className="font-bold">相關證明文件</h2>
-//               <div className="h-[50vh] sm:h-[30vh] lg:h-[40vh] grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-2 gap-3 mt-4">
-//               <div
-//                 className="bg-gray-200 rounded-2xl relative overflow-hidden transform transition duration-300 hover:scale-105"
-//                 style={
-//                   {
-//                   backgroundImage: `url(${File1.src})`,
-//                   backgroundSize: 'cover',
-//                   backgroundPosition: 'center',
-//                   }
-//                 }
-//               >
-//                 <div className="w-full h-[30px] backdrop-blur-lg absolute bottom-0 left-0 text-black text-[15px] flex justify-center items-center rounded-b-2xl">
-//                   畢業證書
-//                 </div>
-//               </div>
-
-//                 <div className="bg-gray-200 rounded-2xl relative overflow-hidden transform transition duration-300 hover:scale-105"
-//                   style={
-//                     { backgroundImage: `url(${File2.src})`, 
-//                     backgroundSize: 'cover',
-//                     backgroundPosition: 'center' 
-//                     }
-//                   }
-//                 >
-//                   <div className="w-full h-[30px] backdrop-blur-lg 
-//                   absolute bottom-0 left-0 text-black text-[15px] flex justify-center items-center rounded-b-2xl">
-//                     成績單
-//                   </div>
-//                 </div>
-
-//                 <div className="bg-gray-200 rounded-2xl relative overflow-hidden transform transition duration-300 hover:scale-105"
-//                   style={
-//                     { backgroundImage: `url(${File3.src})`, 
-//                     backgroundSize: 'cover',
-//                     backgroundPosition: 'center' }
-//                   }
-//                 >
-//                   <div className="w-full h-[30px] backdrop-blur-lg 
-//                   absolute bottom-0 left-0 text-black text-[15px] flex justify-center items-center rounded-b-2xl">
-//                     獎狀
-//                   </div>
-//                 </div>
-
-//                 <div className="bg-gray-200 rounded-2xl relative overflow-hidden transform transition duration-300 hover:scale-105"
-//                   style={
-//                     { backgroundImage: `url(${File4.src})`, 
-//                     backgroundSize: 'cover',
-//                     backgroundPosition: 'center' }
-//                   }
-                
-//                 >
-//                   <div className="w-full h-[30px] backdrop-blur-lg 
-//                   absolute bottom-0 left-0 text-black text-[15px] flex justify-center items-center rounded-b-2xl">
-//                     檢定證書
-//                   </div>
-//                 </div>
-
-//               </div>
-//             </div>
-
-//           </div>
-
-          
-//           <div className="w-full lg:w-[70vh] xl:w-[90vh] flex flex-col bg-[rgba(255,255,255,0.45)]  text-[#00437B] p-4 rounded-2xl mt-3">
-//               <h2 className="font-bold">能力</h2>
-//               <div className="pl-10 mt-5">
-//                 {/* 第一個項目 */}
-//                 <div className="flex items-center rounded-2xl py-3 pr-4 relative">
-//                     <div className="w-[20px] h-[20px] rounded-full bg-[#A9D2E4] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">User Research</div>
-//                   </div>
-
-//                   {/* 第二個項目 */}
-//                   <div className="flex items-center rounded-2xl py-3 pr-4 relative">
-//                     <div className="w-[20px] h-[20px] rounded-full bg-[#92C8DF] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">Visual Design</div>
-//                   </div>
-
-//                   {/* 第三個項目 */}
-//                   <div className="flex items-center rounded-2xl py-3 pr-4 relative">
-//                     <div className="w-[20px] h-[20px] rounded-full bg-[#79BED9] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">Javascript</div>
-//                   </div>
-
-//                   {/* 第四個項目 */}
-//                   <div className="flex items-center rounded-2xl py-3 pr-4 relative">
-//                     <div className="w-[20px] h-[20px] rounded-full bg-[#60B5D4] z-10 absolute left-[-30px]"></div>
-//                     <div className="ml-5">Digital Art</div>
-//                   </div>
-//               </div>
-//           </div>
-        
-//         </div>
-//       </div>
-      
-
-
-//     </div>
-//   );
-// }
