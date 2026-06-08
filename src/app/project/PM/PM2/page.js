@@ -93,31 +93,6 @@ export default function PM() {
         </div>
 
 
-        <div className="w-full mt-8 flex">
-          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p>
-
-          <div className="flex gap-4 flex-wrap">
-            <button
-              onClick={() => window.open("https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2", "_blank")}
-              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-            >
-              FIGMA
-            </button>
-            <button
-              onClick={() => window.open("https://drive.google.com/file/d/1VqpiCXR5OnZcc8JrxULW4jHKLybofG4o/view?usp=drive_link", "_blank")}
-              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-            >
-              Demo影片
-            </button>
-            <button
-              onClick={() => window.open("https://drive.google.com/file/d/11xeP2-bsMOWkhCrbHaETEMr7vn6MCAiU/view?usp=drive_link", "_blank")}
-              className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
-            >
-              海報
-            </button>
-          </div>
-        </div>
-
 
 
       </div>
