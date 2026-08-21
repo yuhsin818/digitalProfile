@@ -27,7 +27,7 @@ export default function Project() {
           {[
             { key: "uiux", label: "UI/UX" },
             { key: "PM", label: "PM" },
-            { key: "web", label: "網頁" },
+            { key: "web", label: "前後端" },
             // { key: "final", label: "畢業製作" },
             { key: "p5js", label: "數位藝術" },
             { key: "game", label: "遊戲" },

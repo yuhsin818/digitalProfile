@@ -74,7 +74,7 @@ export default function Web6() {
             <p className="text-[#00437B] whitespace-pre-line">
               這是一套以 Ruby on Rails 8 開發的任務管理 Web 應用程式，提供多使用者環境下的任務追蹤與管理功能。使用者需透過帳號登入後，才能在個人專屬的工作空間中建立、管理與追蹤自己的任務。系統同時設有管理員後台，讓管理員可以統一管理所有使用者帳號。
             </p>
-            <p className="text-[#00437B] font-bold mt-2">類型：網頁</p>
+            <p className="text-[#00437B] font-bold mt-2">類型：網頁前後端（ruby on rails）</p>
           </div>
         </div>
 

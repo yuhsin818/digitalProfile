@@ -40,9 +40,9 @@ export default function PM() {
             <Image src={uiux_cover} alt={''} className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">電子產品官網 - 優化案</h1>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">VIVOTEK 官網</h1>
             <p className="text-[#00437B] whitespace-pre-line">
-              此專案為電子產品官網改版優化案，
+              此專案為 VIVOTEK 產品官網改版優化案，
               專案內容包含官網的改版、功能的擴充、BUG的排查，以及技術的交接等。
               {`\n`}我作爲 PM 參與了本專案，負責客戶的需求溝通到實際的功能開發、測試，並進行後續的追蹤，處理功能上線後出現的問題等。</p>
             <p className="text-[#00437B] font-bold mt-2">類型：PM</p>
@@ -65,21 +65,21 @@ export default function PM() {
 
               <ul>
                 <strong>1. 需求解構與可行性評估：</strong>
-                <p>
+                <p className="mt-1 pl-4">
                   接收客戶需求後，深入研讀既有系統架構，進行商務邏輯與技術邊界的評估，確保功能在時程內可被實踐且
                   不產生額外技術債。
                 </p>
               </ul>
               <ul>
                 <strong>2. 任務結構化與精準分派：</strong>
-                <p>
+                <p className="mt-1 pl-4">
                   將需求撰寫成規格書，並附上清晰的 User Flow 與驗收標準（Acceptance Criteria），
                   透過高精確度的任務範疇（Ticket Scoping）定義，減少 40% 的開發前溝通成本。
                 </p>
               </ul>
               <ul>
                 <strong>3. 易用性與功能性驗收測試：</strong>
-                <p>
+                <p className="mt-1 pl-4">
                   在開發完成後擔任第一線質量把關者（QA），除常規功能驗收，更專注於邊界條件（Edge Cases）測試，
                   從 UX 視角驗證微互動流暢度與防呆機制是否符合心智模型。
                 </p>
@@ -87,7 +87,7 @@ export default function PM() {
               </ul>
               <ul>
                 <strong>4. 後續追蹤與閉環回報：</strong>
-                <p>
+                <p className="mt-1 pl-4">
                   功能上線後主動向客戶端回報進度，並持續透過用戶反饋與指標監測追蹤使用狀況，將潛在卡點提煉成優化清單
                   （Backlog），為產品進行敏捷的持續迭代。
                 </p>
@@ -117,8 +117,19 @@ export default function PM() {
                 <li className="mt-1 pl-4"><span className="font-semibold">具體執行：</span><br />在後台新增按鈕，一鍵自動更新 Sitemap，並提交給 Google 抓取。將「手動到 Google Console 提交」的瑣碎流程，整合為「後台一鍵提交與自動排程更新」的功能。</li>
               </ul>
               <ul>
-                <strong>3. BUG 排查</strong>
-                <p className="mt-1 pl-4">在遇到 BUG 時，我會先自行操作，透過重現該問題後，鎖定該問題排查的範圍，並會先用 claude code 列出可能的問題，理解後發派該任務給工程師執行，透過更加具體的敘述以及範圍的限縮，讓工程師可以更快速地處理該問題。待工程師處理完後會再 review 並部署到測試環境。</p>
+                <strong>3. 多語言與產品頁 SEO（Canonical & Hreflang）優化</strong>
+                <li className="mt-1 pl-4">
+                  <span className="font-semibold">脈絡與痛點：</span><br />
+                  本網站為多產品之國際數位型錄，具多語言與產品子 Tab 結構。若未明確標示，搜尋引擎無法精準將對應語系推送給海外使用者，且結構相近的網址容易被誤判為重複內容（Duplicate Content），導致 SEO 權重分散。
+                </li>
+                <li className="mt-1 pl-4">
+                  <span className="font-semibold">具體執行：</span><br />
+                  於全站埋設 hreflang 屬性，引導搜尋引擎在搜尋結果中精準呈現對應語系；並針對產品頁與子 Tab 網址配置 canonical 規範網址，明確標示主頁面權重，防範重複內容疑慮並集中 SEO 關鍵字價值。
+                </li>
+              </ul>
+              <ul>
+                <strong>4. BUG 排查</strong>
+                <p className="mt-1 pl-4">遇到 BUG 回報時，會先透過自行操作重現該問題後，鎖定該問題排查的範圍及使用情境，先利用 claude code 排查可能的問題後發派該任務給工程師確認，以讓工程師可以更快速地處理該問題。待工程師處理完後會再 review 並部署到測試環境。</p>
               </ul>
             </div>
           </div>
