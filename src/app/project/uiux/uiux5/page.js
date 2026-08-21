@@ -77,7 +77,7 @@ export default function Web5() {
               本專案為 SOSI 官網的 UI 全站更新案。SOSI 是 5xruby 旗下的遠端連線產品，原有官網存在 UI 無設計規範、產品特色未被強調、缺乏動態互動等核心痛點。
               {`\n`}我負責痛點分析、規劃改版策略後，實際進行前端實作，從品牌形象色彩定義到動態開發，完成一次覆蓋全站的 UI 升級。項目包含全站設計系統建立、動態背景、全新 Hero 區塊、操作影片展示、數字遞增動畫、合作夥伴跑馬燈、獨立聯絡頁，以及完整的多語系支援等。
             </p>
-            <p className="text-[#00437B] font-bold mt-2">類型：網頁前後端開發 + UI/UX設計</p>
+            <p className="text-[#00437B] font-bold mt-2">類型：網頁前後端 + UI/UX</p>
           </div>
         </div>
 
@@ -193,7 +193,7 @@ export default function Web5() {
                       <Image src={item.mediaPresent} alt={`痛點${i + 1}`} className="rounded-[3vh] w-full lg:w-[70%] flex-shrink-0 h-auto" />
                     ) : (
                       <video
-                        ref={(el) => (videoRefs.current[(i - 1) * 2] = el)}
+                        ref={(el) => (videoRefs.current[i * 2] = el)} // ✅ 修正：改為 i * 2
                         src={item.mediaPresent}
                         loop muted playsInline
                         className="rounded-[3vh] w-full lg:w-[70%] flex-shrink-0"
@@ -215,7 +215,7 @@ export default function Web5() {
                       <Image src={item.media} alt={`解決方案${i + 1}`} className="rounded-[3vh] w-full lg:w-[70%] flex-shrink-0 h-auto" />
                     ) : (
                       <video
-                        ref={(el) => (videoRefs.current[(i - 1) * 2 + 1] = el)}
+                        ref={(el) => (videoRefs.current[i * 2 + 1] = el)} // ✅ 修正：改為 i * 2 + 1
                         src={item.media}
                         loop muted playsInline
                         className="rounded-[3vh] w-full lg:w-[70%] flex-shrink-0"

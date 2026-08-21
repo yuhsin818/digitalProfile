@@ -92,7 +92,7 @@ export default function Web4() {
               {`\n`}為了高效率完成前台視覺重構與複雜的動態互動效果，我在了解改版需求後，採取了「設計與技術雙軌並行」策略，在初步規劃完 UI 方向後，運用現代化前端動態技術（GSAP、Lenis、Canvas 2D API）與 Claude Code 進行程式碼協作，
               並定期與老闆及資深設計師進行 review，成功打造兼具技術深度與流暢體驗的新版官網。
             </p>
-            <p className="text-[#00437B] font-bold mt-2">類型：網頁前後端開發 + UI/UX 設計</p>
+            <p className="text-[#00437B] font-bold mt-2">類型：網頁前後端 + UI/UX</p>
           </div>
         </div>
 
