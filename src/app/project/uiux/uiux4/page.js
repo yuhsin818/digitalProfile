@@ -84,7 +84,7 @@ export default function Web4() {
             <Image src={cover} alt="5xruby 官網優化與動態重構" className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">5xruby 官網全面翻新與動態優化</h1>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">五倍紅寶石官網-優化</h1>
             <p className="text-[#00437B] whitespace-pre-line">
               本專案旨在將公司官網進行全方位的改版與體驗重構。
               {`\n`}面對原有網站資訊層級不清晰、缺少互動體驗與動態效果，以及無法完整傳遞核心技術（Ruby on Rails）與服務價值等痛點，

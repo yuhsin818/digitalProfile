@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
                   擅長使用者經驗設計
                 </p>
                 <p className="max-w-[380px] text-center">
-                  網頁開發、專案管理
+                  網頁開發、互動裝置
                 </p>
                 {/* <p className="max-w-[380px] text-center text-white font-light">
               畢業於政大心理學系，雙主修數位內容、輔系日文，具備跨領域整合能力。專長為使用者經驗設計、網頁開發與數位互動裝置，擅長從使用者心理出發，將需求轉化為具互動性與實用性的數位介面，期望投入 UI/UX 或前端相關領域發展。

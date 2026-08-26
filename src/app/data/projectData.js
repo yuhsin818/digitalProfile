@@ -506,7 +506,7 @@ export const projects = [
     name: "SOSI 官網-優化",
     cover: Web5,
     isFeatured: true,
-    intro_short: '本專案為 5xruby 的遠端連線產品「SOSI」的官網 UI 全站優化，我負責就有網站痛點分析、規劃改版策略，並實際進行前端實作，從品牌形象定義到動態開發，完成全站 UI 升級。',
+    intro_short: '本專案為五倍紅寶石的遠端連線產品「SOSI」的官網 UI 全站優化，我負責網站痛點分析、規劃改版策略，並實際進行前端實作，從品牌形象定義到動態開發，完成全站 UI 升級。',
   },
 
   {
@@ -796,7 +796,7 @@ export const projects = [
   {
     id: "PM3",
     category: "PM",
-    name: "建模軟體 plugin",
+    name: "SketchUp Plugin",
     cover: PM3,
 
     intro_short: '在公司無相關專案經驗的情況下，為建模軟體設計 plugin。我從頭瞭解該軟體開發環境限制、類似 plugin 作法及管理方式，思考及跟工程師討論符合我們公司開發經驗的做法以及技術架構，並規劃具體可執行的方案和交付階段。',

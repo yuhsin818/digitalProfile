@@ -40,7 +40,7 @@ export default function PM() {
             <Image src={uiux_cover} alt={''} className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">建模軟體 plugin</h1>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">SketchUp Plugin</h1>
             <p className="text-[#00437B] whitespace-pre-line">
               在公司無相關專案經驗的情況下，為建模軟體設計 plugin。我從頭瞭解該軟體開發環境限制、類似 plugin 作法及管理方式，思考及跟工程師討論符合我們公司開發經驗的做法以及技術架構，並規劃具體可執行的方案和交付階段。
             </p>

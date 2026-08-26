@@ -182,8 +182,12 @@ export default function Profile() {
                 <div className="flex flex-col">
                   <p className="pl-1 text-[#008BBF] text-xl font-bold whitespace-pre-line">飛捷材料有限公司 - 業務</p>
 
-                  <div className="p-2 flex flex-col gap-2">
-                    <p>半導體相關製程知識、客戶問題排解、材料訂購</p>
+                  <div className="p-2 flex flex-col gap-2  whitespace-pre-line">
+                    <p>
+                      1. 半導體製程與材料相關知識{'\n'}
+                      2. 客戶問題諮詢與需求處理{'\n'}
+                      3. 材料訂購與訂單管理
+                    </p>
                   </div>
 
                 </div>
@@ -198,11 +202,11 @@ export default function Profile() {
 
                   <div className="p-2 flex flex-col gap-2 whitespace-pre-line">
                     <p>
-                      1. 溝通、整理客戶需求{`\n`}
-                      2. 根據客戶需求與工程師協調實作方式{`\n`}
-                      3. 專案排程，指派實作{`\n`}
-                      4. 功能測試與回報{`\n`}
-                      相關專案內容見作品集
+                      1. 客戶需求訪談、需求整理與專案溝通{'\n'}
+                      2. 規格文件撰寫、資訊架構與介面規劃{'\n'}
+                      3. 專案排程、開發任務開票與進度追蹤{'\n'}
+                      4. 功能測試、問題分析與 Bug 回報{'\n'}
+                      5. 參與公司官網改版，負責網站架構規劃、UI 設計與前端實作
                     </p>
                   </div>
 
@@ -309,7 +313,7 @@ export default function Profile() {
 
           <div className="flex flex-col mb-8">
 
-            <p className="font-bold text-2xl mb-5">網頁相關技能</p>
+            <p className="font-bold text-2xl mb-5">技能</p>
 
             <div className="w-full p-2">
               <p className="font-bold">UI/UX</p>
@@ -352,6 +356,7 @@ export default function Profile() {
               <p className="text-[#008BBF] font-bold mb-2">程式語言</p>
               <div className="flex flex-wrap gap-2 p-3">
                 <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Javascipt</button>
+                <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Ruby on Rails</button>
                 <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">C#</button>
                 <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Python</button>
                 <button className="px-10 py-1 border-[#008BBF] border-2 rounded-4xl text-[#008BBF]">Matlab</button>

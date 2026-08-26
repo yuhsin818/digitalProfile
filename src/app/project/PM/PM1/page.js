@@ -40,7 +40,7 @@ export default function PM() {
             <Image src={uiux_cover} alt={''} className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">VIVOTEK 官網</h1>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">VIVOTEK 官網-擴充案</h1>
             <p className="text-[#00437B] whitespace-pre-line">
               此專案為 VIVOTEK 產品官網改版優化案，
               專案內容包含官網的改版、功能的擴充、BUG的排查，以及技術的交接等。
