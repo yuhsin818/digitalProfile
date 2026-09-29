@@ -1,10 +1,11 @@
 'use client';
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 import uiux_cover from "@/app/image/uiux1_cover.png";
@@ -32,33 +33,36 @@ import uiux_flow3_7 from  "@/app/image/uiux1_flow3-07.png";
 
 
 export default function AE() {
+  const { t } = useLanguage();
+
+
   const router = useRouter();
 
   const flow1 = [
-    { src: uiux_flow1_1, caption: "1. 使用者首先進入主頁，瀏覽目前所在位置周邊的景點資訊。當使用者點擊「GO!」，系統將進入交通方式的選擇頁面。" },
-    { src: uiux_flow1_2, caption: "2. 進入交通方式頁面，使用者切換至「大眾運輸」分頁以查看可搭乘的交通選項。" },
-    { src: uiux_flow1_3, caption: "3. 使用者瀏覽不同路線所需的時間與費用，並從中選擇一條最適合自己的路線。" },
-    { src: uiux_flow1_4, caption: "4. 進入路線詳細頁後，使用者可查看完整資訊，並點擊「訂票」以進入付款步驟。" },
-    { src: uiux_flow1_5, caption: "5. 使用者檢查票券金額與付款資訊，並點擊「確認」完成支付。" },
-    { src: uiux_flow1_6, caption: "6. 系統顯示完成訂購的成功提示，流程正式結束。" }
+    { src: uiux_flow1_1, caption: t("content.project_uiux_uiux1.1OpenTheHomepageToBrowseNearby") },
+    { src: uiux_flow1_2, caption: t("content.project_uiux_uiux1.2OnTheTransportScreenSwitchTo") },
+    { src: uiux_flow1_3, caption: t("content.project_uiux_uiux1.3CompareRouteDurationAndCostThen") },
+    { src: uiux_flow1_4, caption: t("content.project_uiux_uiux1.4ReviewTheFullRouteDetailsAnd") },
+    { src: uiux_flow1_5, caption: t("content.project_uiux_uiux1.5CheckTheFareAndPaymentDetails") },
+    { src: uiux_flow1_6, caption: t("content.project_uiux_uiux1.6ASuccessMessageConfirmsTheBooking") }
   ];
   
   const flow2 = [
-    { src: uiux_flow2_1, caption: "1. 在主頁進行「搜尋」，查詢自己感興趣的景點。" },
-    { src: uiux_flow2_2, caption: "2. 在搜尋欄位輸入關鍵字進行查詢。" },
-    { src: uiux_flow2_3, caption: "3. 系統將顯示符合條件的搜尋結果，使用者點選其中一個景點以查看詳細內容。" },
-    { src: uiux_flow2_4, caption: "4. 在景點資訊頁中透過滑動方式瀏覽詳細內容，例如圖片、介紹、開放時間等。" },
-    { src: uiux_flow2_5, caption: "5. 繼續滑動頁面，以取得更深入的景點相關資訊。" },
+    { src: uiux_flow2_1, caption: t("content.project_uiux_uiux1.1SearchFromTheHomepageForAn") },
+    { src: uiux_flow2_2, caption: t("content.project_uiux_uiux1.2EnterAKeywordInTheSearch") },
+    { src: uiux_flow2_3, caption: t("content.project_uiux_uiux1.3SelectAnAttractionFromTheMatching") },
+    { src: uiux_flow2_4, caption: t("content.project_uiux_uiux1.4ScrollThroughPhotosDescriptionsOpeningHours") },
+    { src: uiux_flow2_5, caption: t("content.project_uiux_uiux1.5ContinueScrollingForFurtherDetailsAbout") },
   ];
   
   const flow3 = [
-    { src: uiux_flow3_1, caption: "1. 從主頁切換至「行程規劃」分頁，開始管理個人行程。" },
-    { src: uiux_flow3_2, caption: "2. 系統提供多種推薦行程，使用者點擊其中一個行程以進入詳細內容。" },
-    { src: uiux_flow3_3, caption: "3. 在行程詳細頁中，使用者選擇刪除某個景點，系統隨即跳出確認視窗。" },
-    { src: uiux_flow3_4, caption: "4. 使用者在確認視窗按下「確認」，執行刪除動作。" },
-    { src: uiux_flow3_5, caption: "5. 系統顯示刪除成功的訊息，代表該景點已從行程中移除。" },
-    { src: uiux_flow3_6, caption: "6. 回到推薦行程頁面，並在某個景點項目按下「直接加入」。" },
-    { src: uiux_flow3_7, caption: "7. 系統顯示加入成功訊息，該景點正式新增至使用者的行程規劃。" }
+    { src: uiux_flow3_1, caption: t("content.project_uiux_uiux1.1SwitchFromTheHomepageToItinerary") },
+    { src: uiux_flow3_2, caption: t("content.project_uiux_uiux1.2SelectARecommendedItineraryToView") },
+    { src: uiux_flow3_3, caption: t("content.project_uiux_uiux1.3ChooseToRemoveAnAttractionA") },
+    { src: uiux_flow3_4, caption: t("content.project_uiux_uiux1.4ConfirmTheRemovalInTheDialog") },
+    { src: uiux_flow3_5, caption: t("content.project_uiux_uiux1.5ASuccessMessageConfirmsThatThe") },
+    { src: uiux_flow3_6, caption: t("content.project_uiux_uiux1.6ReturnToRecommendedItinerariesAndSelect") },
+    { src: uiux_flow3_7, caption: t("content.project_uiux_uiux1.7ASuccessMessageConfirmsThatIt") }
   ];
 
   const [index1, setIndex1] = useState(0);
@@ -100,7 +104,7 @@ export default function AE() {
         <button
           onClick={() => router.push(`/project?category=uiux`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -117,9 +121,9 @@ export default function AE() {
             <Image src={uiux_cover} alt={''} className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6">現在玩台北</h1>
-            <p className="text-[#00437B] whitespace-pre-line">本專案為「現在玩台北」App 的 Redesign。事前研究的部分透過問卷、訪談，了解目標使用者對於旅遊 App 的使用經驗與期許，重新規劃、設計一個以「台北觀光景點資訊」為主要功能的 App，並在完成設計後進行測試與改善。</p>
-            <p className="text-[#00437B] font-bold mt-2">類型： UX research + UI design</p>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6"><TranslatedText messageKey="content.projects.exploreTaipeiNow" /></h1>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.projects.aRedesignOfTheExploreTaipeiNow" /></p>
+            <p className="text-[#00437B] font-bold mt-2"><TranslatedText messageKey="content.project_uiux_uiux1.typeUxResearchUiDesign" /></p>
           </div>
         </div>
 
@@ -129,15 +133,8 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">專案背景與動機</p>
-            <p className="text-[#00437B] whitespace-pre-line">
-              本專案以「現在玩台北」App 為重新設計對象，聚焦於改善使用者在旅遊行程規劃過程中，常見的資訊不足、規劃不便與介面操作不直覺等問題。
-              {`\n`}原版「現在玩台北」App 缺乏充足的景點資訊、交通資訊，與完善的行程安排機制（例如：時間規劃、景點間交通方式等），且資訊結構較複雜、重複性高，導致使用誘因不足。
-              另一方面，市面上多數使用者習慣透過 Google Map 規劃行程，但其資訊更新仰賴店家自行維護，容易出現資訊不完整的狀況，且路線規劃多以最短距離為優先，
-              未必符合實際遊玩時的便利性。{`\n`}
-              因此，本次 Redesign 以「整合資訊、優化流程與強化易用性」為核心目標，重新梳理旅遊相關使用情境，
-              並加入更符合使用者需求的搜尋排序方式、訂票功能整合與行程安排等實用內容，期望讓使用者能更有效率且順暢地完成台北旅遊的行前規劃與實際導覽體驗。
-            </p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.backgroundAndMotivation" /></p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux1.thisRedesignOfExploreTaipeiNowFocuses" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.theOriginalAppLackedSufficientAttractionAnd" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.theRedesignThereforeFocusesOnIntegratingInformation" /></p>
           </div>
         </div>
 
@@ -147,16 +144,12 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line  mb-2">使用者族群</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-            目標使用者為：
-            <div className="p-3 pl-5">
-              <li>習慣使用手機查詢旅遊資訊的使用者</li>
-              <li>具有前往台北旅遊需求的族群</li>
-              <li>需要旅遊建議、行程規劃與即時資訊的使用者</li>
-            </div>
-            主要使用情境包含台北觀光旅遊、前往知名餐廳或特色景點，使用者期待能透過一個整合式平台快速獲得即時、完整且實用的旅遊建議，協助他們更有效率地完成行前規劃與旅程安排。
-            </div>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line  mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.targetUsers" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux1.theTargetAudienceIncludes" /><div className="p-3 pl-5">
+              <li><TranslatedText messageKey="content.project_uiux_uiux1.peopleWhoRegularlyUseSmartphonesToFind" /></li>
+              <li><TranslatedText messageKey="content.project_uiux_uiux1.peoplePlanningATripToTaipei" /></li>
+              <li><TranslatedText messageKey="content.project_uiux_uiux1.peopleSeekingTravelRecommendationsItineraryPlanningAnd" /></li>
+            </div><TranslatedText messageKey="content.project_uiux_uiux1.typicalScenariosIncludeSightseeingInTaipeiAnd" /></div>
           </div>
         </div>
 
@@ -166,36 +159,26 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">事前研究</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.initialResearch" /></p>
             <p className="text-[#00437B] whitespace-pre-line mb-2">
-              <strong>1. 研究方法</strong>{`\n`}
-              本專案於設計初期採用深度訪談、問卷調查與競品分析三種研究方法，旨在精準定義目標對象（Target Audience）的旅遊行為，並挖掘現有工具未被滿足的痛點。
-            </p>
+              <strong><TranslatedText messageKey="content.project_uiux_uiux1.1ResearchMethods" /></strong>{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.earlyResearchCombinedInDepthInterviewsSurveys" /></p>
             <div className="text-[#00437B] whitespace-pre-line mb-4">
               <div className="p-3 pl-5 space-y-3">
-                <li>深度訪談： 針對三位非台北人（具備基礎數位工具使用能力）進行質性訪談，探索旅遊規劃的心理路徑。</li>
-                <li>問卷調查： 回收 34 份樣本（主要分佈於政大交流板），量化使用者對景點、路線與住宿功能的滿意度影響因子，並針對功能重要性進行排序。</li>
-                <li>競品分析： 橫向評估 Klook、KKday、Funliday、愛食記與 Google Maps，釐清市場現有的服務缺口。</li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.inDepthInterviewsThreeParticipantsFromOutside" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.surveyWeCollected34ResponsesMainlyThrough" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.competitorAnalysisWeComparedKlookKkdayFunliday" /></li>
               </div>
             </div>
 
             <div className="text-[#00437B] whitespace-pre-line mb-4">
-              <strong>2. 研究發現與洞察</strong>{`\n`}
-              研究結果顯示，多數使用者目前主要依賴 Google Maps 作為行程規劃工具，僅少部分會額外使用 App 訂票 or 購買行程，但普遍認為現有工具存在店家資訊不足、資訊重複、更新仰賴店家而不即時、路線規劃雖最短但不便利、儲存地點不易管理等問題。{`\n`}
-              使用者同時也期待旅遊 App 能具備即時更新的商家資訊、符合個人需求的搜尋排序、篩選功能、路線與行事曆整合，以及住宿地點的衛生資訊查詢等進階功能。
-              {`\n`}在競品分析方面，Google Map 雖有評論與評分優勢，但在資訊完整度與行程規劃便利性上仍有不足；
-              原版「現在玩台北」App 雖具有景點分類與收藏功能，但整體景點數量不足、缺乏優惠與語音導覽整合；行程安排功能只能加入景點，未顯示景點間的交通時間預估，且未能建立使用者黏著度。
-              此外，我們亦發現部分使用者對於額外下載旅遊 App 的意願偏低，顯示產品需具備更明確的使用誘因促增加使用意願。
-            </div>
+              <strong><TranslatedText messageKey="content.project_uiux_uiux1.2FindingsAndInsights" /></strong>{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.mostParticipantsReliedOnGoogleMapsFor" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.usersAlsoWantedCurrentBusinessInformationPersonalized" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.googleMapsOfferedStrongReviewsAndRatings" /></div>
 
             <div className="text-[#00437B] whitespace-pre-line">
-              <strong>3. 改善方案</strong>{`\n`}
-              針對上述洞察，本專案提出以下設計策略：
-              <div className="p-3 pl-5 space-y-3">
-                <li>資訊整合與介面設計： 針對資訊碎片化問題，重新設計景點頁面，整合即時更新的商家狀態，並優化導覽流程，降低搜尋時的認知負荷。</li>
-                <li>整合訂票功能：讓使用者可以直接於 app 中訂車票，且可於查詢路徑時跳轉到該功能，降低使用者規劃行程時需使用多平台的負擔，提升整體服務流程的連貫性。</li>
-                <li>行程規劃系統： 優化路線排序邏輯，加入行事曆同步功能，讓使用者能直覺地拖拉調整行程順序，並即時預覽交通路徑，解決 Google Maps 儲存地點難以管理與規劃不便，以及現在玩台北行稱規劃功能不完整的痛點。</li>
-                <li>高誘幫激勵機制與社群排行榜： 為提升下載意願與黏著度，於首頁導入「獨家優惠券」與「限時行程套票」。同時建立基於大數據的「熱門排行榜」，將 App 從單純的工具轉變為具備「旅遊靈感提供」與「消費利多」的綜合平台。</li>
+              <strong><TranslatedText messageKey="content.project_uiux_uiux1.3ProposedImprovements" /></strong>{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.theseInsightsInformedTheFollowingDesignStrategies" /><div className="p-3 pl-5 space-y-3">
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.integratedInformationAndInterfaceDesignRedesignAttraction" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.integratedTicketBookingLetUsersBookTransport" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.itineraryPlanningImproveRouteOrderingAddCalendar" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.incentivesAndPopularityRankingsIntroduceExclusiveCoupons" /></li>
               </div>
             </div>
           </div>
@@ -207,16 +190,13 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">資訊架構</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-              本專案的資訊架構設計基礎，除了基於功能需求進行分類外，還參考了使用者卡片分類的結果，確保分類邏輯貼近目標使用者的心智模型。
-              系統主要分為五大模組，這些模組在 App 底部以 Tab 形式呈現，提供使用者快速切換主要功能，主要功能包含：
-              <div className="p-3 pl-5">
-                <li>行程安排：推薦/自訂行程、行程時間管理、預訂服務。</li>
-                <li>交通：大眾運輸、自駕、票券預訂、租車服務。</li>
-                <li>景點：景點探索、篩選、資訊查詢、評價與回饋。</li>
-                <li>遊記：旅遊日誌、上傳圖片文字紀錄、社群互動。</li>
-                <li>個人：個人檔案、儲存/收藏資訊、系統設定。</li>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.informationArchitecture" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux1.theArchitectureCombinesFunctionalRequirementsWithUser" /><div className="p-3 pl-5">
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.itinerariesRecommendedAndCustomTripsSchedulingAnd" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.transportPublicTransitDrivingTicketsAndCar" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.attractionsDiscoveryFiltersInformationReviewsAndFeedback" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.travelJournalsPhotoAndTextEntriesAnd" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.profilePersonalInformationSavedItemsAndSettings" /></li>
               </div>  
             </div>
             <Image src={uiux_IA} alt={''} className="p-6 w-full h-auto rounded-[10vh]" />
@@ -230,12 +210,12 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">介面設計重點</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.interfaceDesignHighlights" /></p>
             <div className="text-[#00437B] whitespace-pre-line">
               <div className="p-3 pl-5">
-                <li>色彩策略： 以藍綠色和白色作為主要主題色 </li>
-                <li>視覺風格： 採用較圓潤的文字和圓角，以及流線型的設計。</li>
-                <li>品牌傳達： 語音回饋訊息搭配台北市政府吉祥物熊讚（Bravo）及其家人，傳達品牌態度。</li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.colorStrategyTealAndWhiteFormThe" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.visualStyleRoundedTypographyAndCornersWith" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.brandExpressionAudioFeedbackFeaturesTaipeiS" /></li>
               </div>  
             </div>
           </div>
@@ -253,14 +233,12 @@ export default function AE() {
           {/* 右側文字 */}
           <div className="flex flex-col w-full gap-3">
 
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.userFlows" /></p>
 
             {/* 訂票流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                訂票
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux1.bookTickets" /></p>
 
 
               <div
@@ -320,9 +298,7 @@ export default function AE() {
             {/* 查景點流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                查景點
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux1.findAttractions" /></p>
 
 
               <div
@@ -380,9 +356,7 @@ export default function AE() {
             {/* 排行程流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                排行程
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux1.planAnItinerary" /></p>
 
 
               <div
@@ -446,36 +420,22 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用者測試與改善</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.userTestingAndImprovements" /></p>
             <div className="text-[#00437B] whitespace-pre-line">
               <div className="p-3 pl-5 space-y-3">
-                <li>
-                  首次進入 App 時，導航按鈕不夠明顯，使用者需先點擊「GO!」才能開始導航，容易產生操作混淆。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.onFirstUseNavigationControlsWereNot" /></li>
 
-                <li>
-                  訂票成功後的票券提示彈窗不夠顯眼，使用者容易錯過查看已預訂票券的入口。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.theBookingSuccessDialogWasEasyTo" /></li>
 
-                <li>
-                  付款流程最後一步需填寫大量表單資料，操作繁瑣，影響整體預訂效率與體驗。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.theFinalPaymentStepRequiredTooMuch" /></li>
 
-                <li>
-                  點擊搜尋框後未即時提供常見分類（如餐廳、百貨公司），提升了搜尋成本。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.selectingTheSearchFieldDidNotImmediately" /></li>
 
-                <li>
-                  行程規劃中缺乏可拖曳調整順序的機制，使用者無法直覺地重新安排路線。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.theItineraryLackedDragAndDropReordering" /></li>
 
-                <li>
-                  行程中的「刪除 X」圖示易被誤認為最小化，導致誤觸刪除的風險。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.theXRemovalIconCouldBeMistaken" /></li>
 
-                <li>
-                  景點資訊頁缺乏地圖定位、評論區不易被發現，且確認頁文字資訊過多，影響行程管理的清楚度。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux1.attractionPagesLackedMapPositioningReviewsWere" /></li>
               </div>  
             </div>
           </div>
@@ -487,41 +447,32 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">事後檢討</p>
-            <p className="text-[#00437B] whitespace-pre-line">
-            在專案結束後的自我審視中，我發現事前研究所觀察到的多項痛點並未在最終設計中獲得完整改善。
-            目前的 Prototype 僅優先完成了景點查詢、訂票與行程安排等核心功能，反映出在處理複雜需求時，
-            功能優先級的取捨與開發時程的平衡仍有進步空間。
-            {`\n`}此外，研究中提到的商家資訊更新不即時、或是地圖導覽路線規畫不佳等問題，
-            本質上多屬於後端資料庫維護或外部 API 演算的系統性限制，而非單純透過 App 介面或視覺設計層面所能輕易解決。
-            {`\n`}這次經驗讓我體認到 UI/UX 設計師除了優化視覺與互動，更需深入理解技術邊界與開發限制，並思考如何在無法更動底層邏輯的情況下，
-            透過設計手段（如增加最後更新時間標註、建立使用者回報機制等）來緩解使用者的操作負擔與焦慮感，
-            這將成為我未來在進行產品 Redesign 時極為重要的反思基礎。
-            </p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.reflection" /></p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux1.afterTheProjectIRealizedThatSeveral" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.problemsSuchAsOutdatedBusinessInformationAnd" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux1.thisExperienceShowedMeThatUiUx" /></p>
           </div>
         </div>
           
         <div className="w-full mt-8 flex">
-          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5"><TranslatedText messageKey="content.project_uiux_uiux1.relatedLinks" /></p>
 
           <div className="flex gap-4 flex-wrap">
             <button
               onClick={() => window.open("https://drive.google.com/file/d/16auc4eNCAR0qdeyCtKBCtEdoE30gUEQb/view?usp=drive_link", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
-              Demo影片
+              <TranslatedText messageKey="actions.demo" />
             </button>
             <button
               onClick={() => window.open("https://drive.google.com/file/d/1tuXbVnNxsTDvcLd71ZKVh1SUrJm0dGna/view?usp=drive_link", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
-              海報
+              <TranslatedText messageKey="actions.poster" />
             </button>
             <button
               onClick={() => window.open("https://drive.google.com/file/d/1WMDS6ez4satFEbZOFtrwft8Ctio__vwE/view?usp=sharing", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
-              測試腳本
+              <TranslatedText messageKey="actions.testScript" />
             </button>
           </div>
         </div>

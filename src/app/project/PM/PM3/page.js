@@ -1,10 +1,11 @@
 'use client';
 
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 import uiux_cover from "@/app/image/PM3.jpg";
@@ -12,6 +13,8 @@ import uiux_cover from "@/app/image/PM3.jpg";
 
 
 export default function PM() {
+
+
   const router = useRouter();
 
 
@@ -23,7 +26,7 @@ export default function PM() {
         <button
           onClick={() => router.push(`/project?category=PM`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-          Back to Projects
+          <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -41,10 +44,8 @@ export default function PM() {
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
             <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">SketchUp Plugin</h1>
-            <p className="text-[#00437B] whitespace-pre-line">
-              在公司無相關專案經驗的情況下，為建模軟體設計 plugin。我從頭瞭解該軟體開發環境限制、類似 plugin 作法及管理方式，思考及跟工程師討論符合我們公司開發經驗的做法以及技術架構，並規劃具體可執行的方案和交付階段。
-            </p>
-            <p className="text-[#00437B] font-bold mt-2">類型：UI design</p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.projects.iPlannedAModelingSoftwarePluginDespite" /></p>
+            <p className="text-[#00437B] font-bold mt-2"><TranslatedText messageKey="content.project_PM_PM3.typeUiDesign" /></p>
           </div>
         </div>
 
@@ -56,13 +57,13 @@ export default function PM() {
         <div className="w-full flex flex-row gap-4 p-2">
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           <div className="flex flex-col">
-            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">核心任務</p>
+            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_PM_PM1.coreResponsibilities" /></p>
             <div className="text-[#00437B] p-3 pl-5 space-y-3">
               <ul>
-                <li>1. 整理客戶需求</li>
-                <li>2. 了解開發環境、類似 plugin 作法</li>
-                <li>3. 與工程師討論規劃可行的系統架構</li>
-                <li>4. 撰寫 PRD，並與客戶同步技術規劃</li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.1OrganizeCustomerRequirements" /></li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.2InvestigateTheDevelopmentEnvironmentAndComparable" /></li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.3PlanAFeasibleArchitectureWithEngineers" /></li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.4WriteThePrdAndAlignTechnical" /></li>
               </ul>
             </div>
           </div>
@@ -72,10 +73,8 @@ export default function PM() {
         <div className="w-full flex flex-row gap-4 p-2">
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           <div className="flex flex-col">
-            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">具體執行項目範例</p>
-            <div className="text-[#00437B]">
-              plugin 本身為 ruby 檔，但因為客戶要求需同時符合帳號管理以及素材自動更新的條件，故在原有 plugin 環境外還需再規劃後端環境等，故我先提出可行的方案供工程師審核，並與客戶來回確認需求細項，修改技術細節。
-            </div>
+            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_PM_PM1.examplesOfImplementationWork" /></p>
+            <div className="text-[#00437B]"><TranslatedText messageKey="content.project_PM_PM3.thePluginItselfIsWrittenInRuby" /></div>
           </div>
         </div>
 
@@ -83,11 +82,11 @@ export default function PM() {
         <div className="w-full flex flex-row gap-4 p-2">
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           <div className="flex flex-col">
-            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">AI 協作</p>
+            <p className="text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_PM_PM1.aiAssistedCollaboration" /></p>
             <div className="text-[#00437B] p-3 pl-5 space-y-3">
               <ul>
-                <li>1. 整理客戶需求，並分析公司專長，讓 AI 建議執行方向</li>
-                <li>2. 執行時程評估參考</li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.1OrganizeRequirementsAndEvaluateTheTeam" /></li>
+                <li><TranslatedText messageKey="content.project_PM_PM3.2UseAiEstimatesAsAReference" /></li>
               </ul>
             </div>
           </div>

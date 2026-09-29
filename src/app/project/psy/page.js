@@ -1,3 +1,5 @@
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
 import Photo1 from "@/app/image/photo1.jpg"
@@ -15,12 +17,8 @@ export default function Game() {
     <div className="w-full min-w-[320px] h-full bg-[#D8E9F0] flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
       
       <div className="w-full bg-[#00437B] flex flex-col text-white pt-8 px-20 rounded-bl-4xl">
-        <h1 className="text-2xl font-bold mb-1">
-          攝影作品
-        </h1>
-        <h3 className="mb-4">
-          我放在推特上的娃娃收藏分享
-        </h3>
+        <h1 className="text-2xl font-bold mb-1"><TranslatedText messageKey="content.projects.photography" /></h1>
+        <h3 className="mb-4"><TranslatedText messageKey="content.projects.photosOfMyPlushCollectionSharedOn" /></h3>
       </div>
 
 
@@ -61,9 +59,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1815960981706817712" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      泣いちゃった
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.inTears" /></p>
                   </div>
                 </a>
               </div>
@@ -80,9 +76,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1809851226567426549" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      お出かけ
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.outAndAbout" /></p>
                   </div>
                 </a>
               </div>
@@ -99,9 +93,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1814898339932217368" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      報酬もらった
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.gotAReward" /></p>
                   </div>
                 </a>
               </div>
@@ -118,9 +110,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1814564814968266810" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      失敗しちゃった
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.oopsIFailed" /></p>
                   </div>
                 </a>
               </div>
@@ -156,9 +146,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1823957591950811303" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      慰めろッ
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.comfortMe" /></p>
                   </div>
                 </a>
               </div>
@@ -175,9 +163,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1829065190631190984" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      古本屋だらけ
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.soManyFuruhonya" /></p>
                   </div>
                 </a>
               </div>
@@ -194,9 +180,7 @@ export default function Game() {
                 {/* Hover 出現的白色毛玻璃圖層 */}
                 <a href="https://x.com/Hanayo888/status/1822860495042347057" target="_blank">
                   <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-gray-800 text-center text-lg font-semibold">
-                      ムン顔ハチワレ
-                    </p>
+                    <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.hachiwareSDeterminedFace" /></p>
                   </div>
                 </a>
               </div>

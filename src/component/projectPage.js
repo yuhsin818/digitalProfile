@@ -1,5 +1,7 @@
 'use client'
 
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,9 +44,7 @@ export default function ProjectPage({ image, content, href, title, isFeatured })
           <div className="w-full flex justify-start items-center mb-3 gap-3">
             <div className="flex justify-start font-bold text-xl">{title}</div>
             {isFeatured && (
-              <button className="text-[#AAD2E4] font-bold bg-[rgba(255,255,255,0.6)] rounded-3xl px-3 p-1 flex items-center justify-center">
-                ⭐ Featured
-              </button>
+              <button className="text-[#AAD2E4] font-bold bg-[rgba(255,255,255,0.6)] rounded-3xl px-3 p-1 flex items-center justify-center"><TranslatedText messageKey="content.shared.featured" /></button>
             )}
           </div>
 

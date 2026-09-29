@@ -1,5 +1,7 @@
 'use client';
 
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import Game1 from "@/app/image/DogGame.png";
 import { useRouter } from 'next/navigation'; // Next.js 13+ app router
@@ -11,16 +13,12 @@ export default function DetailPage({img, imageWidth, imageHeight, categoryKey, n
     <div className="w-full min-w-[320px] h-full flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
       
       <div className="relative w-full flex flex-col text-[#00437B] pt-8 px-20 pb-4">
-        <h1 className="text-2xl font-bold mb-1">
-          遊戲作品一
-        </h1>
-        <h3 className="mb-4">
-          我放在推特上的娃娃收藏分享
-        </h3>
+        <h1 className="text-2xl font-bold mb-1"><TranslatedText messageKey="content.shared.gameProject1" /></h1>
+        <h3 className="mb-4"><TranslatedText messageKey="content.projects.photosOfMyPlushCollectionSharedOn" /></h3>
         <button
           onClick={() => router.push(`/project?category=${categoryKey}`)} // ✅ 返回指定分類
           className="absolute bottom-1 right-5 w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#80A1BD] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -34,29 +32,29 @@ export default function DetailPage({img, imageWidth, imageHeight, categoryKey, n
             <div className="w-full flex justify-start flex-col gap-6">
 
               <div className="text-[#00437B] flex flex-row">
-                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5">名稱：</p>
+                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5"><TranslatedText messageKey="content.shared.name" /></p>
                 <p className="flex justify-center items-center">{name}</p>
               </div>
            
 
               <div className="text-[#00437B] flex flex-row">
-                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5">類型：</p>
+                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5"><TranslatedText messageKey="content.shared.type" /></p>
                 <p className="flex justify-center items-center">{category}</p>
               </div>
         
 
               <div className="text-[#00437B] flex flex-row">
-                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5">技術：</p>
+                <p className="flex justify-center items-center font-bold pr-1 text-xl pb-0.5"><TranslatedText messageKey="content.shared.technology" /></p>
                 <p className="flex justify-center items-center">{tool}</p>
               </div>
     
               <div className="text-[#00437B] flex flex-col">
-                <p className="flex items-center font-bold pr-1 text-xl pb-0.5">背景介紹：</p>
+                <p className="flex items-center font-bold pr-1 text-xl pb-0.5"><TranslatedText messageKey="content.shared.background" /></p>
                 <p className="flex items-center ">{description}</p>
               </div>
 
               <div className="text-[#00437B] flex flex-col">
-                <p className="flex items-center font-bold pr-1 text-xl pb-0.5">遊玩方式：</p>
+                <p className="flex items-center font-bold pr-1 text-xl pb-0.5"><TranslatedText messageKey="content.shared.howToPlay" /></p>
                 <p className="flex items-center">{instruction}</p>
               </div>
 
@@ -64,7 +62,7 @@ export default function DetailPage({img, imageWidth, imageHeight, categoryKey, n
 
             <div className="w-full flex justify-start pt-7">
               <div className="text-[#00437B] flex flex-row">
-                  <p className="flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p>
+                  <p className="flex items-center font-bold pr-5 text-xl pb-0.5"><TranslatedText messageKey="content.project_uiux_uiux1.relatedLinks" /></p>
                   <div className="flex gap-5">
 
                   <button
@@ -74,7 +72,7 @@ export default function DetailPage({img, imageWidth, imageHeight, categoryKey, n
                     }}
                     className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
                   >
-                    demo影片
+                    <TranslatedText messageKey="actions.demo" />
                   </button>
 
                   <button
@@ -94,7 +92,7 @@ export default function DetailPage({img, imageWidth, imageHeight, categoryKey, n
                     }}
                     className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
                   >
-                    開始遊戲
+                    <TranslatedText messageKey="actions.game" />
                   </button>
 
                   </div>

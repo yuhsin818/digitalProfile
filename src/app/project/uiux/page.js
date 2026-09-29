@@ -1,3 +1,5 @@
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
 import Figma1 from "@/app/image/Figma_work1.png"
@@ -8,12 +10,8 @@ export default function Uiux() {
     <div className="w-full min-w-[320px] h-full bg-[#D8E9F0] flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
       
       <div className="w-full bg-[#00437B] flex flex-col text-white pt-8 px-20 rounded-bl-4xl">
-        <h1 className="text-2xl font-bold mb-1">
-          介面設計作品
-        </h1>
-        <h3 className="mb-4">
-          我利用Figma創作的介面設計作品
-        </h3>
+        <h1 className="text-2xl font-bold mb-1"><TranslatedText messageKey="content.project_uiux.interfaceDesign" /></h1>
+        <h3 className="mb-4"><TranslatedText messageKey="content.project_uiux.interfaceDesignsICreatedWithFigma" /></h3>
       </div>
 
 
@@ -37,9 +35,7 @@ export default function Uiux() {
 
               {/* <div className="w-full h-[50vh] lg:h-[70vh] lg:w-[80vh] p-2"> */}
               <div className="w-full h-full flex lg:justify-center lg:items-center p-6 mb-11 text-[#00437B]">
-                <p>
-                  此影評 App 結合訂票、查詢評價與撰寫評論功能，針對目前市面上觀影流程分散的問題提出整合式解方。透過簡潔的介面與直覺的操作邏輯，使用者可在單一平台完成觀影前的選片、訂票，中途的即時評價查詢，以及觀影後的分享討論，提升整體使用效率與參與感。
-                </p>
+                <p><TranslatedText messageKey="content.project_uiux.thisMovieReviewAppIntegratesTicketBooking" /></p>
               </div>
 
               <a href="https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-2&t=vAzDLXBiyQaEZYcv-1" target="_blank">
@@ -68,9 +64,7 @@ export default function Uiux() {
 
               {/* <div className="w-full h-[50vh] lg:h-[70vh] lg:w-[80vh] p-2"> */}
               <div className="w-full h-full flex lg:justify-center lg:items-center p-6 mb-11 text-[#00437B]">
-                <p>
-                為解決目前國考資訊與功能分散於不同機關網站的痛點，規劃一個集中式平台，整合公告發布、報名系統、歷屆考題與成績查詢等關鍵功能。以清晰的分類與一致的操作流程為核心，降低使用者在資訊搜尋與流程操作上的負擔，提升準備效率與整體使用體驗。
-                </p>
+                <p><TranslatedText messageKey="content.project_uiux.aCentralizedPlatformThatBringsTogetherAnnouncements" /></p>
               </div>
 
               <a href="https://www.figma.com/proto/OqMj3992swXrXHfhx3Nbz5/web%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88_design?node-id=1-3&t=vAzDLXBiyQaEZYcv-1" target="_blank">

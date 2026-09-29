@@ -1,3 +1,5 @@
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
 import Painting1 from "@/app/image/p5js_1.png"
@@ -11,12 +13,8 @@ export default function P5js() {
     <div className="w-full min-w-[320px] h-full bg-[#D8E9F0] flex rounded-2xl flex-col justify-start items-center overflow-y-auto">
       
       <div className="w-full bg-[#00437B] flex flex-col text-white pt-8 px-20 rounded-bl-4xl">
-        <h1 className="text-2xl font-bold mb-1">
-          生成式藝術作品
-        </h1>
-        <h3 className="mb-4">
-          我利用p5.js創作的生成式藝術作品
-        </h3>
+        <h1 className="text-2xl font-bold mb-1"><TranslatedText messageKey="content.project_p5js.generativeArt" /></h1>
+        <h3 className="mb-4"><TranslatedText messageKey="content.project_p5js.generativeArtworksICreatedWithP5Js" /></h3>
       </div>
 
 

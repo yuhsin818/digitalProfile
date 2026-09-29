@@ -1,10 +1,11 @@
 'use client';
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 import uiux_cover from "@/app/image/uiux3_cover.png";
@@ -48,66 +49,69 @@ import uiux_flow6_5 from  "@/app/image/uiux3_flow6_5.png";
 
 
 export default function AE() {
+  const { t } = useLanguage();
+
+
   const router = useRouter();
 
   const flows = [
     {
-      title: "報名",
+      title: t("content.project_uiux_uiux3.registration"),
       data: [
-        { src: uiux_flow1_1, caption: "1. 從主頁點選「登入」以呈現側邊導覽列個人化項目。" },
-        { src: uiux_flow1_2, caption: "2. 輸入身分證字號和密碼登入。" },
-        { src: uiux_flow1_3, caption: "3. 剛登入便會呈現以報考的科目報考狀態頁，可點選側邊導覽列「考試報名＞現在報名」，進入近期考科報名頁。" },
-        { src: uiux_flow1_4, caption: "4. 可查看近日可報名的考科資訊、應考須知、應考資格，以及進入報名程序。" },
-        { src: uiux_flow1_5, caption: "5. 確認基本資料（會預設為註冊帳號時所填寫的資料）。" },
-        { src: uiux_flow1_6, caption: "6. 上傳必要文件，完成後點選確認。" },
-        { src: uiux_flow1_7, caption: "7. 報名完成後會再跳回以報名考科的報名狀態頁。" },
+        { src: uiux_flow1_1, caption: t("content.project_uiux_uiux3.1SelectLogInOnTheHomepage") },
+        { src: uiux_flow1_2, caption: t("content.project_uiux_uiux3.2EnterYourNationalIdNumberAnd") },
+        { src: uiux_flow1_3, caption: t("content.project_uiux_uiux3.3AfterLoginViewTheStatusOf") },
+        { src: uiux_flow1_4, caption: t("content.project_uiux_uiux3.4ReviewAvailableExaminationsInstructionsAndEligibility") },
+        { src: uiux_flow1_5, caption: t("content.project_uiux_uiux3.5ConfirmPersonalInformationPrefilledFromThe") },
+        { src: uiux_flow1_6, caption: t("content.project_uiux_uiux3.6UploadRequiredDocumentsAndConfirm") },
+        { src: uiux_flow1_7, caption: t("content.project_uiux_uiux3.7AfterRegistrationReturnToTheExamination") },
       ]
     },
     {
-      title: "查看歷屆試題",
+      title: t("content.project_uiux_uiux3.browsePastExaminationPapers"),
       data: [
-        { src: uiux_flow2_1, caption: "1. 點選側邊導覽列「備考資訊＞歷屆試題」。" },
-        { src: uiux_flow2_2, caption: "2. 呈現已報名科目的歷屆試題（由於側邊導覽列主要負責個人化的資訊呈現，所以未報名考科的歷屆試題可另外在上方導覽列查看），點選查看目標科目的歷屆試題。" },
-        { src: uiux_flow2_3, caption: "3. 可選擇要查看的考試，或勾選欲下載的考科一次下載。" }
+        { src: uiux_flow2_1, caption: t("content.project_uiux_uiux3.1SelectPreparationPastPapersInThe") },
+        { src: uiux_flow2_2, caption: t("content.project_uiux_uiux3.2ViewPastPapersForRegisteredExaminations") },
+        { src: uiux_flow2_3, caption: t("content.project_uiux_uiux3.3OpenAPaperOrSelectMultiple") }
       ]
     },
     {
-      title: "查看應考通知書",
+      title: t("content.project_uiux_uiux3.viewAdmissionNotices"),
       data: [
-        { src: uiux_flow3_1, caption: "1. 點選側邊導覽列「應考資訊＞應考通知書」。" },
-        { src: uiux_flow3_2, caption: "2. 呈現已報名考科列表，可點選查看應考通知書。" },
-        { src: uiux_flow3_3, caption: "3. 應考通知書電子檔，可選擇放大或下載。" }
+        { src: uiux_flow3_1, caption: t("content.project_uiux_uiux3.1SelectExaminationInformationAdmissionNoticeIn") },
+        { src: uiux_flow3_2, caption: t("content.project_uiux_uiux3.2SelectAnExaminationFromTheRegistered") },
+        { src: uiux_flow3_3, caption: t("content.project_uiux_uiux3.3EnlargeOrDownloadTheElectronicAdmission") }
       ]
     },
     {
-      title: "查詢成績",
+      title: t("content.project_uiux_uiux3.checkResults"),
       data: [
-        { src: uiux_flow4_1, caption: "1. 點選側邊導覽列「考試結果＞成績查詢」" },
-        { src: uiux_flow4_2, caption: "2. 呈現已報名考科列表，可點選查看「個人成績」、「榜單公告」，若有及格則可以下載「及格通知」，不及格則不會出現該按紐。" },
-        { src: uiux_flow4_3, caption: "3. 查看個人成績，可以選擇「放大」或「下載」。" },
-        { src: uiux_flow4_4, caption: "4. 查看及格通知書，可以選擇「放大」或「下載」。" },
-        { src: uiux_flow4_5, caption: "5. 查看榜單公告，可以選擇「放大」或「下載」。" }
+        { src: uiux_flow4_1, caption: t("content.project_uiux_uiux3.1SelectExaminationResultsScoreLookupIn") },
+        { src: uiux_flow4_2, caption: t("content.project_uiux_uiux3.2SelectAnExaminationToViewPersonal") },
+        { src: uiux_flow4_3, caption: t("content.project_uiux_uiux3.3ViewEnlargeOrDownloadPersonalScores") },
+        { src: uiux_flow4_4, caption: t("content.project_uiux_uiux3.4ViewEnlargeOrDownloadTheQualification") },
+        { src: uiux_flow4_5, caption: t("content.project_uiux_uiux3.5ViewEnlargeOrDownloadPublishedResults") }
       ]
     },
     {
-      title: "志願選填",
+      title: t("content.project_uiux_uiux3.rankPlacementPreferences"),
       data: [
-        { src: uiux_flow5_1, caption: "1. 點選側邊導覽列「錄取分發＞職務查詢（志願選填）」" },
-        { src: uiux_flow5_2, caption: "2. 可選擇並搜尋職務的篩選條件，將職務加入志願清單。" },
-        { src: uiux_flow5_3, caption: "3. 成功加入職務後，原本呈現加號的按鈕會轉為打勾狀態，點選「查看志願清單」可看到已加入志願清單的職務列表。" },
-        { src: uiux_flow5_4, caption: "4. 已加入志願清單的職務可以拖拉調整志願序，或刪除志願。" },
-        { src: uiux_flow5_5, caption: "5. 若點選刪除志願，會跳出確認刪除的對話框。" },
-        { src: uiux_flow5_6, caption: "6. 成功刪除志願，可以按「查詢職務」跳回所有職務列表，加入其他職務。" }
+        { src: uiux_flow5_1, caption: t("content.project_uiux_uiux3.1SelectPlacementPositionSearchPreferencesIn") },
+        { src: uiux_flow5_2, caption: t("content.project_uiux_uiux3.2SearchAndFilterPositionsThenAdd") },
+        { src: uiux_flow5_3, caption: t("content.project_uiux_uiux3.3AfterAddingAPositionItsPlus") },
+        { src: uiux_flow5_4, caption: t("content.project_uiux_uiux3.4DragPositionsToChangeTheirRanking") },
+        { src: uiux_flow5_5, caption: t("content.project_uiux_uiux3.5RemovingAPreferenceOpensAConfirmation") },
+        { src: uiux_flow5_6, caption: t("content.project_uiux_uiux3.6AfterRemovalSelectSearchPositionsTo") }
       ]
     },
     {
-      title: "錄取資格保留申請",
+      title: t("content.project_uiux_uiux3.applyToDeferPlacementEligibility"),
       data: [
-        { src: uiux_flow6_1, caption: "1. 點選側邊導覽列「錄取分發＞錄取資格保留申請」" },
-        { src: uiux_flow6_2, caption: "2. 呈現已錄取考科，可申請保留錄取資格。" },
-        { src: uiux_flow6_3, caption: "3. 確認基本資料（會預設為註冊帳號時所填寫的資料）。" },
-        { src: uiux_flow6_4, caption: "4. 填寫申辦事由和上傳證明文件，完成後點選「確認」。" },
-        { src: uiux_flow6_5, caption: "5. 完成申請，等待審核。" }
+        { src: uiux_flow6_1, caption: t("content.project_uiux_uiux3.1SelectPlacementEligibilityDeferralInThe") },
+        { src: uiux_flow6_2, caption: t("content.project_uiux_uiux3.2ViewExaminationsYouHavePassedAnd") },
+        { src: uiux_flow6_3, caption: t("content.project_uiux_uiux3.3ConfirmPersonalInformationPrefilledFromThe") },
+        { src: uiux_flow6_4, caption: t("content.project_uiux_uiux3.4EnterTheReasonUploadSupportingDocuments") },
+        { src: uiux_flow6_5, caption: t("content.project_uiux_uiux3.5SubmitTheApplicationAndWaitFor") }
 
       ]
     },
@@ -169,7 +173,7 @@ export default function AE() {
         <button
           onClick={() => router.push(`/project?category=uiux`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -186,17 +190,9 @@ export default function AE() {
             <Image src={uiux_cover} alt={''} className="w-full h-auto rounded-[6vh]" />
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
-            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6">國家考試整合平台</h1>
-            <p className="text-[#00437B] whitespace-pre-line">
-              本專案旨在解決現行國家考試資訊分散、流程複雜及介面使用體驗不佳等問題，規劃一個整合性的國家考試一站式服務平台。{`\n`}
-              每年約有三十萬人參與國家考試，然而在報名、備考、應試到錄取分發等不同階段，考生必須分別操作多個政府網站。
-              由於資訊分散、流程不夠清楚，加上現有網站常見字體過小、資訊架構複雜等問題，
-              導致考生在查找資料與操作時需耗費大量時間和精力，整體使用體驗不佳。{`\n`}
-              在前期研究階段，本專案透過問卷調查與使用者訪談，深入了解考生在使用現有國考網站時的實際經驗與主要痛點
-              ，並以此作為設計基礎。設計目標在於打造流程清晰、介面易讀的一站式平台，
-              提升考生在各考試階段中取得資訊的效率，並改善整體使用體驗。
-            </p>
-            <p className="text-[#00437B] font-bold mt-2">類型： UX research + UI design</p>
+            <h1 className="text-4xl font-extrabold text-[#00437B] mb-6"><TranslatedText messageKey="content.projects.nationalExaminationServicePlatform" /></h1>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux3.thisProjectProposesAnIntegratedOneStop" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux3.around300000PeopleTakeNationalExaminations" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux3.surveysAndInterviewsExploredCandidatesExperiencesAnd" /></p>
+            <p className="text-[#00437B] font-bold mt-2"><TranslatedText messageKey="content.project_uiux_uiux1.typeUxResearchUiDesign" /></p>
           </div>
         </div>
 
@@ -206,26 +202,18 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">專案背景與動機</p>
-            <p className="text-[#00437B] whitespace-pre-line">
-              在參與國家考試時，考生會有以下流程需要完成：
-            </p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.backgroundAndMotivation" /></p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux3.candidatesCompleteTheFollowingStagesWhenTaking" /></p>
             <Image src={uiux_pic1} alt={''} className="p-3 w-full lg:w-[100vh] h-auto rounded-[5vh]" />
-            <div className="text-[#00437B] whitespace-pre-line">
-              但現行國家考試相關的資訊取得管道、作業系統、網站架構等，有諸多問題，使得考生除了專心應考之外，還須面對繁瑣的流程，並自行花費心力去找尋考試每一階段資訊窗口以及需要作業的網站，甚至因而錯過部分資訊，或需要仰賴補習班整理或學長姊分享。其主要面臨的痛點如下:
-              
-              <div className="p-3 pl-5 space-y-3 mb-4">
-                <li>資訊分散： 由於考試不同階段的作業可能是由不同公家單位所負責，導致即使是國考相關的作業，也須從不同網站的窗口去完成或查找資訊，例如：考試院網站可察看歷屆試題和查看考試日程等，考試報名需要在另外的國家考試報名網站完成；而考完試的志願選填要在行政院人事行政總處網站完成，但資格保留又必須另外在公務人員保訓會網站作業。</li>
-                <li>資訊結構複雜：現行的網站資訊龐雜，搜尋不易，對只想使用國考功能的考生而言，需在茫茫文字中尋找目標資訊，體驗不佳；且由於考選部業務不只國考，故網站上列示所有資訊的情況下，難有進一步優化個人體驗。</li>
-                <li>資訊不對等： 補習班通常只會花心思整理熱門考科資訊，造成冷門考科考生取得資訊的難易度更高。</li>
-                <li>介面體驗不佳： 現行網站字太多、太小，操作吃力，容易錯過重要資訊，且介面不夠美觀。</li>
-              </div>
-
-              故我們希望可以：
-              <div className="p-3 pl-5 space-y-3">
-                <li>遵循政府為民服務原則，提供服務流程改造。</li>
-                <li>提供一站式平台，整合國考所有資源，明確及簡化國考流程。</li>
-                <li>全面提高考生的使用者經驗與服務體驗。</li>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux3.existingInformationChannelsSystemsAndSiteStructures" /><div className="p-3 pl-5 space-y-3 mb-4">
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.fragmentedInformationDifferentAgenciesManageDifferentStages" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.complexInformationArchitectureExtensiveContentMakesRelevant" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.unequalAccessToInformationTutoringCentersTend" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.poorInterfaceExperienceDenseSmallTextMakes" /></li>
+              </div><TranslatedText messageKey="content.project_uiux_uiux3.ourGoalsAreTo" /><div className="p-3 pl-5 space-y-3">
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.redesignServiceWorkflowsAroundPublicServicePrinciples" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.integrateExaminationResourcesIntoAOneStop" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.improveTheOverallUserAndServiceExperience" /></li>
               </div>
 
             </div>
@@ -240,10 +228,8 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line  mb-2">使用者族群</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-              本平台主要服務參與國家考試的考生（每年約30萬人參與國考），包含正在備考、已完成考試並需進行志願選填、名額保留及後續流程規劃的使用者。
-            </div>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line  mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.targetUsers" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux3.thePlatformServesNationalExaminationCandidatesAround" /></div>
           </div>
         </div>
 
@@ -253,46 +239,31 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-4">事前研究</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-4"><TranslatedText messageKey="content.project_uiux_uiux1.initialResearch" /></p>
             <div className="text-[#00437B] whitespace-pre-line mb-2">
-              <strong>1. 研究方法{`\n`}</strong>
-              本專案除了針對現行網站與國考流程進行背景研究，更結合了定性與定量研究，以深入挖掘使用者的操作痛點與資訊取得經驗。{`\n`}
+              <strong><TranslatedText messageKey="content.project_uiux_uiux1.1ResearchMethods" />{`\n`}</strong><TranslatedText messageKey="content.project_uiux_uiux3.alongsideBackgroundResearchOnExistingWebsitesAnd" />{`\n`}
               <div className="p-3 pl-5 space-y-3">
-                <li>
-                  訪談： 訪談的對象共有三位，皆是曾參與過國家考試者（移民特考、測量製圖、估價師＆地政士＆地政高考）。
-                  訪談流程，首先詢問受訪者背景資訊（報考的科目、動機等）；
-                  接著利用 52 張寫有各種國考相關網站的資訊和功能之卡片，請受訪者選出認為重要的 20 個功能，
-                  同時也以此階段的作業作為探針（probe）幫助受訪者回憶國考各階段網站的使用情形；
-                  接著分為考前、考中、考後的階段，詢問受訪者各階段資訊的取得情況和對於介面的想法，
-                  並邀請受訪者實際進行各階段的模擬操作，以了解受訪者對於現行網站的操作和資訊的搜尋上是否有困難。
-                </li>
-                <li>
-                  線上問卷： 透過 Dcard 公職版與政大交流版進行發放，共回收 71 份有效樣本。
-                  問卷針對「介面設計」、「資訊獲取」及「功能性」三大維度，量化使用者對現有網站的滿意度與操作門檻。
-                </li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.interviewsThreePreviousCandidatesParticipatedCoveringImmigration" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.onlineSurveyDistributedThroughDcardSPublic" /></li>
               </div>
               
             </div>
 
             <div className="text-[#00437B] whitespace-pre-line mt-4">
-              <strong>2. 研究發現與痛點分析{`\n`}</strong>
-              綜合定性與定量研究，我們歸納出國考體驗中的四大核心痛點：
-              <div className="p-3 pl-5 space-y-3">
-                <li>視覺負荷與導覽迷失： 現行網站介面字太多、太小，以致於操作吃力、易錯過重要資訊。此外，資訊結構複雜、導覽用詞模糊，使考生極易錯過重要公告。</li>
-                <li>資訊管道破碎化： 國考涉及行政機關眾多（如：考選部、保訓會、人事行政總處等），資訊分散於各入口網、電子郵件與簡訊中。使用者被迫頻繁切換平台，甚至必須直接仰賴外部搜尋引擎（Google）而非網站內部搜尋。</li>
-                <li>作業狀態不透明： 部分關鍵程序（如：錄取資格保留）仍高度依賴紙本公文往返，缺乏線上即時狀態更新。考生無法確認文件收寄進度，僅能透過電話詢問，造成極大的心理焦慮。</li>
-                <li>資訊取得具時效性限制： 官方資料的開放與搜尋權限常受限於報考期間，非報名期難以檢索歷年報考資訊、歷史榜單等相關資訊，對長期備考者不友善。</li>
+              <strong><TranslatedText messageKey="content.project_uiux_uiux3.2FindingsAndPainPointAnalysis" />{`\n`}</strong><TranslatedText messageKey="content.project_uiux_uiux3.theQualitativeAndQuantitativeResearchIdentifiedFour" /><div className="p-3 pl-5 space-y-3">
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.visualOverloadAndConfusingNavigationDenseSmall" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.fragmentedChannelsInformationFromMultipleAgenciesIs" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.unclearProcessingStatusImportantProceduresSuchAs" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.timeLimitedInformationAccessAccessToOfficial" /></li>
               </div>
             </div>
 
             <div className="text-[#00437B] whitespace-pre-line mt-4">
-              <strong>3. 核心改善方案{`\n`}</strong>
-              針對上述洞察，本專案提出以下設計策略：
-              <div className="p-3 pl-5 space-y-3">
-                <li>視覺系統優化： 調整字體大小與版面留白，優化視覺層級，降低資訊負擔。</li>
-                <li>個人化一站式服務： 重新梳理資訊架構，依據「考前、考中、考後」的生命週期提供情境化導覽，將所有分散機關的資訊整合於單一平台；且提供個人化服務，透過記錄使用者基本資訊和報考科目，避免需要重複輸入資料的情形，並提高使用者資訊取得效率。</li>
-                <li>即時狀態追蹤系統： 新增文件送出後的進度狀態列，提供即時更新的審核動態，提升流程透明度。</li>
-                <li>歷年資料庫入口： 打破時效性限制，建立常態性的歷年資訊查詢專區，方便使用者隨時獲取所需的備考歷史數據。</li>
+              <strong><TranslatedText messageKey="content.project_uiux_uiux3.3CoreImprovements" />{`\n`}</strong><TranslatedText messageKey="content.project_uiux_uiux1.theseInsightsInformedTheFollowingDesignStrategies" /><div className="p-3 pl-5 space-y-3">
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.visualSystemAdjustTypeSizesSpacingAnd" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.personalizedOneStopServicesReorganizeInformationAround" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.liveStatusTrackingAddAProgressIndicator" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux3.historicalInformationAccessProvideAPermanentArchive" /></li>
               </div>
             </div>
           </div>
@@ -304,11 +275,8 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">資訊架構</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-              我們重新設計的一站式國考網站，將原本分散於各部門網站的資訊和作業流程都整合進本網站，且將general的資訊和個人化的資訊做區隔（general資訊在上方導覽列，個人化資訊在登入後會呈現在側邊導覽列）。
-              資訊架構示意圖如下： 
-            </div>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.informationArchitecture" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux3.theRedesignedPlatformBringsInformationAndTasks" /></div>
             <Image src={uiux_IA} alt={''} className="p-6 w-full h-auto rounded-[10vh]" />
           </div>
         </div>
@@ -325,7 +293,7 @@ export default function AE() {
           {/* 右側文字 */}
           <div className="flex flex-col w-full gap-3">
 
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程（僅列舉主要流程）</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux3.userFlowsSelectedCoreTasks" /></p>
 
             {flows.map((flow, flowIndex) => (
               <div
@@ -386,7 +354,7 @@ export default function AE() {
         </div>
           
         <div className="w-full mt-8 flex">
-          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5"><TranslatedText messageKey="content.project_uiux_uiux1.relatedLinks" /></p>
 
           <div className="flex gap-4 flex-wrap">
             <button

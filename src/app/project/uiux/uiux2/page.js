@@ -1,10 +1,11 @@
 'use client';
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 import uiux_cover from "@/app/image/uiux2_cover.png";
@@ -30,33 +31,36 @@ import uiux_flow4_4 from  "@/app/image/uiux2_flow4-04.png";
 
 
 export default function AE() {
+  const { t } = useLanguage();
+
+
   const router = useRouter();
 
   const flow1 = [
-    { src: uiux_flow1_1, caption: "1. 主頁為近期所有電影的資訊，電影縮圖旁邊的欄位是該電影的「最佳評論」，按右邊的箭頭可切換成其他熱門評論。可以用電影評價、討論度、票房等條件排序陳列順序，也可以直接搜尋指定電影的評論，或根據電影類型、上映時間篩選。\n\n點擊電影圖片可以看電影資訊，點擊右側評論可以看完整評論和留言。" },
-    { src: uiux_flow1_2, caption: "2. 點擊首頁電影圖片後跳到該電影的介紹頁，呈現預告片、電影介紹、演員名單、分類、得獎紀錄等資訊，可按場次訂票或收藏該電影。" },
-    { src: uiux_flow1_3, caption: "3. 電影介紹頁下方是該電影的評分和所有評論。" },
-    { src: uiux_flow1_4, caption: "4. 點擊任意評論可以打開該評論的完整頁，以及查看留言。" },
-    { src: uiux_flow1_5, caption: "5. 回到電影介紹頁後，可以新增該電影的評分與評論。" },
+    { src: uiux_flow1_1, caption: t("content.project_uiux_uiux2.1TheHomepageListsRecentFilmsBeside") },
+    { src: uiux_flow1_2, caption: t("content.project_uiux_uiux2.2SelectingAFilmImageOpensIts") },
+    { src: uiux_flow1_3, caption: t("content.project_uiux_uiux2.3RatingsAndAllReviewsAppearBelow") },
+    { src: uiux_flow1_4, caption: t("content.project_uiux_uiux2.4SelectAReviewToOpenIts") },
+    { src: uiux_flow1_5, caption: t("content.project_uiux_uiux2.5ReturnToTheMoviePageTo") },
   ];
   
   const flow2 = [
-    { src: uiux_flow2_1, caption: "1. 可從電影資訊頁跳到該電影的場次查詢頁，或直接點選場次查詢的tab。" },
-    { src: uiux_flow2_2, caption: "2. 輸入電影名稱後出現附近電影院場次資訊。" },
-    { src: uiux_flow2_3, caption: "3. 輸入電影名稱、地點、日期時間、人數，出現場次篩選結果。點擊下方場次時間可跳到該電影院的訂票系統以進行後續的訂票。" },
+    { src: uiux_flow2_1, caption: t("content.project_uiux_uiux2.1OpenShowtimesFromAMovieS") },
+    { src: uiux_flow2_2, caption: t("content.project_uiux_uiux2.2EnterAMovieTitleToSee") },
+    { src: uiux_flow2_3, caption: t("content.project_uiux_uiux2.3FilterByMovieLocationDateTime") },
   ];
   
   const flow3 = [
-    { src: uiux_flow3_1, caption: "1. 從探索頁可以看到各種電影相關的最新資訊和關於各種電影的綜合討論。" },
-    { src: uiux_flow3_2, caption: "2. 點入文章後呈現完整頁面。" },
-    { src: uiux_flow3_3, caption: "3. 回到探索頁可以自行新增文章。" },
+    { src: uiux_flow3_1, caption: t("content.project_uiux_uiux2.1TheExplorePagePresentsMovieNews") },
+    { src: uiux_flow3_2, caption: t("content.project_uiux_uiux2.2SelectAnArticleToReadThe") },
+    { src: uiux_flow3_3, caption: t("content.project_uiux_uiux2.3ReturnToExploreToCreateYour") },
   ];
 
   const flow4 = [
-    { src: uiux_flow4_1, caption: "1. 從個人頁可以查看收藏的電影、評論、曾留下的影評紀錄，以及個人設定功能。" },
-    { src: uiux_flow4_2, caption: "2. 查看收藏的電影。" },
-    { src: uiux_flow4_3, caption: "3. 查看收藏的評論。" },
-    { src: uiux_flow4_4, caption: "4. 設定個人資料。" }
+    { src: uiux_flow4_1, caption: t("content.project_uiux_uiux2.1TheProfilePageContainsSavedFilms") },
+    { src: uiux_flow4_2, caption: t("content.project_uiux_uiux2.2ViewSavedFilms") },
+    { src: uiux_flow4_3, caption: t("content.project_uiux_uiux2.3ViewSavedReviews") },
+    { src: uiux_flow4_4, caption: t("content.project_uiux_uiux2.4EditPersonalInformation") }
   ];
 
   const [index1, setIndex1] = useState(0);
@@ -100,7 +104,7 @@ export default function AE() {
         <button
           onClick={() => router.push(`/project?category=uiux`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -118,8 +122,8 @@ export default function AE() {
           </motion.div>
           <div className="lg:w-1/2 w-full flex flex-col gap-4">
             <h1 className="text-4xl font-extrabold text-[#00437B] mb-6 whitespace-pre-line">MORE{`\n`} - your movie review App</h1>
-            <p className="text-[#00437B] whitespace-pre-line">本專案為一款以影評為核心的一站式影評＋場次查詢 App UI 設計。針對台灣缺乏整合性影評平台、國外資訊結構複雜與影評與訂票流程分離等問題，重新規劃符合台灣使用習慣的介面架構。首頁以影評作為主要導覽入口，整合電影資訊、場次查詢與訂票連結，並提供探索與個人收藏功能，提升整體使用流暢度與資訊理解效率。本作品以 UI 視覺與操作流程設計為主，未進行實際使用者測試，未來可作為後續 UX 驗證與優化基礎。</p>
-            <p className="text-[#00437B] font-bold mt-2">類型：UI design</p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.projects.aUiDesignForAOneStop2" /></p>
+            <p className="text-[#00437B] font-bold mt-2"><TranslatedText messageKey="content.project_PM_PM3.typeUiDesign" /></p>
           </div>
         </div>
 
@@ -129,11 +133,8 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">專案背景與動機</p>
-            <p className="text-[#00437B] whitespace-pre-line">
-            本專案為一款以「影評為主導，訂票為輔助」的一站式電影 App UI 設計。針對目前的市場進行觀察，目前台灣多以社群媒體分享、部落格影評或零散影評文章為主，缺乏一個具整合性與公信力的影評平台； 而國外影評網站資訊層級複雜，可能不符合台灣使用習慣； 且我們認為現有平台中，影評平台與場次查詢功能未整合，使用者在查詢目標電影可觀看的場次時，也只能在不同影城網頁或 app 中確認各場的時間，導致使用者在找尋想看的電影到訂票的過程中需多次跳轉，增加使用負擔。{`\n`}
-因此，本專案目標是打造符合台灣使用習慣的一站式影評＋場次查詢平台，並致力於簡化影評瀏覽與電影資訊查詢流程，建立清楚、直覺且具有一致性的介面結構，為使用者提供更流暢、高效的電影探索與購票流程。
-            </p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.backgroundAndMotivation" /></p>
+            <p className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux2.thisOneStopMovieAppPrioritizesReviews" />{`\n`}<TranslatedText messageKey="content.project_uiux_uiux2.theGoalIsAnIntegratedReviewAnd" /></p>
           </div>
         </div>
 
@@ -143,10 +144,8 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">介面設計重點</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-            這款影評 App 的設計大量使用深藍作為基底色，搭配亮黃色作為強調色，打造出具有「影院燈光」氛圍的視覺風格。介面採用卡片式布局與圓角設計，使整體風格現代且友善。整體介面希望呈現良好的視覺優先順序、清晰的資訊架構，以及一致的品牌識別性。
-            </div>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.interfaceDesignHighlights" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux2.deepBlueAndBrightYellowEvokeCinema" /></div>
           </div>
         </div>
 
@@ -157,15 +156,13 @@ export default function AE() {
           <div className="bg-[linear-gradient(to_bottom_right,_#008BBF,_#AAD2E4)] w-[30px] h-[30px] flex-shrink-0 rounded-full"></div>
           {/* 右側文字 */}
           <div className="flex flex-col">
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">資訊架構</p>
-            <div className="text-[#00437B] whitespace-pre-line">
-              系統主要分為五大模組，這些模組在 App 底部以 Tab 形式呈現，主要功能包含：
-              <div className="p-3 pl-5">
-                <li>首頁：顯示正在上映、熱門影評摘要、點擊影評後進入電影詳細資訊。</li>
-                <li>電影詳情頁：包含電影介紹、演員名單、分類、得獎紀錄、預告片播放，以及使用者評分、評論查看與留言功能。</li>
-                <li>場次與訂票：顯示各大戲院上映場次、時間與空位數即時查詢，點擊訂票後導向至戲院官方網站完成購票。</li>
-                <li>探索頁：提供最新電影新聞與綜合討論內容，供使用者瀏覽與交流。</li>
-                <li>個人頁：包含收藏的電影、收藏的評論、曾留下的影評紀錄，以及個人設定功能。</li>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.informationArchitecture" /></p>
+            <div className="text-[#00437B] whitespace-pre-line"><TranslatedText messageKey="content.project_uiux_uiux2.theSystemIsOrganizedIntoFiveMain" /><div className="p-3 pl-5">
+                <li><TranslatedText messageKey="content.project_uiux_uiux2.homeCurrentReleasesAndPopularReviewSummaries" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux2.movieDetailsSynopsisCastCategoriesAwardsTrailers" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux2.showtimesAndBookingCinemaSchedulesTimesAnd" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux2.exploreMovieNewsAndGeneralDiscussionsFor" /></li>
+                <li><TranslatedText messageKey="content.project_uiux_uiux2.profileSavedFilmsAndReviewsReviewHistory" /></li>
               </div>  
             </div>
             <Image src={uiux_IA} alt={''} className="p-6 w-full h-auto rounded-[10vh]" />
@@ -187,14 +184,12 @@ export default function AE() {
           {/* 右側文字 */}
           <div className="flex flex-col w-full gap-3">
 
-            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2">使用流程</p>
+            <p className=" text-[#008BBF] text-xl font-bold whitespace-pre-line mb-2"><TranslatedText messageKey="content.project_uiux_uiux1.userFlows" /></p>
 
             {/* 訂票流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                查看電影評論＆資訊
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux2.browseMovieReviewsAndInformation" /></p>
 
 
               <div
@@ -254,9 +249,7 @@ export default function AE() {
             {/* 查景點流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                查場次
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux2.findShowtimes" /></p>
 
 
               <div
@@ -314,9 +307,7 @@ export default function AE() {
             {/* 排行程流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                查看電影相關消息
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux2.readMovieNews" /></p>
 
 
               <div
@@ -373,9 +364,7 @@ export default function AE() {
             {/* 排行程流程 */}
             <div className="w-full h-auto bg-[rgba(255,255,255,0.5)] rounded-2xl pb-5 mt-5">
 
-              <p className="text-[#00437B] text-xl font-bold p-5">
-                查看個人頁面
-              </p>
+              <p className="text-[#00437B] text-xl font-bold p-5"><TranslatedText messageKey="content.project_uiux_uiux2.viewYourProfile" /></p>
 
 
               <div
@@ -433,7 +422,7 @@ export default function AE() {
         </div>
           
         <div className="w-full mt-8 flex">
-          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5">相關連結：</p> 
+          <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5"><TranslatedText messageKey="content.project_uiux_uiux1.relatedLinks" /></p>
 
           <div className="flex gap-4 flex-wrap">
             <button
@@ -446,13 +435,13 @@ export default function AE() {
               onClick={() => window.open("https://drive.google.com/file/d/1VqpiCXR5OnZcc8JrxULW4jHKLybofG4o/view?usp=drive_link", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
-              Demo影片
+              <TranslatedText messageKey="actions.demo" />
             </button>
             <button
               onClick={() => window.open("https://drive.google.com/file/d/11xeP2-bsMOWkhCrbHaETEMr7vn6MCAiU/view?usp=drive_link", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1  transform transition duration-300 hover:scale-105 cursor-pointer"
             >
-              海報
+              <TranslatedText messageKey="actions.poster" />
             </button>
           </div>
         </div>

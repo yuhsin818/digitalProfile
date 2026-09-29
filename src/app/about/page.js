@@ -1,5 +1,6 @@
 "use client"
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
 import Image from "next/image";
 import AvatarImage from "@/../public/hachiware.jpg";
 import HeartImg from "@/app/image/icon_heart.svg";
@@ -8,6 +9,8 @@ import { useState } from "react";
 import BlurText from "../../component/BlurText";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   const [isHovered, setIsHovered] = useState(false);
   const [heart, setHeart] = useState(0);
   
@@ -21,7 +24,7 @@ export default function Home() {
 
   const copyText = async (text, setStatus) => {
     await navigator.clipboard.writeText(text);
-    setStatus("已複製！");
+    setStatus(t("content.contact.copied"));
     setTimeout(() => setStatus(""), 1500);
   };
   const [emailCopied, setEmailCopied] = useState("");
@@ -45,12 +48,12 @@ export default function Home() {
 
        
         <div className="relative text-[#00437B] flex justify-center items-center p-4 flex-col">
-          <BlurText text="Feel free to contact me" delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-2"/>
-          <BlurText text="if you’re interested in working together." delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-8"/>
+          <BlurText text={t("content.contact.feelFreeToContactMe")} delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-2"/>
+          <BlurText text={t("content.contact.ifYouReInterestedInWorkingTogether")} delay={150} animateBy="words" direction="top" className="w-full flex justify-center text-center text-[20px] mb-8"/>
            {/* Email */}
           <div className="flex items-center gap-3 flex-col sm:flex-row">
             <BlurText
-              text="Email:  maggie96206@gmail.com"
+              text={t("content.contact.emailMaggie96206GmailCom")}
               delay={150}
               animateBy="words"
               direction="top"
@@ -66,14 +69,14 @@ export default function Home() {
               className="px-4 py-1 text-sm rounded-full border border-[#00437B] transition
                         hover:bg-[#00437B] hover:text-white cursor-pointer mb-4 sm:mb-0"
             >
-              {emailCopied ? "✅Copied" : "Copy"}
+              <TranslatedText messageKey={emailCopied ? "actions.copied" : "actions.copy"} />
             </button>
           </div>
 
           {/* Phone */}
           <div className="flex items-center gap-3  flex-col sm:flex-row">
             <BlurText
-              text="Mobile:  0912367162"
+              text={t("content.contact.mobile0912367162")}
               delay={150}
               animateBy="words"
               direction="top"
@@ -89,10 +92,10 @@ export default function Home() {
               className="px-4 py-1 text-sm rounded-full border border-[#00437B] transition
                         hover:bg-[#00437B] hover:text-white cursor-pointer"
             >
-              {phoneCopied ? "✅Copied" : "Copy"}
+              <TranslatedText messageKey={phoneCopied ? "actions.copied" : "actions.copy"} />
             </button>
           </div>
-          <BlurText text="Thank You!" delay={150} animateBy="words" direction="top" className="text-[20px] mt-8"/>
+          <BlurText text={t("content.contact.thankYou")} delay={150} animateBy="words" direction="top" className="text-[20px] mt-8"/>
 
           {/* <h3 className="mb-6">我是政大心理系學生，熱愛觀察人心，也愛動手做！同時修習日文，希望未來能在創意與人性之間找到新火花！</h3> */}
           {/* <div className="absolute bottom-1 right-3 m-1 cursor-pointer flex flex-row justify-center items-center" onClick={addHeart}>

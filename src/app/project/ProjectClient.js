@@ -1,11 +1,16 @@
 'use client'
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
+import LanguageSwitcher from "@/component/LanguageSwitcher";
 import { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import ProjectPage from "@/component/projectPage";
-import { projects } from "@/app/data/projectData";
+import { useProjects } from "@/hooks/useProjects";
 
 export default function Project() {
+  const { t } = useLanguage();
+  const projects = useProjects();
+
 
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -18,21 +23,24 @@ export default function Project() {
     <div className="w-full min-w-[320px] h-full flex flex-col items-center overflow-y-auto">
 
       {/* 標題、分類 */}
-      <div className="w-full flex flex-col text-[#00437B] pt-8 px-4 sm:px-20">
-        <h1 className="text-2xl font-bold mb-5">My Projects</h1>
+      <div className="w-full flex flex-col text-[#00437B] px-4 pt-8 sm:pl-[100px] sm:pr-[60px]">
+        <div className="flex items-center justify-between gap-2 mb-5">
+          <h1 className="text-xl sm:text-2xl font-bold"><TranslatedText messageKey="content.project.myProjects" /></h1>
+          <LanguageSwitcher />
+        </div>
         {/* <h1 className="text-2xl font-bold mb-2">My Projects</h1>
         <p className="mb-5">⭐ for recommended projects</p> */}
 
-        <div className="w-full flex justify-around border-b border-[#9BB7C6] pb-2">
+        <div className="w-full flex flex-wrap gap-x-4 gap-y-3 justify-around border-b border-[#9BB7C6] pb-2">
           {[
             { key: "uiux", label: "UI/UX" },
             { key: "PM", label: "PM" },
-            { key: "web", label: "前後端" },
+            { key: "web", label: t("content.project.webDevelopment") },
             // { key: "final", label: "畢業製作" },
-            { key: "p5js", label: "數位藝術" },
-            { key: "game", label: "遊戲" },
+            { key: "p5js", label: t("content.project.digitalArt") },
+            { key: "game", label: t("content.project.games") },
             // { key: "psy", label: "心理" },
-            { key: "others", label: "其他" },
+            { key: "others", label: t("content.project.other") },
           ].map(({ key, label }) => (
             <button
               key={key}
@@ -49,7 +57,7 @@ export default function Project() {
                   ${category === key ? 'after:w-full' : ''}
               `}
             >
-              {label}
+              <TranslatedText messageKey={`categories.${key}`} />
             </button>
           ))}
         </div>

@@ -1,10 +1,12 @@
 'use client';
 
+import { TranslatedText, useLanguage } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { projects } from "@/app/data/projectData";
+import { useProjects } from "@/hooks/useProjects";
 
 import Design1 from "@/app/image/design1.jpg"
 import Design2 from "@/app/image/design2.png"
@@ -12,6 +14,9 @@ import Design3 from "@/app/image/design3.png"
 import Design4 from "@/app/image/design4.png"
 
 export default function Design() {
+  const { t } = useLanguage();
+  const projects = useProjects();
+
   const router = useRouter();
   const project = projects.find(p => p.id === "design");
 
@@ -19,10 +24,10 @@ export default function Design() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
-    { src: Design1.src, desc: `109 學年度心理之夜「拭塵」的粉絲專頁頭貼。\n此頭貼是配合活動的劇情內容所設計,\n並用電繪結合手繪的方式呈現。` },
-    { src: Design2.src, desc: `109 學年度下學期政大交響的迎新傳單。` },
-    { src: Design3.src, desc: `此圖為第十九屆心理營「如夢初心」的活動紀念品,右圖為實體吊飾。\n此紀念品是以該活動的包裝「夢境」,\n結合總籌組要求的色調以及夢幻的感覺為發想所設計出的捕夢網。` },
-    { src: Design4.src, desc: `此為我設計的高中管樂團成發「舞起狂瀾」的活動衣服。\n為結合活動主題與社團屆數,\n我設計舞者拉著彩帶跳舞,\n並踐踏水窪的場景。\n其中緞帶是用校歌開頭的五線譜代表,且彎曲成「5」的形狀;\n右邊舞者的身姿則為「7」的形狀,\n以和社團的屆數「57 屆」作呼應。` },
+    { src: Design1.src, desc: t("content.project_others_design.profileImageForThe20202021Psychology") },
+    { src: Design2.src, desc: t("content.project_others_design.aWelcomeFlyerForTheNccuSymphony") },
+    { src: Design3.src, desc: t("content.project_others_design.aSouvenirForThe19thPsychologyCamp") },
+    { src: Design4.src, desc: t("content.project_others_design.aConcertTShirtForMyHigh") },
   ];
 
   return (
@@ -33,7 +38,7 @@ export default function Design() {
         <button
           onClick={() => router.push(`/project?category=others`)}
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-            Back to Projects
+            <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 

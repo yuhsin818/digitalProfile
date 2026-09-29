@@ -1,9 +1,11 @@
 'use client';
 
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
+import { useProjects } from "@/hooks/useProjects";
 
 import AE1 from "@/app/image/AE1.png"
 import AE2 from "@/app/image/AE2.png"
@@ -11,6 +13,8 @@ import AE3 from "@/app/image/AE3.png"
 
 
 export default function AE() {
+  const projects = useProjects();
+
   const router = useRouter();
   const project = projects.find(p => p.id === "AE");
 
@@ -22,7 +26,7 @@ export default function AE() {
         <button
           onClick={() => router.push(`/project?category=others`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -51,10 +55,7 @@ export default function AE() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://drive.google.com/file/d/1ERo3_0vnh8UtSLoS9fGFG1nBLu__BRxF/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold whitespace-pre-line">
-                    以 12 個食物圖片素材，做出類似定格動畫的效果，{`\n`}
-                    呈現食物在玩耍的情境，模擬速食店的廣告。
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold whitespace-pre-line"><TranslatedText messageKey="content.project_others_AE.using12FoodImagesToCreateA" />{`\n`}<TranslatedText messageKey="content.project_others_AE.thisAnimationImaginesFoodAtPlayIn" /></p>
                 </div>
               </a>
             </div>
@@ -71,9 +72,7 @@ export default function AE() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://drive.google.com/file/d/14omZLtuIucBmtnt4cpg9B0TpBgRzgfLv/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    以大自然為主題選擇三組靜態圖片所做的動畫。
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.project_others_AE.aNatureThemedAnimationCreatedFromThree" /></p>
                 </div>
               </a>
             </div>
@@ -90,9 +89,7 @@ export default function AE() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://drive.google.com/file/d/1M7lUwjpatMU-lkuCewp9d2QyvhjT5Ogc/view?usp=sharing" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    以演奏會影像為素材，具象化呈現音樂帶給人類似魔法般的想像。
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.project_others_AE.concertFootageVisualizesTheMagicalSenseOf" /></p>
                 </div>
               </a>
             </div>

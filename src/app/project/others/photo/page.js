@@ -1,9 +1,11 @@
 'use client';
 
+import { TranslatedText } from "@/component/LanguageProvider";
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { motion } from "framer-motion";
-import { projects } from "@/app/data/projectData";
+import { useProjects } from "@/hooks/useProjects";
 
 import Photo1 from "@/app/image/photo1.jpg"
 import Photo2 from "@/app/image/photo2.jpg"
@@ -16,6 +18,8 @@ import Photo8 from "@/app/image/photo8.jpg"
 import Photo9 from "@/app/image/photo9.jpg"
 
 export default function Photo() {
+  const projects = useProjects();
+
   const router = useRouter();
   const project = projects.find(p => p.id === "photo");
 
@@ -27,7 +31,7 @@ export default function Photo() {
         <button
           onClick={() => router.push(`/project?category=others`)} // ✅ 返回指定分類
           className="w-[200px] border-2 stroke-[#00437B] text-[#00437B] px-4 py-2 my-6 mx-4 rounded-[4vw] font-bold flex justify-center items-center mb-3 hover:bg-[#AAD2E4] transition-all duration-300 cursor-pointer">
-              Back to Projects
+              <TranslatedText messageKey="actions.back" />
         </button>
       </div>
 
@@ -75,9 +79,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1815960981706817712" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    泣いちゃった
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.inTears" /></p>
                 </div>
               </a>
             </div>
@@ -94,9 +96,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1809851226567426549" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    お出かけ
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.outAndAbout" /></p>
                 </div>
               </a>
             </div>
@@ -113,9 +113,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1814898339932217368" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    報酬もらった
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.gotAReward" /></p>
                 </div>
               </a>
             </div>
@@ -132,9 +130,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1814564814968266810" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    失敗しちゃった
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.oopsIFailed" /></p>
                 </div>
               </a>
             </div>
@@ -170,9 +166,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1823957591950811303" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    慰めろッ
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.comfortMe" /></p>
                 </div>
               </a>
             </div>
@@ -189,9 +183,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1829065190631190984" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    古本屋だらけ
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.soManyFuruhonya" /></p>
                 </div>
               </a>
             </div>
@@ -208,9 +200,7 @@ export default function Photo() {
               {/* Hover 出現的白色毛玻璃圖層 */}
               <a href="https://x.com/Mallow_chiikawa/status/1822860495042347057" target="_blank">
                 <div className="absolute inset-0 bg-white/50 backdrop-blur-lg rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-gray-800 text-center text-lg font-semibold">
-                    ムン顔ハチワレ
-                  </p>
+                  <p className="text-gray-800 text-center text-lg font-semibold"><TranslatedText messageKey="content.photo.hachiwareSDeterminedFace" /></p>
                 </div>
               </a>
             </div>
