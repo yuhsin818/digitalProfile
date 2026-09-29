@@ -51,7 +51,7 @@ export default function Profile() {
         </div>
 
         {/* 上方照片+自我介紹 */}
-        <motion.div className="w-full h-auto flex flex-col lg:flex-row p-4 pt-8 justify-center items-center mb-5 bg-[rgba(255,255,255,0.3)] rounded-4xl"
+        <motion.div className="w-full h-auto flex flex-col lg:flex-row p-6 justify-center items-center mb-5 bg-[rgba(255,255,255,0.3)] rounded-4xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
