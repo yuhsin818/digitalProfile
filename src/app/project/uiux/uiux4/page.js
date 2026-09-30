@@ -390,42 +390,42 @@ export default function Web4() {
               {/* 撠汗???函?蝯辣 */}
               <div>
                 <p className="font-semibold mb-2"><TranslatedText messageKey="content.project_uiux_uiux4.navigationAndSharedComponents" /></p>
-                <ul className="pl-5 space-y-1">
-                  <li className="pl-[1em] [text-indent:-1em]"><TranslatedText messageKey="content.project_uiux_uiux4.desktopNavigationUsesDropdownMenusWith" /><code>opacity</code> + <code>translateY</code><TranslatedText messageKey="content.project_uiux_uiux4.revealAnimationsTheResponsiveBreakpointIs" /><code>xl</code><TranslatedText messageKey="content.project_uiux_uiux4.1280pxMobileUsesAPlainJavascriptAccordion" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><TranslatedText messageKey="content.project_uiux_uiux4.theFooterIntegratesLeafletJsWithA" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><TranslatedText messageKey="content.project_uiux_uiux4.sharedStylesInclude" /><code>section-heading</code><TranslatedText messageKey="content.shared.listSeparator" /><code>section-subtitle</code><TranslatedText messageKey="content.project_uiux_uiux4.asWellAs" /><code>quote-wipe-line</code><TranslatedText messageKey="content.project_uiux_uiux4.forWordByWordRevealEffects" /></li>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li><TranslatedText messageKey="content.project_uiux_uiux4.desktopNavigationUsesDropdownMenusWith" /><code>opacity</code> + <code>translateY</code><TranslatedText messageKey="content.project_uiux_uiux4.revealAnimationsTheResponsiveBreakpointIs" /><code>xl</code><TranslatedText messageKey="content.project_uiux_uiux4.1280pxMobileUsesAPlainJavascriptAccordion" /></li>
+                  <li><TranslatedText messageKey="content.project_uiux_uiux4.theFooterIntegratesLeafletJsWithA" /></li>
+                  <li><TranslatedText messageKey="content.project_uiux_uiux4.sharedStylesInclude" /><code>section-heading</code><TranslatedText messageKey="content.shared.listSeparator" /><code>section-subtitle</code><TranslatedText messageKey="content.project_uiux_uiux4.asWellAs" /><code>quote-wipe-line</code><TranslatedText messageKey="content.project_uiux_uiux4.forWordByWordRevealEffects" /></li>
                 </ul>
               </div>
 
               {/* 擐???????*/}
               <div>
                 <p className="font-semibold mb-2"><TranslatedText messageKey="content.project_uiux_uiux4.homePageAndAnimation" /></p>
-                <ul className="pl-5 space-y-1">
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.isometricGrid" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.aCustomCanvas2dAnimationUsesThe" /><code>destination-in</code><TranslatedText messageKey="content.project_uiux_uiux4.compositingModeInPlaceOfCss" /><code>mask-image</code><TranslatedText messageKey="content.project_uiux_uiux4.toPreventMemoryLeaksAndPerformanceBottlenecks" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.gsapScrolltrigger" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.scrollDrivenStackingCardsHeroAndVision" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.lenisSmoothScrolling" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.siteWideSmoothScrollingKeepsGsapTriggered" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.accordionCards" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.plainJavascriptReads" /><code>scrollHeight</code><TranslatedText messageKey="content.project_uiux_uiux4.toSet" /><code>max-height</code><TranslatedText messageKey="content.project_uiux_uiux4.inPixelsAvoidingCssSInabilityTo" /><code>0 → none</code><TranslatedText messageKey="content.project_uiux_uiux4.text" /></li>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.isometricGrid" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.aCustomCanvas2dAnimationUsesThe" /><code>destination-in</code><TranslatedText messageKey="content.project_uiux_uiux4.compositingModeInPlaceOfCss" /><code>mask-image</code><TranslatedText messageKey="content.project_uiux_uiux4.toPreventMemoryLeaksAndPerformanceBottlenecks" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.gsapScrolltrigger" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.scrollDrivenStackingCardsHeroAndVision" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.lenisSmoothScrolling" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.siteWideSmoothScrollingKeepsGsapTriggered" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.accordionCards" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.plainJavascriptReads" /><code>scrollHeight</code><TranslatedText messageKey="content.project_uiux_uiux4.toSet" /><code>max-height</code><TranslatedText messageKey="content.project_uiux_uiux4.inPixelsAvoidingCssSInabilityTo" /><code>0 → none</code><TranslatedText messageKey="content.project_uiux_uiux4.text" /></li>
                 </ul>
               </div>
 
               {/* ?撱箇蔭?????*/}
               <div>
                 <p className="font-semibold mb-2"><TranslatedText messageKey="content.project_uiux_uiux4.pagesAndServices" /></p>
-                <ul className="pl-5 space-y-1">
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.dedicatedPages" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.created" /><code>/product_development</code><TranslatedText messageKey="content.project_uiux_uiux4.forSoftwareDevelopmentConsultingAnd" /><code>/join-us</code><TranslatedText messageKey="content.project_uiux_uiux4.forCareers" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.gitlabServicePageRedesign" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.increasedTextSizeAndCardCornerRadius" /><code>rounded-2xl</code><TranslatedText messageKey="content.project_uiux_uiux4.separatedProcessStepComponentsAndRefinedMobile" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.articles" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedAFeaturedTabAndSeparateCard" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.consultation" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.extractedTheInquiryFormIntoAReusable" /></li>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.dedicatedPages" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.created" /><code>/product_development</code><TranslatedText messageKey="content.project_uiux_uiux4.forSoftwareDevelopmentConsultingAnd" /><code>/join-us</code><TranslatedText messageKey="content.project_uiux_uiux4.forCareers" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.gitlabServicePageRedesign" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.increasedTextSizeAndCardCornerRadius" /><code>rounded-2xl</code><TranslatedText messageKey="content.project_uiux_uiux4.separatedProcessStepComponentsAndRefinedMobile" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.articles" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedAFeaturedTabAndSeparateCard" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.consultation" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.extractedTheInquiryFormIntoAReusable" /></li>
                 </ul>
               </div>
 
               {/* 敺蝞∠?蝟餌絞?芸? */}
               <div>
                 <p className="font-semibold mb-2"><TranslatedText messageKey="content.project_uiux_uiux4.adminSystemImprovements" /></p>
-                <ul className="pl-5 space-y-1">
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.carouselManagement" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.supportsMultilingualTitlesDescriptionsTagsAndButton" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.articleManagement" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedA" /><code>featured</code><TranslatedText messageKey="content.project_uiux_uiux4.databaseFieldForFeaturedArticleSelectionAnd" /></li>
-                  <li className="pl-[1em] [text-indent:-1em]"><strong><TranslatedText messageKey="content.project_uiux_uiux4.formsAndValidation" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedASharedFormHeaderComponentFor" /></li>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.carouselManagement" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.supportsMultilingualTitlesDescriptionsTagsAndButton" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.articleManagement" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedA" /><code>featured</code><TranslatedText messageKey="content.project_uiux_uiux4.databaseFieldForFeaturedArticleSelectionAnd" /></li>
+                  <li><strong><TranslatedText messageKey="content.project_uiux_uiux4.formsAndValidation" /></strong><TranslatedText messageKey="content.project_uiux_uiux4.addedASharedFormHeaderComponentFor" /></li>
                 </ul>
               </div>
 
