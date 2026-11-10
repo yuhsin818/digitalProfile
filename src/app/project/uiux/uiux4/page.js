@@ -438,13 +438,13 @@ export default function Web4() {
           <p className="text-[#00437B] flex items-center font-bold pr-5 text-xl pb-0.5"><TranslatedText messageKey="content.project_uiux_uiux1.relatedLinks" /></p>
           <div className="flex gap-4 flex-wrap">
             <button
-              onClick={() => window.open("https://5xruby.com/", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1hrxZzZNPpXbOBeSvL6Ep7xphZqcIl5Gu/view?usp=sharing", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1 transform transition duration-300 hover:scale-105 cursor-pointer"
             >
               <TranslatedText messageKey="actions.currentSite" />
             </button>
             <button
-              onClick={() => window.open("https://drive.google.com/file/d/1LZtGhBab3bHYvwgL9VWZmBTrWvS0JajV/view?usp=drive_link", "_blank")}
+              onClick={() => window.open("https://5xruby.com/", "_blank")}
               className="bg-gradient-to-br from-[#008BBF] to-[#AAD2E4] text-white rounded-2xl px-5 py-1 transform transition duration-300 hover:scale-105 cursor-pointer"
             >
               <TranslatedText messageKey="actions.newVersion" />
